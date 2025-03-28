@@ -1,0 +1,121 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27ce4h (163044) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00037d0c vaddr=3ffb0000 size=04088h ( 16520) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003bd9c vaddr=40080000 size=0427ch ( 17020) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=955cch (611788) map[0m
+[0;32mI (385) esp_image: segment 4: paddr=000d55f4 vaddr=4008427c size=161a0h ( 90528) load[0m
+[0;32mI (433) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (433) boot: Disabling RNG early entropy source...[0m
+[0;32mI (445) cpu_start: Multicore app[0m
+[0;32mI (454) cpu_start: Pro cpu start user code[0m
+[0;32mI (454) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (454) app_init: Application information:[0m
+[0;32mI (457) app_init: Project name:     datn[0m
+[0;32mI (461) app_init: App version:      1[0m
+[0;32mI (466) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (472) app_init: ELF file SHA256:  2bcb38fa8...[0m
+[0;32mI (477) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (482) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (487) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (492) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (497) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (504) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (510) heap_init: At 3FFB8368 len 00027C98 (159 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (523) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 4009A41C len 00005BE4 (22 KiB): IRAM[0m
+[0;32mI (537) spi_flash: detected chip: generic[0m
+[0;32mI (540) spi_flash: flash io: dio[0m
+[0;33mW (544) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (557) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;33mW (608) MAIN: Ethernet interface not found![0m
+CHECK_TREO[0;32mI (608) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (628) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (638) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (648) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (658) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (668) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (698) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (698) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (718) wifi:wifi driver task: 3ffc4468, prio:23, stack:6656, core=0
+I (728) wifi:wifi firmware version: ccaebfa
+I (728) wifi:wifi certification version: v7.0
+I (728) wifi:config NVS flash: enabled
+I (728) wifi:config nano formating: disabled
+I (738) wifi:Init data frame dynamic rx buffer num: 32
+I (738) wifi:Init static rx mgmt buffer num: 5
+I (748) wifi:Init management short buffer num: 32
+I (748) wifi:Init dynamic tx buffer num: 32
+I (748) wifi:Init static rx buffer size: 1600
+I (758) wifi:Init static rx buffer num: 10
+I (758) wifi:Init dynamic rx buffer num: 32
+[0;32mI (768) wifi_init: rx ba win: 6[0m
+[0;32mI (768) wifi_init: accept mbox: 6[0m
+[0;32mI (768) wifi_init: tcpip mbox: 32[0m
+[0;32mI (778) wifi_init: udp mbox: 6[0m
+[0;32mI (778) wifi_init: tcp mbox: 6[0m
+[0;32mI (788) wifi_init: tcp tx win: 5760[0m
+[0;32mI (788) wifi_init: tcp rx win: 5760[0m
+[0;32mI (788) wifi_init: tcp mss: 1440[0m
+[0;32mI (798) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (798) wifi_init: WiFi RX IRAM OP enabled[0m
+W (808) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (818) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (908) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (908) wifi:enable tsf
+[0;32mI (908) WiFi_STA: wifi_init_sta finished.[0m
+I (918) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (918) wifi:state: init -> auth (0xb0)
+I (938) wifi:state: auth -> assoc (0x0)
+I (948) wifi:state: assoc -> run (0x10)
+I (948) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (978) wifi:connected with Hassagi, aid = 4, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (978) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (978) wifi:pm start, type: 1
+
+I (978) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1018) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+CHECK_TREOCHECK_TREO[0;32mI (3608) MAIN: Ethernet UP, stopping Wi-Fi.[0m
+I (3608) wifi:state: run -> init (0x0)
+I (3618) wifi:pm stop, total sleep time: 2188067 us / 2635846 us
+
+I (3618) wifi:<ba-del>idx:0, tid:0
+I (3618) wifi:new:<7,0>, old:<7,2>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+E (3628) wifi:NAN WiFi stop
+[0;32mI (3628) WiFi_STA: retry to connect to the AP[0m
+[0;32mI (3628) WiFi_STA: connect to the AP fail[0m
+I (3668) wifi:flush txq
+I (3668) wifi:stop sw txq
+I (3668) wifi:lmac stop hw txq
+CHECK_TREOCHECK_TREOCHECK_TREO[0;32mI (5708) esp_netif_handlers: eth ip: 192.168.5.111, mask: 255.255.255.0, gw: 192.168.5.1[0m
+CHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCHECK_TREOCH

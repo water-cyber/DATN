@@ -1,0 +1,398 @@
+[1/14] Linking C static library esp-idf\wifi_config\libwifi_config.a
+[2/14] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP_IDF\datn\build\bootloader\esp-idf\esptool_py && D:\ESP_IDF\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP_IDF/datn/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[3/12] Linking C static library esp-idf\gpio_config\libgpio_config.a
+[4/12] Linking C static library esp-idf\ethernet_w5500\libethernet_w5500.a
+[5/12] Building C object esp-idf/app_mqtt/CMakeFiles/__idf_app_mqtt.dir/mqtt_task.c.obj
+FAILED: esp-idf/app_mqtt/CMakeFiles/__idf_app_mqtt.dir/mqtt_task.c.obj 
+ccache D:\ESP_IDF\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/ESP_IDF/datn/build/config -ID:/ESP_IDF/datn/components/app_mqtt -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/platform_include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/include/freertos -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/xtensa/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/esp_additions/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include/soc -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include/soc/esp32 -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/dma/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/ldo/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/. -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/heap/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/soc/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32 -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/hal/platform_port/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/include/esp32 -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32 -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_common/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/include/private -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/deprecated_include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/apps -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/apps/sntp -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/freertos/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/arch -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/sys -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_eth/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_spi/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_pm/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/driver/touch_sensor/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/driver/twai/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/driver/touch_sensor/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_pcnt/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gptimer/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_mcpwm/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ana_cmpr/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_i2s/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdmmc/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/sdmmc/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdspi/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdio/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_dac/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_rmt/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_tsens/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdm/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_i2c/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/vfs/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ledc/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_parlio/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_netif/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/json/cJSON -ID:/ESP_IDF/datn/main -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/port/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/library -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/esp_crt_bundle/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_app_format/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_bootloader_format/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/app_update/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader_support/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader_support/bootloader_flash/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_partition/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/spi_flash/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/pthread/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/app_trace/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/nvs_flash/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_phy/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_phy/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_vfs_console/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/wpa_supplicant/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/wpa_supplicant/port/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/wpa_supplicant/esp_supplicant/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/nan_app/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/include/local -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/unity/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/unity/unity/src -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/cmock/CMock/src -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/console -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/http_parser -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp-tls-crypto -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/interface -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/esp32/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/deprecated/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_isp/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_cam/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_cam/interface -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_jpeg/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ppa/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_gdbstub/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hid/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_https_ota/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_https_server/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_psram/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_lcd/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_lcd/interface -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/protobuf-c/protobuf-c -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/protocomm/include/common -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/protocomm/include/security -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/protocomm/include/transports -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/protocomm/include/crypto/srp6a -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/protocomm/proto-c -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_local_ctrl/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/espcoredump/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/espcoredump/include/port/xtensa -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/wear_levelling/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/fatfs/diskio -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/fatfs/src -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/fatfs/vfs -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/idf_test/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/idf_test/include/esp32 -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/ieee802154/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/nvs_sec_provider/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/perfmon/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/spiffs/include -ID:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/wifi_provisioning/include -ID:/ESP_IDF/datn/components/RS485 -ID:/ESP_IDF/datn/components/RTC -ID:/ESP_IDF/datn/components/ethernet_w5500 -ID:/ESP_IDF/datn/components/gpio_config -ID:/ESP_IDF/datn/components/wifi_config -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/ESP_IDF/datn=. -fmacro-prefix-map=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/app_mqtt/CMakeFiles/__idf_app_mqtt.dir/mqtt_task.c.obj -MF esp-idf\app_mqtt\CMakeFiles\__idf_app_mqtt.dir\mqtt_task.c.obj.d -o esp-idf/app_mqtt/CMakeFiles/__idf_app_mqtt.dir/mqtt_task.c.obj -c D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c: In function 'publish_mqtt_inputs':
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:71:5: error: unknown type name 'rtc_time_t'
+   71 |     rtc_time_t now;
+      |     ^~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:72:9: error: implicit declaration of function 'ds1307_get_time' [-Werror=implicit-function-declaration]
+   72 |     if (ds1307_get_time(&now) == ESP_OK) {
+      |         ^~~~~~~~~~~~~~~
+In file included from D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:8:
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:21: error: request for member 'hour' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                     ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:31: error: request for member 'minute' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                               ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:43: error: request for member 'second' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                           ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:55: error: request for member 'date' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                       ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:65: error: request for member 'month' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                 ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:76: error: request for member 'year' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                            ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:21: error: request for member 'hour' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                     ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:31: error: request for member 'minute' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                               ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:43: error: request for member 'second' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                           ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:55: error: request for member 'date' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                       ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:65: error: request for member 'month' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                 ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:76: error: request for member 'year' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                            ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:21: error: request for member 'hour' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                     ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:31: error: request for member 'minute' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                               ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:43: error: request for member 'second' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                           ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:55: error: request for member 'date' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                       ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:65: error: request for member 'month' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                 ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:76: error: request for member 'year' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                            ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:21: error: request for member 'hour' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                     ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:31: error: request for member 'minute' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                               ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:43: error: request for member 'second' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                           ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:55: error: request for member 'date' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                       ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:65: error: request for member 'month' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                 ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:76: error: request for member 'year' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                            ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:21: error: request for member 'hour' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                     ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:31: error: request for member 'minute' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                               ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:43: error: request for member 'second' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                           ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:55: error: request for member 'date' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                       ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:65: error: request for member 'month' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                 ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:74:76: error: request for member 'year' in something not a structure or union
+   74 |                  now.hour, now.minute, now.second, now.date, now.month, now.year);
+      |                                                                            ^
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:73:9: note: in expansion of macro 'ESP_LOGI'
+   73 |         ESP_LOGI(TAG, "Giờ hiện tại: %02d:%02d:%02d - %02d/%02d/20%02d",
+      |         ^~~~~~~~
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:83:46: error: request for member 'hour' in something not a structure or union
+   83 |     cJSON_AddNumberToObject(root, "hour", now.hour);
+      |                                              ^
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:84:48: error: request for member 'minute' in something not a structure or union
+   84 |     cJSON_AddNumberToObject(root, "minute", now.minute);
+      |                                                ^
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:85:48: error: request for member 'second' in something not a structure or union
+   85 |     cJSON_AddNumberToObject(root, "second", now.second);
+      |                                                ^
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:86:45: error: request for member 'date' in something not a structure or union
+   86 |     cJSON_AddNumberToObject(root, "day", now.date);
+      |                                             ^
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:87:47: error: request for member 'month' in something not a structure or union
+   87 |     cJSON_AddNumberToObject(root, "month", now.month);
+      |                                               ^
+D:/ESP_IDF/datn/components/app_mqtt/mqtt_task.c:88:53: error: request for member 'year' in something not a structure or union
+   88 |     cJSON_AddNumberToObject(root, "year", 2000 + now.year); // Chuyển về năm đầy đủ
+      |                                                     ^
+cc1.exe: some warnings being treated as errors
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+ninja: build stopped: subcommand failed.

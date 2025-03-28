@@ -1,0 +1,69 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081caa: panic_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008bc39: esp_system_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008cc0a: vApplicationStackOverflowHook at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4008e00f: vTaskSwitchContext at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008cd14: _frxt_dispatch at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008ccc6: _frxt_int_exit at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081caa: panic_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008bc39: esp_system_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008cc0a: vApplicationStackOverflowHook at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4008e00f: vTaskSwitchContext at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008cd14: _frxt_dispatch at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008ccc6: _frxt_int_exit at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4017b2b8: find_value at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/pthread/pthread_local_storage.c:176
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x4017b2b5: find_value at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/pthread/pthread_local_storage.c:175
+0x400d6065: pthread_getspecific at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/pthread/pthread_local_storage.c:190
+0x40150274: sys_thread_sem_get at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/freertos/sys_arch.c:492
+0x40150eef: netconn_apimsg at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/api_lib.c:128
+0x40151262: netconn_write_vectors_partly at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/api_lib.c:1064
+0x401512c9: netconn_write_partly at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/api_lib.c:980
+0x4013d39e: lwip_send at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/sockets.c:1418
+0x400f7608: send at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/lwip/sockets.h:42
+ (inlined by) httpd_default_send at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_txrx.c:699
+0x4017c8e9: httpd_send_all at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_txrx.c:73
+0x400f72be: httpd_resp_send at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_txrx.c:257 (discriminator 1)
+0x400db339: scan_wifi_handler at D:/ESP_IDF/datn/components/wifi_config/web_server.c:62
+0x400f78e7: httpd_uri at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_uri.c:329
+0x400f6a39: httpd_parse_req at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_parse.c:663
+0x400f6ad8: httpd_req_new at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_parse.c:791
+0x400f704c: httpd_sess_process at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_sess.c:426
+0x400f5904: httpd_process_session at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_main.c:262
+0x4017c88f: httpd_sess_enum at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+0x400f6106: httpd_server at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_main.c:312
+0x400f6172: httpd_thread at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server/src/httpd_main.c:334
+0x4008c801: vPortTaskWrapper at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081caa: panic_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008bc39: esp_system_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008cc0a: vApplicationStackOverflowHook at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4008e00f: vTaskSwitchContext at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008cd14: _frxt_dispatch at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008ccc6: _frxt_int_exit at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

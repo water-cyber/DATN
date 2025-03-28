@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "sdkconfig.h": "c",
+        "gpio_in_out.h": "c"
+    }
+}

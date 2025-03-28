@@ -1,0 +1,384 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5a64h (744036) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5a8c vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (434) esp_image: segment 4: paddr=000f7bd8 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  65eb401cf...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (541) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;33mW (657) MAIN: Ethernet interface not found![0m
+[0;32mI (657) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (657) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) wifi_manager: Initializing WiFi in SoftAP mode...[0m
+I (747) wifi:wifi driver task: 3ffc24d8, prio:23, stack:6656, core=0
+I (747) wifi:wifi firmware version: ccaebfa
+I (747) wifi:wifi certification version: v7.0
+I (747) wifi:config NVS flash: enabled
+I (757) wifi:config nano formating: disabled
+I (757) wifi:Init data frame dynamic rx buffer num: 32
+I (757) wifi:Init static rx mgmt buffer num: 5
+I (767) wifi:Init management short buffer num: 32
+I (767) wifi:Init dynamic tx buffer num: 32
+I (777) wifi:Init static rx buffer size: 1600
+I (777) wifi:Init static rx buffer num: 10
+I (777) wifi:Init dynamic rx buffer num: 32
+[0;32mI (787) wifi_init: rx ba win: 6[0m
+[0;32mI (787) wifi_init: accept mbox: 6[0m
+[0;32mI (797) wifi_init: tcpip mbox: 32[0m
+[0;32mI (797) wifi_init: udp mbox: 6[0m
+[0;32mI (797) wifi_init: tcp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp tx win: 5760[0m
+[0;32mI (807) wifi_init: tcp rx win: 5760[0m
+[0;32mI (817) wifi_init: tcp mss: 1440[0m
+[0;32mI (817) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (817) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (827) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (917) wifi:mode : sta (8c:4b:14:94:f3:88) + softAP (8c:4b:14:94:f3:89)
+I (917) wifi:enable tsf
+I (917) wifi:Total power save buffer number: 16
+I (927) wifi:Init max length of beacon: 752/752
+I (927) wifi:Init max length of beacon: 752/752
+[0;32mI (927) wifi_manager: SoftAP started with SSID: ESP32_Setup[0m
+[0;32mI (927) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (947) web_server: Web server started[0m
+[0;32mI (947) web_server: Waiting SSID/PASS from Web...[0m
+[0;33mW (1657) MAIN: Ethernet interface not found![0m
+[0;33mW (2657) MAIN: Ethernet interface not found![0m
+[0;33mW (3657) MAIN: Ethernet interface not found![0m
+[0;33mW (4657) MAIN: Ethernet interface not found![0m
+[0;33mW (5657) MAIN: Ethernet interface not found![0m
+[0;33mW (6657) MAIN: Ethernet interface not found![0m
+[0;33mW (7657) MAIN: Ethernet interface not found![0m
+[0;33mW (8657) MAIN: Ethernet interface not found![0m
+[0;33mW (9657) MAIN: Ethernet interface not found![0m
+[0;33mW (10657) MAIN: Ethernet interface not found![0m
+[0;33mW (11657) MAIN: Ethernet interface not found![0m
+[0;33mW (12657) MAIN: Ethernet interface not found![0m
+[0;33mW (13657) MAIN: Ethernet interface not found![0m
+I (14017) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (14017) wifi:station: 36:aa:19:75:d0:fc join, AID=1, bgn, 20
+[0;32mI (14067) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (14457) wifi:<ba-add>idx:2 (ifx:1, 36:aa:19:75:d0:fc), tid:0, ssn:2, winSize:64
+[0;33mW (14657) MAIN: Ethernet interface not found![0m
+[0;33mW (15657) MAIN: Ethernet interface not found![0m
+[0;33mW (16657) MAIN: Ethernet interface not found![0m
+[0;33mW (17657) MAIN: Ethernet interface not found![0m
+[0;33mW (18657) MAIN: Ethernet interface not found![0m
+[0;33mW (19657) MAIN: Ethernet interface not found![0m
+[0;33mW (20657) MAIN: Ethernet interface not found![0m
+[0;33mW (21657) MAIN: Ethernet interface not found![0m
+
+***ERROR*** A stack overflow in task httpd has been detected.
+
+
+Backtrace: 0x40081caa:0x3ffcb090 0x4008bc39:0x3ffcb0b0 0x4008cc0a:0x3ffcb0d0 0x4008e00f:0x3ffcb150 0x4008cd14:0x3ffcb170 0x4008ccc6:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 65eb401cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5a64h (744036) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5a8c vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (433) esp_image: segment 4: paddr=000f7bd8 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (519) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  65eb401cf...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (540) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;33mW (657) MAIN: Ethernet interface not found![0m
+[0;32mI (657) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (657) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) wifi_manager: Initializing WiFi in SoftAP mode...[0m
+I (747) wifi:wifi driver task: 3ffc24d8, prio:23, stack:6656, core=0
+I (747) wifi:wifi firmware version: ccaebfa
+I (747) wifi:wifi certification version: v7.0
+I (747) wifi:config NVS flash: enabled
+I (757) wifi:config nano formating: disabled
+I (757) wifi:Init data frame dynamic rx buffer num: 32
+I (757) wifi:Init static rx mgmt buffer num: 5
+I (767) wifi:Init management short buffer num: 32
+I (767) wifi:Init dynamic tx buffer num: 32
+I (777) wifi:Init static rx buffer size: 1600
+I (777) wifi:Init static rx buffer num: 10
+I (777) wifi:Init dynamic rx buffer num: 32
+[0;32mI (787) wifi_init: rx ba win: 6[0m
+[0;32mI (787) wifi_init: accept mbox: 6[0m
+[0;32mI (797) wifi_init: tcpip mbox: 32[0m
+[0;32mI (797) wifi_init: udp mbox: 6[0m
+[0;32mI (797) wifi_init: tcp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp tx win: 5760[0m
+[0;32mI (807) wifi_init: tcp rx win: 5760[0m
+[0;32mI (817) wifi_init: tcp mss: 1440[0m
+[0;32mI (817) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (817) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (827) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (917) wifi:mode : sta (8c:4b:14:94:f3:88) + softAP (8c:4b:14:94:f3:89)
+I (917) wifi:enable tsf
+I (927) wifi:Total power save buffer number: 16
+I (927) wifi:Init max length of beacon: 752/752
+I (927) wifi:Init max length of beacon: 752/752
+[0;32mI (927) wifi_manager: SoftAP started with SSID: ESP32_Setup[0m
+[0;32mI (937) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (947) web_server: Web server started[0m
+[0;32mI (947) web_server: Waiting SSID/PASS from Web...[0m
+[0;33mW (1657) MAIN: Ethernet interface not found![0m
+I (1877) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (1877) wifi:station: 36:aa:19:75:d0:fc join, AID=1, bgn, 20
+[0;33mW (2657) MAIN: Ethernet interface not found![0m
+I (3237) wifi:<ba-add>idx:2 (ifx:1, 36:aa:19:75:d0:fc), tid:0, ssn:50, winSize:64
+[0;33mW (3657) MAIN: Ethernet interface not found![0m
+[0;33mW (4657) MAIN: Ethernet interface not found![0m
+[0;33mW (5657) MAIN: Ethernet interface not found![0m
+[0;33mW (6657) MAIN: Ethernet interface not found![0m
+[0;33mW (7657) MAIN: Ethernet interface not found![0m
+[0;33mW (8657) MAIN: Ethernet interface not found![0m
+[0;33mW (9657) MAIN: Ethernet interface not found![0m
+[0;33mW (10657) MAIN: Ethernet interface not found![0m
+[0;33mW (11657) MAIN: Ethernet interface not found![0m
+[0;33mW (12657) MAIN: Ethernet interface not found![0m
+[0;33mW (13657) MAIN: Ethernet interface not found![0m
+[0;33mW (14657) MAIN: Ethernet interface not found![0m
+[0;33mW (15657) MAIN: Ethernet interface not found![0m
+[0;33mW (16657) MAIN: Ethernet interface not found![0m
+[0;33mW (17657) MAIN: Ethernet interface not found![0m
+[0;33mW (18657) MAIN: Ethernet interface not found![0m
+[0;33mW (19657) MAIN: Ethernet interface not found![0m
+[0;33mW (20657) MAIN: Ethernet interface not found![0m
+[0;33mW (21657) MAIN: Ethernet interface not found![0m
+[0;33mW (22657) MAIN: Ethernet interface not found![0m
+[0;33mW (23657) MAIN: Ethernet interface not found![0m
+[0;33mW (24657) MAIN: Ethernet interface not found![0m
+[0;33mW (25657) MAIN: Ethernet interface not found![0m
+[0;33mW (26657) MAIN: Ethernet interface not found![0m
+[0;33mW (27657) MAIN: Ethernet interface not found![0m
+[0;33mW (28657) MAIN: Ethernet interface not found![0m
+[0;33mW (29657) MAIN: Ethernet interface not found![0m
+[0;33mW (30657) MAIN: Ethernet interface not found![0m
+[0;33mW (31657) MAIN: Ethernet interface not found![0m
+[0;33mW (32657) MAIN: Ethernet interface not found![0m
+[0;33mW (33657) MAIN: Ethernet interface not found![0m
+[0;33mW (34657) MAIN: Ethernet interface not found![0m
+[0;33mW (35657) MAIN: Ethernet interface not found![0m
+[0;33mW (36657) MAIN: Ethernet interface not found![0m
+[0;33mW (37657) MAIN: Ethernet interface not found![0m
+[0;33mW (38657) MAIN: Ethernet interface not found![0m
+[0;33mW (39657) MAIN: Ethernet interface not found![0m
+[0;33mW (40657) MAIN: Ethernet interface not found![0m
+[0;33mW (41657) MAIN: Ethernet interface not found![0m
+[0;33mW (42657) MAIN: Ethernet interface not found![0m
+[0;33mW (43657) MAIN: Ethernet interface not found![0m
+[0;33mW (44657) MAIN: Ethernet interface not found![0m
+[0;33mW (45657) MAIN: Ethernet interface not found![0m
+[0;33mW (46657) MAIN: Ethernet interface not found![0m
+[0;33mW (47657) MAIN: Ethernet interface not found![0m
+[0;33mW (48657) MAIN: Ethernet interface not found![0m
+[0;33mW (49657) MAIN: Ethernet interface not found![0m
+[0;33mW (50657) MAIN: Ethernet interface not found![0m
+[0;33mW (51657) MAIN: Ethernet interface not found![0m
+[0;33mW (52657) MAIN: Ethernet interface not found![0m
+[0;33mW (53657) MAIN: Ethernet interface not found![0m
+[0;33mW (54657) MAIN: Ethernet interface not found![0m
+[0;33mW (55657) MAIN: Ethernet interface not found![0m
+[0;33mW (56657) MAIN: Ethernet interface not found![0m
+[0;33mW (57657) MAIN: Ethernet interface not found![0m
+[0;33mW (58657) MAIN: Ethernet interface not found![0m
+[0;33mW (59657) MAIN: Ethernet interface not found![0m
+[0;33mW (60657) MAIN: Ethernet interface not found![0m
+[0;33mW (61657) MAIN: Ethernet interface not found![0m
+[0;33mW (62657) MAIN: Ethernet interface not found![0m
+[0;33mW (63657) MAIN: Ethernet interface not found![0m
+[0;33mW (64657) MAIN: Ethernet interface not found![0m
+[0;33mW (65657) MAIN: Ethernet interface not found![0m
+[0;33mW (66657) MAIN: Ethernet interface not found![0m
+[0;33mW (67657) MAIN: Ethernet interface not found![0m
+[0;33mW (68657) MAIN: Ethernet interface not found![0m
+[0;33mW (69657) MAIN: Ethernet interface not found![0m
+[0;33mW (70657) MAIN: Ethernet interface not found![0m
+[0;33mW (71657) MAIN: Ethernet interface not found![0m
+[0;33mW (72657) MAIN: Ethernet interface not found![0m
+[0;33mW (73657) MAIN: Ethernet interface not found![0m
+[0;33mW (74657) MAIN: Ethernet interface not found![0m
+[0;33mW (75657) MAIN: Ethernet interface not found![0m
+[0;33mW (76657) MAIN: Ethernet interface not found![0m
+[0;33mW (77657) MAIN: Ethernet interface not found![0m
+[0;33mW (78657) MAIN: Ethernet interface not found![0m
+[0;33mW (79657) MAIN: Ethernet interface not found![0m
+[0;33mW (80657) MAIN: Ethernet interface not found![0m
+[0;33mW (81657) MAIN: Ethernet interface not found![0m
+[0;33mW (82657) MAIN: Ethernet interface not found![0m
+[0;33mW (83657) MAIN: Ethernet interface not found![0m
+[0;33mW (84657) MAIN: Ethernet interface not found![0m
+[0;33mW (85657) MAIN: Ethernet interface not found![0m
+[0;33mW (86657) MAIN: Ethernet interface not found![0m
+[0;33mW (87657) MAIN: Ethernet interface not found![0m
+[0;33mW (88657) MAIN: Ethernet interface not found![0m
+[0;33mW (89657) MAIN: Ethernet interface not found![0m
+[0;33mW (90657) MAIN: Ethernet interface not found![0m
+[0;33mW (91657) MAIN: Ethernet interface not found![0m
+[0;33mW (92657) MAIN: Ethernet interface not found![0m
+[0;33mW (93657) MAIN: Ethernet interface not found![0m
+[0;33mW (94657) MAIN: Ethernet interface not found![0m
+[0;33mW (95657) MAIN: Ethernet interface not found![0m
+[0;33mW (96657) MAIN: Ethernet interface not found![0m
+[0;33mW (97657) MAIN: Ethernet interface not found![0m
+[0;33mW (98657) MAIN: Ethernet interface not found![0m
+[0;33mW (99657) MAIN: Ethernet interface not found![0m
+[0;33mW (100657) MAIN: Ethernet interface not found![0m
+[0;33mW (101657) MAIN: Ethernet interface not found![0m
+[0;33mW (102657) MAIN: Ethernet interface not found![0m
+[0;33mW (103657) MAIN: Ethernet interface not found![0m
+[0;33mW (104657) MAIN: Ethernet interface not found![0m
+[0;33mW (105657) MAIN: Ethernet interface not found![0m
+[0;33mW (106657) MAIN: Ethernet interface not found![0m
+[0;33mW (107657) MAIN: Ethernet interface not found![0m
+[0;33mW (108657) MAIN: Ethernet interface not found![0m
+[0;33mW (109657) MAIN: Ethernet interface not found![0m
+[0;33mW (110657) MAIN: Ethernet interface not found![0m
+[0;33mW (111657) MAIN: Ethernet interface not found![0m
+[0;33mW (112657) MAIN: Ethernet interface not found![0m
+[0;33mW (113657) MAIN: Ethernet interface not found![0m
+[0;33mW (114657) MAIN: Ethernet interface not found![0m
+[0;33mW (115657) MAIN: Ethernet interface not found![0m
+[0;33mW (116657) MAIN: Ethernet interface not found![0m
+[0;33mW (117657) MAIN: Ethernet interface not found![0m
+[0;33mW (118657) MAIN: Ethernet interface not found![0m
+[0;33mW (119657) MAIN: Ethernet interface not found![0m
+[0;33mW (120657) MAIN: Ethernet interface not found![0m
+[0;33mW (121657) MAIN: Ethernet interface not found![0m
+[0;33mW (122657) MAIN: Ethernet interface not found![0m
+[0;33mW (123657) MAIN: Ethernet interface not found![0m
+[0;33mW (124657) MAIN: Ethernet interface not found![0m
+[0;33mW (125657) MAIN: Ethernet interface not found![0m
+[0;33mW (126657) MAIN: Ethernet interface not found![0m
+[0;33mW (127657) MAIN: Ethernet interface not found![0m
+[0;33mW (128657) MAIN: Ethernet interface not found![0m
+[0;33mW (129657) MAIN: Ethernet interface not found![0m
+[0;33mW (130657) MAIN: Ethernet interface not found![0m
+[0;33mW (131657) MAIN: Ethernet interface not found![0m
+[0;33mW (132657) MAIN: Ethernet interface not found![0m
+[0;33mW (133657) MAIN: Ethernet interface not found![0m
+[0;33mW (134657) MAIN: Ethernet interface not found![0m
+[0;33mW (135657) MAIN: Ethernet interface not found![0m
+[0;33mW (136657) MAIN: Ethernet interface not found![0m
+[0;33mW (137657) MAIN: Ethernet interface not found![0m
+[0;33mW (138657) MAIN: Ethernet interface not found![0m
+[0;33mW (139657) MAIN: Ethernet interface not found![0m
+[0;33mW (140657) MAIN: Ethernet interface not found![0m
+[0;33mW (141657) MAIN: Ethernet interface not found![0m
+[0;33mW (142657) MAIN: Ethernet interface not found![0m
+[0;33mW (143657) MAIN: Ethernet interface not found![0m
+[0;33mW (144657) MAIN: Ethernet interface not found![0m
+[0;33mW (145657) MAIN: Ethernet interface not found![0m
+[0;33mW (146657) MAIN: Ethernet interface not found![0m

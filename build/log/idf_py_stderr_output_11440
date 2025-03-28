@@ -1,0 +1,16 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081caa: panic_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008bc39: esp_system_abort at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008cc0a: vApplicationStackOverflowHook at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4008e00f: vTaskSwitchContext at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008cd14: _frxt_dispatch at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008ccc6: _frxt_int_exit at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

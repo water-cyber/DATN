@@ -1,0 +1,460 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dffch (188412) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e024 vaddr=3ffb0000 size=01ff4h (  8180) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b57d8h (743384) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5800 vaddr=3ffb1ff4 size=020d4h (  8404) load[0m
+[0;32mI (433) esp_image: segment 4: paddr=000f78dc vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (503) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (519) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  b62aff6f8...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (540) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A80 len 00027580 (157 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (626) main_task: Started on CPU0[0m
+[0;32mI (636) main_task: Calling app_main()[0m
+[0;33mW (666) MAIN: Ethernet interface not found![0m
+[0;32mI (666) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (686) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (696) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (706) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (716) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (726) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (736) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (756) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (756) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (776) wifi:wifi driver task: 3ffc4380, prio:23, stack:6656, core=0
+I (786) wifi:wifi firmware version: ccaebfa
+I (796) wifi:wifi certification version: v7.0
+I (796) wifi:config NVS flash: enabled
+I (796) wifi:config nano formating: disabled
+I (796) wifi:Init data frame dynamic rx buffer num: 32
+I (796) wifi:Init static rx mgmt buffer num: 5
+I (806) wifi:Init management short buffer num: 32
+I (806) wifi:Init dynamic tx buffer num: 32
+I (816) wifi:Init static rx buffer size: 1600
+I (816) wifi:Init static rx buffer num: 10
+I (816) wifi:Init dynamic rx buffer num: 32
+[0;32mI (826) wifi_init: rx ba win: 6[0m
+[0;32mI (826) wifi_init: accept mbox: 6[0m
+[0;32mI (836) wifi_init: tcpip mbox: 32[0m
+[0;32mI (836) wifi_init: udp mbox: 6[0m
+[0;32mI (836) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5760[0m
+[0;32mI (846) wifi_init: tcp rx win: 5760[0m
+[0;32mI (856) wifi_init: tcp mss: 1440[0m
+[0;32mI (856) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (856) wifi_init: WiFi RX IRAM OP enabled[0m
+W (866) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (876) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (966) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (966) wifi:enable tsf
+[0;32mI (966) WiFi_STA: wifi_init_sta finished.[0m
+I (1006) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (1006) wifi:state: init -> auth (0xb0)
+I (1016) wifi:state: auth -> assoc (0x0)
+I (1026) wifi:state: assoc -> run (0x10)
+I (1036) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (1056) wifi:connected with Hassagi, aid = 5, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (1056) wifi:security: WPA2-PSK, phy: bgn, rssi: -63
+I (1056) wifi:pm start, type: 1
+
+I (1056) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1096) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4566) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (4566) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (4566) WiFi_STA: connected to ap SSID:Hassagi password:0978111969[0m
+[0;32mI (4576) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;31mE (4586) uart: uart_read_bytes(1492): uart driver error[0m
+[0;32mI (4586) RS485: RS485 Initialized[0m
+[0;32mI (4586) MAIN: Giờ hiện tại: 01:58:25 - 01/01/2000[0m
+[0;32mI (4836) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (4896) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (5596) MAIN: Giờ hiện tại: 01:58:25 - 01/01/2000[0m
+[0;32mI (6596) MAIN: Giờ hiện tại: 01:58:26 - 01/01/2000[0m
+[0;32mI (7596) MAIN: Giờ hiện tại: 01:58:26 - 01/01/2000[0m
+[0;32mI (8596) MAIN: Giờ hiện tại: 01:58:27 - 01/01/2000[0m
+[0;32mI (9596) MAIN: Giờ hiện tại: 01:58:27 - 01/01/2000[0m
+[0;32mI (10596) MAIN: Giờ hiện tại: 01:58:28 - 01/01/2000[0m
+[0;32mI (11596) MAIN: Giờ hiện tại: 01:58:29 - 01/01/2000[0m
+[0;32mI (12596) MAIN: Giờ hiện tại: 01:58:29 - 01/01/2000[0m
+[0;32mI (13596) MAIN: Giờ hiện tại: 01:58:30 - 01/01/2000[0m
+[0;32mI (14596) MAIN: Giờ hiện tại: 01:58:30 - 01/01/2000[0m
+[0;32mI (15596) MAIN: Giờ hiện tại: 01:58:31 - 01/01/2000[0m
+[0;32mI (16596) MAIN: Giờ hiện tại: 01:58:31 - 01/01/2000[0m
+[0;32mI (16886) MQTT_APP: Sending JSON: {"input1":0,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (16886) MQTT_APP: pub LED thành công[0m
+[0;32mI (17596) MAIN: Giờ hiện tại: 01:58:32 - 01/01/2000[0m
+[0;32mI (18596) MAIN: Giờ hiện tại: 01:58:33 - 01/01/2000[0m
+[0;32mI (19226) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (19596) MAIN: Giờ hiện tại: 01:58:33 - 01/01/2000[0m
+[0;32mI (20596) MAIN: Giờ hiện tại: 01:58:34 - 01/01/2000[0m
+[0;32mI (21596) MAIN: Giờ hiện tại: 01:58:34 - 01/01/2000[0m
+[0;32mI (22596) MAIN: Giờ hiện tại: 01:58:35 - 01/01/2000[0m
+[0;32mI (23486) MQTT_APP: Sending JSON: {"input1":1,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (23486) MQTT_APP: pub LED thành công[0m
+[0;32mI (23526) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (23596) MAIN: Giờ hiện tại: 01:58:35 - 01/01/2000[0m
+[0;32mI (24596) MAIN: Giờ hiện tại: 01:58:36 - 01/01/2000[0m
+[0;32mI (25596) MAIN: Giờ hiện tại: 01:58:37 - 01/01/2000[0m
+[0;32mI (26596) MAIN: Giờ hiện tại: 01:58:37 - 01/01/2000[0m
+[0;32mI (26936) MQTT_APP: Sending JSON: {"input1":0,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (26936) MQTT_APP: pub LED thành công[0m
+[0;32mI (26946) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (27596) MAIN: Giờ hiện tại: 01:58:38 - 01/01/2000[0m
+[0;32mI (28596) MAIN: Giờ hiện tại: 01:58:38 - 01/01/2000[0m
+[0;32mI (28736) MQTT_APP: Sending JSON: {"input1":0,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (28736) MQTT_APP: pub LED thành công[0m
+[0;32mI (28776) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (29186) MQTT_APP: Sending JSON: {"input1":1,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (29186) MQTT_APP: pub LED thành công[0m
+[0;32mI (29206) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (29596) MAIN: Giờ hiện tại: 01:58:39 - 01/01/2000[0m
+[0;32mI (30596) MAIN: Giờ hiện tại: 01:58:39 - 01/01/2000[0m
+[0;32mI (31596) MAIN: Giờ hiện tại: 01:58:40 - 01/01/2000[0m
+[0;32mI (32596) MAIN: Giờ hiện tại: 01:58:41 - 01/01/2000[0m
+[0;32mI (33596) MAIN: Giờ hiện tại: 01:58:41 - 01/01/2000[0m
+[0;32mI (34596) MAIN: Giờ hiện tại: 01:58:42 - 01/01/2000[0m
+[0;32mI (35596) MAIN: Giờ hiện tại: 01:58:42 - 01/01/2000[0m
+[0;32mI (36596) MAIN: Giờ hiện tại: 01:58:43 - 01/01/2000[0m
+[0;32mI (37596) MAIN: Giờ hiện tại: 01:58:44 - 01/01/2000[0m
+[0;32mI (38596) MAIN: Giờ hiện tại: 01:58:44 - 01/01/2000[0m
+[0;32mI (39596) MAIN: Giờ hiện tại: 01:58:45 - 01/01/2000[0m
+[0;32mI (40596) MAIN: Giờ hiện tại: 01:58:45 - 01/01/2000[0m
+[0;32mI (41596) MAIN: Giờ hiện tại: 01:58:46 - 01/01/2000[0m
+[0;32mI (42596) MAIN: Giờ hiện tại: 01:58:46 - 01/01/2000[0m
+[0;32mI (43596) MAIN: Giờ hiện tại: 01:58:47 - 01/01/2000[0m
+[0;32mI (44596) MAIN: Giờ hiện tại: 01:58:48 - 01/01/2000[0m
+[0;32mI (45596) MAIN: Giờ hiện tại: 01:58:48 - 01/01/2000[0m
+[0;32mI (46596) MAIN: Giờ hiện tại: 01:58:49 - 01/01/2000[0m
+[0;32mI (47036) MQTT_APP: Sending JSON: {"input1":1,"input2":0,"input3":1,"input4":0,"input5":1}[0m
+[0;32mI (47036) MQTT_APP: pub LED thành công[0m
+[0;32mI (47066) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (47596) MAIN: Giờ hiện tại: 01:58:49 - 01/01/2000[0m
+[0;32mI (48596) MAIN: Giờ hiện tại: 01:58:50 - 01/01/2000[0m
+[0;32mI (49596) MAIN: Giờ hiện tại: 01:58:50 - 01/01/2000[0m
+[0;32mI (50596) MAIN: Giờ hiện tại: 01:58:51 - 01/01/2000[0m
+[0;32mI (51236) MQTT_APP: Sending JSON: {"input1":0,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (51236) MQTT_APP: pub LED thành công[0m
+[0;32mI (51276) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (51596) MAIN: Giờ hiện tại: 01:58:52 - 01/01/2000[0m
+[0;32mI (52596) MAIN: Giờ hiện tại: 01:58:52 - 01/01/2000[0m
+[0;32mI (53596) MAIN: Giờ hiện tại: 01:58:53 - 01/01/2000[0m
+[0;32mI (54536) MQTT_APP: Sending JSON: {"input1":1,"input2":0,"input3":1,"input4":0,"input5":1}[0m
+[0;32mI (54536) MQTT_APP: pub LED thành công[0m
+[0;32mI (54556) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (54596) MAIN: Giờ hiện tại: 01:58:53 - 01/01/2000[0m
+[0;32mI (55286) MQTT_APP: Sending JSON: {"input1":1,"input2":0,"input3":1,"input4":0,"input5":1}[0m
+[0;32mI (55286) MQTT_APP: pub LED thành công[0m
+[0;32mI (55306) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (55436) MQTT_APP: Sending JSON: {"input1":1,"input2":0,"input3":1,"input4":1,"input5":1}[0m
+[0;32mI (55436) MQTT_APP: pub LED thành công[0m
+[0;32mI (55456) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (55596) MAIN: Giờ hiện tại: 01:58:54 - 01/01/2000[0m
+[0;32mI (56596) MAIN: Giờ hiện tại: 01:58:55 - 01/01/2000[0m
+[0;32mI (57596) MAIN: Giờ hiện tại: 01:58:55 - 01/01/2000[0m
+[0;32mI (58596) MAIN: Giờ hiện tại: 01:58:56 - 01/01/2000[0m
+[0;32mI (59596) MAIN: Giờ hiện tại: 01:58:56 - 01/01/2000[0m
+[0;32mI (60596) MAIN: Giờ hiện tại: 01:58:57 - 01/01/2000[0m
+[0;32mI (61596) MAIN: Giờ hiện tại: 01:58:57 - 01/01/2000[0m
+[0;32mI (62596) MAIN: Giờ hiện tại: 01:58:58 - 01/01/2000[0m
+[0;32mI (63596) MAIN: Giờ hiện tại: 01:58:59 - 01/01/2000[0m
+[0;32mI (64596) MAIN: Giờ hiện tại: 01:58:59 - 01/01/2000[0m
+I (65566) wifi:<ba-del>idx:0, tid:0
+I (65566) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:21, winSize:64
+[0;32mI (65596) MAIN: Giờ hiện tại: 01:59:00 - 01/01/2000[0m
+[0;32mI (66596) MAIN: Giờ hiện tại: 01:59:00 - 01/01/2000[0m
+[0;32mI (67596) MAIN: Giờ hiện tại: 01:59:01 - 01/01/2000[0m
+[0;32mI (68596) MAIN: Giờ hiện tại: 01:59:01 - 01/01/2000[0m
+[0;32mI (69596) MAIN: Giờ hiện tại: 01:59:02 - 01/01/2000[0m
+[0;32mI (70596) MAIN: Giờ hiện tại: 01:59:03 - 01/01/2000[0m
+[0;32mI (71596) MAIN: Giờ hiện tại: 01:59:03 - 01/01/2000[0m
+[0;32mI (72596) MAIN: Giờ hiện tại: 01:59:04 - 01/01/2000[0m
+[0;32mI (73596) MAIN: Giờ hiện tại: 01:59:04 - 01/01/2000[0m
+[0;32mI (74596) MAIN: Giờ hiện tại: 01:59:05 - 01/01/2000[0m
+[0;32mI (75596) MAIN: Giờ hiện tại: 01:59:05 - 01/01/2000[0m
+[0;32mI (76596) MAIN: Giờ hiện tại: 01:59:06 - 01/01/2000[0m
+[0;32mI (77596) MAIN: Giờ hiện tại: 01:59:07 - 01/01/2000[0m
+[0;32mI (78596) MAIN: Giờ hiện tại: 01:59:07 - 01/01/2000[0m
+[0;32mI (79596) MAIN: Giờ hiện tại: 01:59:08 - 01/01/2000[0m
+[0;32mI (80596) MAIN: Giờ hiện tại: 01:59:08 - 01/01/2000[0m
+[0;32mI (81596) MAIN: Giờ hiện tại: 01:59:09 - 01/01/2000[0m
+[0;32mI (82596) MAIN: Giờ hiện tại: 01:59:10 - 01/01/2000[0m
+[0;32mI (83596) MAIN: Giờ hiện tại: 01:59:10 - 01/01/2000[0m
+[0;32mI (84596) MAIN: Giờ hiện tại: 01:59:11 - 01/01/2000[0m
+[0;32mI (85596) MAIN: Giờ hiện tại: 01:59:11 - 01/01/2000[0m
+[0;32mI (86596) MAIN: Giờ hiện tại: 01:59:12 - 01/01/2000[0m
+[0;32mI (87596) MAIN: Giờ hiện tại: 01:59:12 - 01/01/2000[0m
+[0;32mI (88596) MAIN: Giờ hiện tại: 01:59:13 - 01/01/2000[0m
+[0;32mI (89596) MAIN: Giờ hiện tại: 01:59:14 - 01/01/2000[0m
+[0;32mI (90596) MAIN: Giờ hiện tại: 01:59:14 - 01/01/2000[0m
+[0;32mI (91596) MAIN: Giờ hiện tại: 01:59:15 - 01/01/2000[0m
+[0;32mI (92596) MAIN: Giờ hiện tại: 01:59:15 - 01/01/2000[0m
+[0;32mI (93596) MAIN: Giờ hiện tại: 01:59:16 - 01/01/2000[0m
+[0;32mI (94596) MAIN: Giờ hiện tại: 01:59:16 - 01/01/2000[0m
+[0;32mI (95596) MAIN: Giờ hiện tại: 01:59:17 - 01/01/2000[0m
+[0;32mI (96596) MAIN: Giờ hiện tại: 01:59:18 - 01/01/2000[0m
+[0;32mI (97596) MAIN: Giờ hiện tại: 01:59:18 - 01/01/2000[0m
+[0;32mI (98596) MAIN: Giờ hiện tại: 01:59:19 - 01/01/2000[0m
+[0;32mI (99596) MAIN: Giờ hiện tại: 01:59:19 - 01/01/2000[0m
+[0;32mI (100596) MAIN: Giờ hiện tại: 01:59:20 - 01/01/2000[0m
+[0;32mI (101596) MAIN: Giờ hiện tại: 01:59:21 - 01/01/2000[0m
+[0;32mI (102596) MAIN: Giờ hiện tại: 01:59:21 - 01/01/2000[0m
+[0;32mI (103596) MAIN: Giờ hiện tại: 01:59:22 - 01/01/2000[0m
+[0;32mI (104596) MAIN: Giờ hiện tại: 01:59:22 - 01/01/2000[0m
+[0;32mI (105596) MAIN: Giờ hiện tại: 01:59:23 - 01/01/2000[0m
+[0;32mI (106596) MAIN: Giờ hiện tại: 01:59:23 - 01/01/2000[0m
+[0;32mI (107596) MAIN: Giờ hiện tại: 01:59:24 - 01/01/2000[0m
+[0;32mI (108596) MAIN: Giờ hiện tại: 01:59:25 - 01/01/2000[0m
+[0;32mI (109596) MAIN: Giờ hiện tại: 01:59:25 - 01/01/2000[0m
+[0;32mI (110596) MAIN: Giờ hiện tại: 01:59:26 - 01/01/2000[0m
+[0;32mI (111596) MAIN: Giờ hiện tại: 01:59:26 - 01/01/2000[0m
+[0;32mI (112596) MAIN: Giờ hiện tại: 01:59:27 - 01/01/2000[0m
+[0;32mI (113596) MAIN: Giờ hiện tại: 01:59:28 - 01/01/2000[0m
+[0;32mI (114596) MAIN: Giờ hiện tại: 01:59:28 - 01/01/2000[0m
+[0;32mI (115596) MAIN: Giờ hiện tại: 01:59:29 - 01/01/2000[0m
+[0;32mI (116596) MAIN: Giờ hiện tại: 01:59:29 - 01/01/2000[0m
+[0;32mI (117596) MAIN: Giờ hiện tại: 01:59:30 - 01/01/2000[0m
+[0;32mI (118596) MAIN: Giờ hiện tại: 01:59:30 - 01/01/2000[0m
+[0;32mI (119596) MAIN: Giờ hiện tại: 01:59:31 - 01/01/2000[0m
+[0;32mI (120596) MAIN: Giờ hiện tại: 01:59:32 - 01/01/2000[0m
+[0;32mI (121596) MAIN: Giờ hiện tại: 01:59:32 - 01/01/2000[0m
+[0;32mI (122596) MAIN: Giờ hiện tại: 01:59:33 - 01/01/2000[0m
+[0;32mI (123596) MAIN: Giờ hiện tại: 01:59:33 - 01/01/2000[0m
+[0;32mI (124596) MAIN: Giờ hiện tại: 01:59:34 - 01/01/2000[0m
+[0;32mI (125596) MAIN: Giờ hiện tại: 01:59:34 - 01/01/2000[0m
+[0;32mI (126596) MAIN: Giờ hiện tại: 01:59:35 - 01/01/2000[0m
+[0;32mI (127596) MAIN: Giờ hiện tại: 01:59:36 - 01/01/2000[0m
+[0;32mI (128596) MAIN: Giờ hiện tại: 01:59:36 - 01/01/2000[0m
+[0;32mI (129596) MAIN: Giờ hiện tại: 01:59:37 - 01/01/2000[0m
+[0;32mI (130596) MAIN: Giờ hiện tại: 01:59:37 - 01/01/2000[0m
+[0;32mI (131596) MAIN: Giờ hiện tại: 01:59:38 - 01/01/2000[0m
+[0;32mI (132596) MAIN: Giờ hiện tại: 01:59:39 - 01/01/2000[0m
+[0;32mI (133596) MAIN: Giờ hiện tại: 01:59:39 - 01/01/2000[0m
+[0;32mI (134596) MAIN: Giờ hiện tại: 01:59:40 - 01/01/2000[0m
+[0;32mI (135596) MAIN: Giờ hiện tại: 01:59:40 - 01/01/2000[0m
+[0;32mI (136596) MAIN: Giờ hiện tại: 01:59:41 - 01/01/2000[0m
+[0;32mI (137596) MAIN: Giờ hiện tại: 01:59:41 - 01/01/2000[0m
+[0;32mI (138596) MAIN: Giờ hiện tại: 01:59:42 - 01/01/2000[0m
+[0;32mI (139596) MAIN: Giờ hiện tại: 01:59:43 - 01/01/2000[0m
+[0;32mI (140596) MAIN: Giờ hiện tại: 01:59:43 - 01/01/2000[0m
+[0;32mI (141596) MAIN: Giờ hiện tại: 01:59:44 - 01/01/2000[0m
+[0;32mI (142596) MAIN: Giờ hiện tại: 01:59:44 - 01/01/2000[0m
+[0;32mI (143596) MAIN: Giờ hiện tại: 01:59:45 - 01/01/2000[0m
+[0;32mI (144596) MAIN: Giờ hiện tại: 01:59:45 - 01/01/2000[0m
+[0;32mI (145596) MAIN: Giờ hiện tại: 01:59:46 - 01/01/2000[0m
+[0;32mI (146596) MAIN: Giờ hiện tại: 01:59:47 - 01/01/2000[0m
+[0;32mI (147596) MAIN: Giờ hiện tại: 01:59:47 - 01/01/2000[0m
+[0;32mI (148596) MAIN: Giờ hiện tại: 01:59:48 - 01/01/2000[0m
+[0;32mI (149596) MAIN: Giờ hiện tại: 01:59:48 - 01/01/2000[0m
+[0;32mI (150596) MAIN: Giờ hiện tại: 01:59:49 - 01/01/2000[0m
+[0;32mI (151596) MAIN: Giờ hiện tại: 01:59:50 - 01/01/2000[0m
+[0;32mI (152596) MAIN: Giờ hiện tại: 01:59:50 - 01/01/2000[0m
+[0;32mI (153596) MAIN: Giờ hiện tại: 01:59:51 - 01/01/2000[0m
+[0;32mI (154596) MAIN: Giờ hiện tại: 01:59:51 - 01/01/2000[0m
+[0;32mI (155596) MAIN: Giờ hiện tại: 01:59:52 - 01/01/2000[0m
+[0;32mI (156596) MAIN: Giờ hiện tại: 01:59:52 - 01/01/2000[0m
+[0;32mI (157596) MAIN: Giờ hiện tại: 01:59:53 - 01/01/2000[0m
+[0;32mI (158596) MAIN: Giờ hiện tại: 01:59:54 - 01/01/2000[0m
+[0;32mI (159596) MAIN: Giờ hiện tại: 01:59:54 - 01/01/2000[0m
+[0;32mI (160596) MAIN: Giờ hiện tại: 01:59:55 - 01/01/2000[0m
+[0;32mI (161596) MAIN: Giờ hiện tại: 01:59:55 - 01/01/2000[0m
+[0;32mI (162596) MAIN: Giờ hiện tại: 01:59:56 - 01/01/2000[0m
+[0;32mI (163596) MAIN: Giờ hiện tại: 01:59:57 - 01/01/2000[0m
+[0;32mI (164596) MAIN: Giờ hiện tại: 01:59:57 - 01/01/2000[0m
+[0;32mI (165596) MAIN: Giờ hiện tại: 01:59:58 - 01/01/2000[0m
+[0;32mI (166596) MAIN: Giờ hiện tại: 01:59:58 - 01/01/2000[0m
+[0;32mI (167596) MAIN: Giờ hiện tại: 01:59:59 - 01/01/2000[0m
+[0;32mI (168596) MAIN: Giờ hiện tại: 01:59:59 - 01/01/2000[0m
+[0;32mI (169596) MAIN: Giờ hiện tại: 02:00:00 - 01/01/2000[0m
+[0;32mI (170596) MAIN: Giờ hiện tại: 02:00:01 - 01/01/2000[0m
+[0;32mI (171596) MAIN: Giờ hiện tại: 02:00:01 - 01/01/2000[0m
+[0;32mI (172596) MAIN: Giờ hiện tại: 02:00:02 - 01/01/2000[0m
+[0;32mI (173596) MAIN: Giờ hiện tại: 02:00:02 - 01/01/2000[0m
+[0;32mI (174596) MAIN: Giờ hiện tại: 02:00:03 - 01/01/2000[0m
+[0;32mI (175596) MAIN: Giờ hiện tại: 02:00:03 - 01/01/2000[0m
+[0;32mI (176596) MAIN: Giờ hiện tại: 02:00:04 - 01/01/2000[0m
+[0;32mI (177596) MAIN: Giờ hiện tại: 02:00:05 - 01/01/2000[0m
+[0;32mI (178596) MAIN: Giờ hiện tại: 02:00:05 - 01/01/2000[0m
+[0;32mI (179596) MAIN: Giờ hiện tại: 02:00:06 - 01/01/2000[0m
+[0;32mI (180596) MAIN: Giờ hiện tại: 02:00:06 - 01/01/2000[0m
+[0;32mI (181596) MAIN: Giờ hiện tại: 02:00:07 - 01/01/2000[0m
+[0;32mI (182596) MAIN: Giờ hiện tại: 02:00:08 - 01/01/2000[0m
+[0;32mI (183596) MAIN: Giờ hiện tại: 02:00:08 - 01/01/2000[0m
+[0;32mI (184596) MAIN: Giờ hiện tại: 02:00:09 - 01/01/2000[0m
+[0;32mI (185596) MAIN: Giờ hiện tại: 02:00:09 - 01/01/2000[0m
+[0;32mI (186596) MAIN: Giờ hiện tại: 02:00:10 - 01/01/2000[0m
+[0;32mI (187596) MAIN: Giờ hiện tại: 02:00:10 - 01/01/2000[0m
+[0;32mI (188596) MAIN: Giờ hiện tại: 02:00:11 - 01/01/2000[0m
+[0;32mI (189596) MAIN: Giờ hiện tại: 02:00:12 - 01/01/2000[0m
+[0;32mI (190596) MAIN: Giờ hiện tại: 02:00:12 - 01/01/2000[0m
+[0;32mI (191596) MAIN: Giờ hiện tại: 02:00:13 - 01/01/2000[0m
+[0;32mI (192596) MAIN: Giờ hiện tại: 02:00:13 - 01/01/2000[0m
+[0;32mI (193596) MAIN: Giờ hiện tại: 02:00:14 - 01/01/2000[0m
+[0;32mI (194596) MAIN: Giờ hiện tại: 02:00:15 - 01/01/2000[0m
+[0;32mI (195596) MAIN: Giờ hiện tại: 02:00:15 - 01/01/2000[0m
+[0;32mI (196596) MAIN: Giờ hiện tại: 02:00:16 - 01/01/2000[0m
+[0;32mI (197596) MAIN: Giờ hiện tại: 02:00:16 - 01/01/2000[0m
+[0;32mI (198596) MAIN: Giờ hiện tại: 02:00:17 - 01/01/2000[0m
+[0;32mI (199596) MAIN: Giờ hiện tại: 02:00:17 - 01/01/2000[0m
+[0;32mI (200596) MAIN: Giờ hiện tại: 02:00:18 - 01/01/2000[0m
+[0;32mI (201596) MAIN: Giờ hiện tại: 02:00:19 - 01/01/2000[0m
+[0;32mI (202596) MAIN: Giờ hiện tại: 02:00:19 - 01/01/2000[0m
+[0;32mI (203596) MAIN: Giờ hiện tại: 02:00:20 - 01/01/2000[0m
+[0;32mI (204596) MAIN: Giờ hiện tại: 02:00:20 - 01/01/2000[0m
+[0;32mI (205596) MAIN: Giờ hiện tại: 02:00:21 - 01/01/2000[0m
+[0;32mI (206596) MAIN: Giờ hiện tại: 02:00:22 - 01/01/2000[0m
+[0;32mI (207596) MAIN: Giờ hiện tại: 02:00:22 - 01/01/2000[0m
+[0;32mI (208596) MAIN: Giờ hiện tại: 02:00:23 - 01/01/2000[0m
+[0;32mI (209596) MAIN: Giờ hiện tại: 02:00:23 - 01/01/2000[0m
+[0;32mI (210596) MAIN: Giờ hiện tại: 02:00:24 - 01/01/2000[0m
+[0;32mI (211596) MAIN: Giờ hiện tại: 02:00:24 - 01/01/2000[0m
+[0;32mI (212596) MAIN: Giờ hiện tại: 02:00:25 - 01/01/2000[0m
+[0;32mI (213596) MAIN: Giờ hiện tại: 02:00:26 - 01/01/2000[0m
+[0;32mI (214596) MAIN: Giờ hiện tại: 02:00:26 - 01/01/2000[0m
+[0;32mI (215596) MAIN: Giờ hiện tại: 02:00:27 - 01/01/2000[0m
+[0;32mI (216596) MAIN: Giờ hiện tại: 02:00:27 - 01/01/2000[0m
+[0;32mI (217596) MAIN: Giờ hiện tại: 02:00:28 - 01/01/2000[0m
+[0;32mI (218596) MAIN: Giờ hiện tại: 02:00:29 - 01/01/2000[0m
+[0;32mI (219596) MAIN: Giờ hiện tại: 02:00:29 - 01/01/2000[0m
+[0;32mI (220596) MAIN: Giờ hiện tại: 02:00:30 - 01/01/2000[0m
+[0;32mI (221596) MAIN: Giờ hiện tại: 02:00:30 - 01/01/2000[0m
+[0;32mI (222596) MAIN: Giờ hiện tại: 02:00:31 - 01/01/2000[0m
+[0;32mI (223596) MAIN: Giờ hiện tại: 02:00:31 - 01/01/2000[0m
+[0;32mI (224596) MAIN: Giờ hiện tại: 02:00:32 - 01/01/2000[0m
+[0;32mI (225596) MAIN: Giờ hiện tại: 02:00:33 - 01/01/2000[0m
+[0;32mI (226596) MAIN: Giờ hiện tại: 02:00:33 - 01/01/2000[0m
+[0;32mI (227596) MAIN: Giờ hiện tại: 02:00:34 - 01/01/2000[0m
+[0;32mI (228596) MAIN: Giờ hiện tại: 02:00:34 - 01/01/2000[0m
+[0;32mI (229596) MAIN: Giờ hiện tại: 02:00:35 - 01/01/2000[0m
+[0;32mI (230596) MAIN: Giờ hiện tại: 02:00:36 - 01/01/2000[0m
+[0;32mI (231596) MAIN: Giờ hiện tại: 02:00:36 - 01/01/2000[0m
+[0;32mI (232596) MAIN: Giờ hiện tại: 02:00:37 - 01/01/2000[0m
+[0;32mI (233596) MAIN: Giờ hiện tại: 02:00:37 - 01/01/2000[0m
+[0;32mI (234596) MAIN: Giờ hiện tại: 02:00:38 - 01/01/2000[0m
+[0;32mI (235596) MAIN: Giờ hiện tại: 02:00:38 - 01/01/2000[0m
+[0;32mI (236596) MAIN: Giờ hiện tại: 02:00:39 - 01/01/2000[0m
+[0;32mI (237596) MAIN: Giờ hiện tại: 02:00:40 - 01/01/2000[0m
+[0;32mI (238596) MAIN: Giờ hiện tại: 02:00:40 - 01/01/2000[0m
+[0;32mI (239596) MAIN: Giờ hiện tại: 02:00:41 - 01/01/2000[0m
+[0;32mI (240596) MAIN: Giờ hiện tại: 02:00:41 - 01/01/2000[0m
+[0;32mI (241596) MAIN: Giờ hiện tại: 02:00:42 - 01/01/2000[0m
+[0;32mI (242596) MAIN: Giờ hiện tại: 02:00:43 - 01/01/2000[0m
+[0;32mI (243596) MAIN: Giờ hiện tại: 02:00:43 - 01/01/2000[0m
+[0;32mI (244596) MAIN: Giờ hiện tại: 02:00:44 - 01/01/2000[0m
+[0;32mI (245596) MAIN: Giờ hiện tại: 02:00:44 - 01/01/2000[0m
+[0;32mI (246596) MAIN: Giờ hiện tại: 02:00:45 - 01/01/2000[0m
+[0;32mI (247596) MAIN: Giờ hiện tại: 02:00:45 - 01/01/2000[0m
+[0;32mI (248596) MAIN: Giờ hiện tại: 02:00:46 - 01/01/2000[0m
+[0;32mI (249596) MAIN: Giờ hiện tại: 02:00:47 - 01/01/2000[0m
+[0;32mI (250596) MAIN: Giờ hiện tại: 02:00:47 - 01/01/2000[0m
+[0;32mI (251596) MAIN: Giờ hiện tại: 02:00:48 - 01/01/2000[0m
+[0;32mI (252596) MAIN: Giờ hiện tại: 02:00:48 - 01/01/2000[0m
+[0;32mI (253596) MAIN: Giờ hiện tại: 02:00:49 - 01/01/2000[0m
+[0;32mI (254596) MAIN: Giờ hiện tại: 02:00:50 - 01/01/2000[0m
+[0;32mI (255596) MAIN: Giờ hiện tại: 02:00:50 - 01/01/2000[0m
+[0;32mI (256596) MAIN: Giờ hiện tại: 02:00:51 - 01/01/2000[0m
+[0;32mI (257596) MAIN: Giờ hiện tại: 02:00:51 - 01/01/2000[0m
+[0;32mI (258596) MAIN: Giờ hiện tại: 02:00:52 - 01/01/2000[0m
+[0;32mI (259596) MAIN: Giờ hiện tại: 02:00:53 - 01/01/2000[0m
+[0;32mI (260596) MAIN: Giờ hiện tại: 02:00:53 - 01/01/2000[0m
+[0;32mI (261596) MAIN: Giờ hiện tại: 02:00:54 - 01/01/2000[0m
+[0;32mI (262596) MAIN: Giờ hiện tại: 02:00:54 - 01/01/2000[0m
+[0;32mI (263596) MAIN: Giờ hiện tại: 02:00:55 - 01/01/2000[0m
+[0;32mI (264596) MAIN: Giờ hiện tại: 02:00:55 - 01/01/2000[0m
+[0;32mI (265596) MAIN: Giờ hiện tại: 02:00:56 - 01/01/2000[0m
+[0;32mI (266596) MAIN: Giờ hiện tại: 02:00:57 - 01/01/2000[0m
+[0;32mI (267596) MAIN: Giờ hiện tại: 02:00:57 - 01/01/2000[0m
+[0;32mI (268596) MAIN: Giờ hiện tại: 02:00:58 - 01/01/2000[0m
+[0;32mI (269596) MAIN: Giờ hiện tại: 02:00:58 - 01/01/2000[0m
+[0;32mI (270596) MAIN: Giờ hiện tại: 02:00:59 - 01/01/2000[0m
+[0;32mI (271596) MAIN: Giờ hiện tại: 02:00:59 - 01/01/2000[0m
+[0;32mI (272596) MAIN: Giờ hiện tại: 02:01:00 - 01/01/2000[0m
+[0;32mI (273596) MAIN: Giờ hiện tại: 02:01:01 - 01/01/2000[0m
+[0;32mI (274596) MAIN: Giờ hiện tại: 02:01:01 - 01/01/2000[0m
+[0;32mI (275596) MAIN: Giờ hiện tại: 02:01:02 - 01/01/2000[0m
+[0;32mI (276596) MAIN: Giờ hiện tại: 02:01:02 - 01/01/2000[0m
+[0;32mI (277596) MAIN: Giờ hiện tại: 02:01:03 - 01/01/2000[0m
+[0;32mI (278596) MAIN: Giờ hiện tại: 02:01:04 - 01/01/2000[0m
+[0;32mI (279596) MAIN: Giờ hiện tại: 02:01:04 - 01/01/2000[0m
+[0;32mI (280596) MAIN: Giờ hiện tại: 02:01:05 - 01/01/2000[0m
+[0;32mI (281596) MAIN: Giờ hiện tại: 02:01:05 - 01/01/2000[0m
+[0;32mI (282596) MAIN: Giờ hiện tại: 02:01:06 - 01/01/2000[0m
+[0;32mI (283596) MAIN: Giờ hiện tại: 02:01:06 - 01/01/2000[0m
+[0;32mI (284596) MAIN: Giờ hiện tại: 02:01:07 - 01/01/2000[0m
+[0;32mI (285596) MAIN: Giờ hiện tại: 02:01:08 - 01/01/2000[0m
+[0;32mI (286596) MAIN: Giờ hiện tại: 02:01:08 - 01/01/2000[0m
+[0;32mI (287596) MAIN: Giờ hiện tại: 02:01:09 - 01/01/2000[0m
+[0;32mI (288596) MAIN: Giờ hiện tại: 02:01:09 - 01/01/2000[0m
+[0;32mI (289596) MAIN: Giờ hiện tại: 02:01:10 - 01/01/2000[0m
+[0;32mI (290596) MAIN: Giờ hiện tại: 02:01:11 - 01/01/2000[0m
+[0;32mI (291596) MAIN: Giờ hiện tại: 02:01:11 - 01/01/2000[0m
+[0;32mI (292596) MAIN: Giờ hiện tại: 02:01:12 - 01/01/2000[0m
+[0;32mI (293596) MAIN: Giờ hiện tại: 02:01:12 - 01/01/2000[0m
+[0;32mI (294596) MAIN: Giờ hiện tại: 02:01:13 - 01/01/2000[0m
+[0;32mI (295596) MAIN: Giờ hiện tại: 02:01:13 - 01/01/2000[0m
+[0;32mI (296596) MAIN: Giờ hiện tại: 02:01:14 - 01/01/2000[0m
+[0;32mI (297596) MAIN: Giờ hiện tại: 02:01:15 - 01/01/2000[0m
+[0;32mI (298596) MAIN: Giờ hiện tại: 02:01:15 - 01/01/2000[0m
+[0;32mI (299596) MAIN: Giờ hiện tại: 02:01:16 - 01/01/2000[0m
+[0;32mI (300596) MAIN: Giờ hiện tại: 02:01:16 - 01/01/2000[0m
+[0;32mI (301596) MAIN: Giờ hiện tại: 02:01:17 - 01/01/2000[0m
+[0;32mI (302596) MAIN: Giờ hiện tại: 02:01:18 - 01/01/2000[0m
+[0;32mI (303596) MAIN: Giờ hiện tại: 02:01:18 - 01/01/2000[0m
+[0;32mI (304596) MAIN: Giờ hiện tại: 02:01:19 - 01/01/2000[0m
+[0;32mI (305596) MAIN: Giờ hiện tại: 02:01:19 - 01/01/2000[0m
+[0;32mI (306596) MAIN: Giờ hiện tại: 02:01:20 - 01/01/2000[0m
+[0;32mI (307596) MAIN: Giờ hiện tại: 02:01:20 - 01/01/2000[0m
+[0;32mI (308596) MAIN: Giờ hiện tại: 02:01:21 - 01/01/2000[0m
+[0;32mI (309596) MAIN: Giờ hiện tại: 02:01:22 - 01/01/2000[0m
+[0;32mI (310596) MAIN: Giờ hiện tại: 02:01:22 - 01/01/2000[0m
+[0;32mI (311596) MAIN: Giờ hiện tại: 02:01:23 - 01/01/2000[0m
+[0;32mI (312596) MAIN: Giờ hiện tại: 02:01:23 - 01/01/2000[0m
+[0;32mI (313596) MAIN: Giờ hiện tại: 02:01:24 - 01/01/2000[0m
+[0;32mI (314596) MAIN: Giờ hiện tại: 02:01:25 - 01/01/2000[0m
+[0;32mI (315596) MAIN: Giờ hiện tại: 02:01:25 - 01/01/2000[0m
+[0;32mI (316596) MAIN: Giờ hiện tại: 02:01:26 - 01/01/2000[0m

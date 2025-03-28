@@ -1,0 +1,25 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP_IDF\datn\build\bootloader\esp-idf\esptool_py && D:\ESP_IDF\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP_IDF/datn/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/13] Building C object esp-idf/RS485/CMakeFiles/__idf_RS485.dir/rs485.c.obj
+[3/13] Linking C static library esp-idf\RS485\libRS485.a
+[4/13] Linking C static library esp-idf\wifi_config\libwifi_config.a
+[5/13] Linking C static library esp-idf\gpio_config\libgpio_config.a
+[6/13] Linking C static library esp-idf\ethernet_w5500\libethernet_w5500.a
+[7/13] Linking C static library esp-idf\app_mqtt\libapp_mqtt.a
+[8/13] Linking C static library esp-idf\main\libmain.a
+[9/13] Generating ld/sections.ld
+[10/13] Building C object CMakeFiles/datn.elf.dir/project_elf_src_esp32.c.obj
+[11/13] Linking CXX executable datn.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/datn/build/datn.bin
+[13/13] cmd.exe /C "cd /D D:\ESP_IDF\datn\build\esp-idf\esptool_py && D:\ESP_IDF\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP_IDF/datn/build/partition_table/partition-table.bin D:/ESP_IDF/datn/build/datn.bin"
+FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size D:/ESP_IDF/datn/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
+cmd.exe /C "cd /D D:\ESP_IDF\datn\build\esp-idf\esptool_py && D:\ESP_IDF\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP_IDF/datn/build/partition_table/partition-table.bin D:/ESP_IDF/datn/build/datn.bin"
+Error: app partition is too small for binary datn.bin size 0x101ee0:
+  - Part 'factory' 0/0 @ 0x10000 size 0x100000 (overflow 0x1ee0)
+ninja: build stopped: subcommand failed.

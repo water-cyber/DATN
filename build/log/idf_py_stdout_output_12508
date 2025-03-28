@@ -1,0 +1,619 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5aa8h (744104) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5ad0 vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (434) esp_image: segment 4: paddr=000f7c1c vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  f47f67586...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (540) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (737) RS485: RS485 Initialized[0m
+[0;32mI (737) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (757) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (757) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (777) wifi:wifi driver task: 3ffc4184, prio:23, stack:6656, core=0
+I (787) wifi:wifi firmware version: ccaebfa
+I (787) wifi:wifi certification version: v7.0
+I (787) wifi:config NVS flash: enabled
+I (787) wifi:config nano formating: disabled
+I (797) wifi:Init data frame dynamic rx buffer num: 32
+I (797) wifi:Init static rx mgmt buffer num: 5
+I (807) wifi:Init management short buffer num: 32
+I (807) wifi:Init dynamic tx buffer num: 32
+I (807) wifi:Init static rx buffer size: 1600
+I (817) wifi:Init static rx buffer num: 10
+I (817) wifi:Init dynamic rx buffer num: 32
+[0;32mI (827) wifi_init: rx ba win: 6[0m
+[0;32mI (827) wifi_init: accept mbox: 6[0m
+[0;32mI (827) wifi_init: tcpip mbox: 32[0m
+[0;32mI (837) wifi_init: udp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp mbox: 6[0m
+[0;32mI (847) wifi_init: tcp tx win: 5760[0m
+[0;32mI (847) wifi_init: tcp rx win: 5760[0m
+[0;32mI (847) wifi_init: tcp mss: 1440[0m
+[0;32mI (857) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (857) wifi_init: WiFi RX IRAM OP enabled[0m
+W (867) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (877) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (967) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (967) wifi:enable tsf
+[0;32mI (967) WiFi_STA: wifi_init_sta finished.[0m
+I (977) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (977) wifi:state: init -> auth (0xb0)
+I (987) wifi:state: auth -> assoc (0x0)
+I (997) wifi:state: assoc -> run (0x10)
+I (1007) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (1027) wifi:connected with Hassagi, aid = 4, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (1027) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (1027) wifi:pm start, type: 1
+
+I (1027) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1087) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4537) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (4537) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (4537) WiFi_STA: connected to ap SSID:Hassagi password:0978111969[0m
+[0;32mI (4547) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (4557) main_task: Returned from app_main()[0m
+[0;32mI (4607) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (4627) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (4757) MQTT_APP: Giờ hiện tại: 12:36:02 - 25/03/2025[0m
+[0;32mI (4757) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":36,"second":2,"day":25,"month":3,"year":2025}[0m
+[0;32mI (4767) MQTT_APP: pub LED thành công[0m
+[0;32mI (4797) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (9477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.07,"current_A":1.25,"power_kW":5.66}}}
+[0m
+[0;32mI (9477) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (19577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":322.5,"current_A":10.75,"power_kW":7.65}}}
+[0m
+[0;32mI (19577) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (29687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.29,"current_A":48.73,"power_kW":8.56}}}
+[0m
+[0;32mI (29687) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (39547) MAIN: Ethernet UP, stopping Wi-Fi.[0m
+I (39547) wifi:state: run -> init (0x0)
+I (39557) wifi:pm stop, total sleep time: 36053468 us / 38522341 us
+
+I (39557) wifi:<ba-del>idx:0, tid:0
+I (39557) wifi:new:<7,0>, old:<7,2>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+E (39557) wifi:NAN WiFi stop
+[0;32mI (39567) WiFi_STA: retry to connect to the AP[0m
+[0;31mE (39567) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;32mI (39567) WiFi_STA: connect to the AP fail[0m
+[0;31mE (39577) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (39587) MQTT_APP: MQTT bị ngắt kết nối[0m
+I (39597) wifi:flush txq
+I (39597) wifi:stop sw txq
+I (39597) wifi:lmac stop hw txq
+[0;32mI (39767) esp_netif_handlers: eth ip: 192.168.137.216, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (49597) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (49687) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (49707) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (49897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":238.53,"current_A":49.52,"power_kW":4.62}}}
+{"sensors":{"power_monitoring":{"voltage_V":293.11,"current_A":23.94,"power_kW":10.82}}}
+[0m
+[0;32mI (49907) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (59997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.09,"current_A":25.44,"power_kW":3.65}}}
+[0m
+[0;32mI (59997) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (70107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":330.03,"current_A":47.04,"power_kW":10.55}}}
+[0m
+[0;32mI (70107) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (80207) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":232.75,"current_A":27.63,"power_kW":0.11}}}
+[0m
+[0;32mI (80207) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (89207) MQTT_APP: Giờ hiện tại: 12:37:27 - 25/03/2025[0m
+[0;32mI (89207) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":12,"minute":37,"second":27,"day":25,"month":3,"year":2025}[0m
+[0;32mI (89217) MQTT_APP: pub LED thành công[0m
+[0;32mI (89237) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (89967) MQTT_APP: Giờ hiện tại: 12:37:28 - 25/03/2025[0m
+[0;32mI (89967) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":37,"second":28,"day":25,"month":3,"year":2025}[0m
+[0;32mI (89977) MQTT_APP: pub LED thành công[0m
+[0;32mI (89987) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (90307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":399.87,"current_A":12.77,"power_kW":9.9}}}
+[0m
+[0;32mI (90307) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (94357) MQTT_APP: Giờ hiện tại: 12:37:32 - 25/03/2025[0m
+[0;32mI (94357) MQTT_APP: Sending JSON: {"inputs":[0,1,1,1,1],"hour":12,"minute":37,"second":32,"day":25,"month":3,"year":2025}[0m
+[0;32mI (94367) MQTT_APP: pub LED thành công[0m
+[0;32mI (94387) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (96467) MQTT_APP: Giờ hiện tại: 12:37:34 - 25/03/2025[0m
+[0;32mI (96467) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":37,"second":34,"day":25,"month":3,"year":2025}[0m
+[0;32mI (96477) MQTT_APP: pub LED thành công[0m
+[0;32mI (96487) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (99477) MQTT_APP: Giờ hiện tại: 12:37:37 - 25/03/2025[0m
+[0;32mI (99477) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":12,"minute":37,"second":37,"day":25,"month":3,"year":2025}[0m
+[0;32mI (99487) MQTT_APP: pub LED thành công[0m
+[0;32mI (99507) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (100417) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":266.2,"current_A":50.9,"power_kW":6.11}}}
+[0m
+[0;32mI (100417) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (101617) MQTT_APP: Giờ hiện tại: 12:37:39 - 25/03/2025[0m
+[0;32mI (101617) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":37,"second":39,"day":25,"month":3,"year":2025}[0m
+[0;32mI (101627) MQTT_APP: pub LED thành công[0m
+[0;32mI (101637) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (110517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":377.62,"current_A":31.69,"power_kW":6.78}}}
+[0m
+[0;32mI (110517) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (120617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":373.57,"current_A":23.5,"power_kW":6.98}}}
+[0m
+[0;32mI (120617) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (130727) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":281.68,"current_A":46.01,"power_kW":6.88}}}
+[0m
+[0;32mI (130727) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (140827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":305.81,"current_A":31.11,"power_kW":8.44}}}
+[0m
+[0;32mI (140827) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (150937) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":349.96,"current_A":37.56,"power_kW":9.62}}}
+[0m
+[0;32mI (150937) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (161037) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":325.39,"current_A":34.87,"power_kW":2}}}
+[0m
+[0;32mI (161037) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (171137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.91,"current_A":4.98,"power_kW":10.7}}}
+[0m
+[0;32mI (171137) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (181247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":393.01,"current_A":11.84,"power_kW":4.27}}}
+[0m
+[0;32mI (181247) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (191347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":255.86,"current_A":10.89,"power_kW":7.27}}}
+[0m
+[0;32mI (191347) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (201447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":311,"current_A":42.4,"power_kW":5.1}}}
+[0m
+[0;32mI (201447) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (211547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.23,"current_A":41.23,"power_kW":5.14}}}
+[0m
+[0;32mI (211547) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (221657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":384.69,"current_A":22.62,"power_kW":2.35}}}
+[0m
+[0;32mI (221657) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (231757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.71,"current_A":35.7,"power_kW":6.93}}}
+[0m
+[0;32mI (231757) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (241867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":211.26,"current_A":30.99,"power_kW":6.26}}}
+[0m
+[0;32mI (241867) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (251967) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":379.41,"current_A":39.19,"power_kW":3.15}}}
+[0m
+[0;32mI (251967) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (262067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.98,"current_A":14.68,"power_kW":10.89}}}
+[0m
+[0;32mI (262067) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (272177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":291.83,"current_A":42.2,"power_kW":0.42}}}
+[0m
+[0;32mI (272177) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (282277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":351.5,"current_A":11.32,"power_kW":6.92}}}
+[0m
+[0;32mI (282277) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (292387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":336.02,"current_A":43.9,"power_kW":3.02}}}
+[0m
+[0;32mI (292387) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (302487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":325.75,"current_A":35.32,"power_kW":0.69}}}
+[0m
+[0;32mI (302487) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (302777) GPIO: Resetting WiFi configuration...[0m
+[0;32mI (303037) GPIO: WiFi configuration reset done.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5aa8h (744104) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5ad0 vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (433) esp_image: segment 4: paddr=000f7c1c vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (519) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  f47f67586...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (540) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (647) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (647) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (657) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) RS485: RS485 Initialized[0m
+[0;32mI (717) wifi_manager: Initializing WiFi in SoftAP mode...[0m
+I (737) wifi:wifi driver task: 3ffc1aa0, prio:23, stack:6656, core=0
+I (737) wifi:wifi firmware version: ccaebfa
+I (737) wifi:wifi certification version: v7.0
+I (737) wifi:config NVS flash: enabled
+I (737) wifi:config nano formating: disabled
+I (747) wifi:Init data frame dynamic rx buffer num: 32
+I (747) wifi:Init static rx mgmt buffer num: 5
+I (757) wifi:Init management short buffer num: 32
+I (757) wifi:Init dynamic tx buffer num: 32
+I (757) wifi:Init static rx buffer size: 1600
+I (767) wifi:Init static rx buffer num: 10
+I (767) wifi:Init dynamic rx buffer num: 32
+[0;32mI (777) wifi_init: rx ba win: 6[0m
+[0;32mI (777) wifi_init: accept mbox: 6[0m
+[0;32mI (777) wifi_init: tcpip mbox: 32[0m
+[0;32mI (787) wifi_init: udp mbox: 6[0m
+[0;32mI (787) wifi_init: tcp mbox: 6[0m
+[0;32mI (787) wifi_init: tcp tx win: 5760[0m
+[0;32mI (797) wifi_init: tcp rx win: 5760[0m
+[0;32mI (797) wifi_init: tcp mss: 1440[0m
+[0;32mI (807) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (807) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1077) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (1077) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (1147) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+I (1157) wifi:mode : sta (8c:4b:14:94:f3:88) + softAP (8c:4b:14:94:f3:89)
+I (1157) wifi:enable tsf
+I (1167) wifi:Total power save buffer number: 16
+I (1167) wifi:Init max length of beacon: 752/752
+I (1167) wifi:Init max length of beacon: 752/752
+[0;32mI (1177) wifi_manager: SoftAP started with SSID: ESP32_Setup[0m
+[0;32mI (1177) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1187) web_server: Web server started[0m
+[0;32mI (1187) web_server: Waiting SSID/PASS from Web...[0m
+I (45667) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (45677) wifi:station: 36:aa:19:75:d0:fc join, AID=1, bgn, 20
+[0;32mI (46067) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (46257) wifi:<ba-add>idx:2 (ifx:1, 36:aa:19:75:d0:fc), tid:0, ssn:2, winSize:64
+I (50927) wifi:<ba-add>idx:3 (ifx:1, 36:aa:19:75:d0:fc), tid:1, ssn:0, winSize:64
+I (50967) wifi:<ba-add>idx:4 (ifx:1, 36:aa:19:75:d0:fc), tid:5, ssn:0, winSize:64
+I (61897) wifi:station: 36:aa:19:75:d0:fc leave, AID = 1, reason = 8, bss_flags is 691299, bss:0x3ffcc8dc
+I (61897) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (61897) wifi:<ba-del>idx:2, tid:0
+I (61907) wifi:<ba-del>idx:3, tid:1
+I (61907) wifi:<ba-del>idx:4, tid:5
+I (62257) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (62257) wifi:station: 36:aa:19:75:d0:fc join, AID=1, bgn, 20
+[0;32mI (62427) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (62447) wifi:<ba-add>idx:2 (ifx:1, 36:aa:19:75:d0:fc), tid:0, ssn:2, winSize:64
+I (63537) wifi:<ba-add>idx:3 (ifx:1, 36:aa:19:75:d0:fc), tid:1, ssn:0, winSize:64
+I (67487) wifi:<ba-add>idx:4 (ifx:1, 36:aa:19:75:d0:fc), tid:5, ssn:0, winSize:64
+[0;32mI (86177) web_server: Nhận dữ liệu từ Web: ssid=4G_AP_D0E0&password=12345678[0m
+[0;32mI (86177) web_server: SSID: 4G_AP_D0E0[0m
+[0;32mI (86187) web_server: Password: 12345678[0m
+[0;32mI (86187) web_server: WiFi config saved![0m
+[0;32mI (86187) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (86207) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (86207) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (86217) wifi:station: 36:aa:19:75:d0:fc leave, AID = 1, reason = 4, bss_flags is 691299, bss:0x3ffcd5d8
+I (86217) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (86227) wifi:<ba-del>idx:2, tid:0
+I (86227) wifi:<ba-del>idx:3, tid:1
+I (86237) wifi:<ba-del>idx:4, tid:5
+I (86237) wifi:mode : sta (8c:4b:14:94:f3:88)
+W (86247) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (86277) WiFi_STA: wifi_init_sta finished.[0m
+E (88197) wifi:NAN WiFi stop
+I (88197) wifi:flush txq
+I (88197) wifi:stop sw txq
+I (88197) wifi:lmac stop hw txq
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5aa8h (744104) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5ad0 vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (433) esp_image: segment 4: paddr=000f7c1c vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (519) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  f47f67586...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (540) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (737) RS485: RS485 Initialized[0m
+[0;32mI (737) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (757) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (757) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (777) wifi:wifi driver task: 3ffc4100, prio:23, stack:6656, core=0
+I (787) wifi:wifi firmware version: ccaebfa
+I (787) wifi:wifi certification version: v7.0
+I (787) wifi:config NVS flash: enabled
+I (787) wifi:config nano formating: disabled
+I (797) wifi:Init data frame dynamic rx buffer num: 32
+I (797) wifi:Init static rx mgmt buffer num: 5
+I (807) wifi:Init management short buffer num: 32
+I (807) wifi:Init dynamic tx buffer num: 32
+I (807) wifi:Init static rx buffer size: 1600
+I (817) wifi:Init static rx buffer num: 10
+I (817) wifi:Init dynamic rx buffer num: 32
+[0;32mI (827) wifi_init: rx ba win: 6[0m
+[0;32mI (827) wifi_init: accept mbox: 6[0m
+[0;32mI (827) wifi_init: tcpip mbox: 32[0m
+[0;32mI (837) wifi_init: udp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp tx win: 5760[0m
+[0;32mI (847) wifi_init: tcp rx win: 5760[0m
+[0;32mI (847) wifi_init: tcp mss: 1440[0m
+[0;32mI (857) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (857) wifi_init: WiFi RX IRAM OP enabled[0m
+W (867) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (877) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (957) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (987) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (987) wifi:enable tsf
+[0;32mI (997) WiFi_STA: wifi_init_sta finished.[0m
+I (1987) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0
+I (1997) wifi:state: init -> auth (0xb0)
+I (1997) wifi:state: auth -> assoc (0x0)
+I (2007) wifi:state: assoc -> run (0x10)
+I (2017) wifi:connected with 4G_AP_D0E0, aid = 4, channel 7, BW20, bssid = 4a:f1:7f:78:2b:98
+I (2017) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (2047) wifi:pm start, type: 1
+
+I (2047) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2057) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (5267) esp_netif_handlers: eth ip: 192.168.137.242, mask: 255.255.255.0, gw: 192.168.137.1[0m
+I (98117) wifi:state: run -> init (0xc0)
+I (98127) wifi:pm stop, total sleep time: 91827414 us / 96079734 us
+
+I (98127) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (98127) WiFi_STA: retry to connect to the AP[0m
+[0;32mI (98127) WiFi_STA: connect to the AP fail[0m
+[0;32mI (100547) WiFi_STA: retry to connect to the AP[0m
+[0;32mI (100547) WiFi_STA: connect to the AP fail[0m
+I (100597) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0
+I (100597) wifi:state: init -> auth (0xb0)
+I (100607) wifi:state: auth -> assoc (0x0)
+I (100617) wifi:state: assoc -> run (0x10)
+I (100637) wifi:connected with 4G_AP_D0E0, aid = 11, channel 7, BW20, bssid = 4a:f1:7f:78:2b:98
+I (100647) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (100647) wifi:pm start, type: 1
+
+I (100697) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5aa8h (744104) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5ad0 vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (434) esp_image: segment 4: paddr=000f7c1c vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  f47f67586...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (541) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (737) RS485: RS485 Initialized[0m
+[0;32mI (737) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (757) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (757) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (777) wifi:wifi driver task: 3ffc4184, prio:23, stack:6656, core=0
+I (787) wifi:wifi firmware version: ccaebfa
+I (787) wifi:wifi certification version: v7.0
+I (787) wifi:config NVS flash: enabled
+I (787) wifi:config nano formating: disabled
+I (797) wifi:Init data frame dynamic rx buffer num: 32
+I (797) wifi:Init static rx mgmt buffer num: 5
+I (807) wifi:Init management short buffer num: 32
+I (807) wifi:Init dynamic tx buffer num: 32
+I (807) wifi:Init static rx buffer size: 1600
+I (817) wifi:Init static rx buffer num: 10
+I (817) wifi:Init dynamic rx buffer num: 32
+[0;32mI (827) wifi_init: rx ba win: 6[0m
+[0;32mI (827) wifi_init: accept mbox: 6[0m
+[0;32mI (827) wifi_init: tcpip mbox: 32[0m
+[0;32mI (837) wifi_init: udp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp mbox: 6[0m
+[0;32mI (847) wifi_init: tcp tx win: 5760[0m
+[0;32mI (847) wifi_init: tcp rx win: 5760[0m
+[0;32mI (847) wifi_init: tcp mss: 1440[0m
+[0;32mI (857) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (857) wifi_init: WiFi RX IRAM OP enabled[0m
+W (867) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (877) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (957) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (967) wifi:enable tsf
+[0;32mI (967) WiFi_STA: wifi_init_sta finished.[0m
+I (977) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0
+I (977) wifi:state: init -> auth (0xb0)
+I (987) wifi:state: auth -> assoc (0x0)
+I (987) wifi:state: assoc -> run (0x10)
+I (1007) wifi:connected with 4G_AP_D0E0, aid = 5, channel 7, BW20, bssid = 4a:f1:7f:78:2b:98
+I (1007) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (1017) wifi:pm start, type: 1
+
+I (1017) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1057) wifi:AP's beacon interval = 102400 us, DTIM period = 3

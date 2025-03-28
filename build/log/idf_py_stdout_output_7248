@@ -1,0 +1,629 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e08ch (188556) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0b4 vaddr=3ffb0000 size=01f64h (  8036) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5a84h (744068) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5aac vaddr=3ffb1f64 size=02154h (  8532) load[0m
+[0;32mI (434) esp_image: segment 4: paddr=000f7c08 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  19e96441d...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (541) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (747) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (747) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (767) wifi:wifi driver task: 3ffc3a2c, prio:23, stack:6656, core=0
+I (777) wifi:wifi firmware version: ccaebfa
+I (777) wifi:wifi certification version: v7.0
+I (777) wifi:config NVS flash: enabled
+I (777) wifi:config nano formating: disabled
+I (787) wifi:Init data frame dynamic rx buffer num: 32
+I (787) wifi:Init static rx mgmt buffer num: 5
+I (797) wifi:Init management short buffer num: 32
+I (797) wifi:Init dynamic tx buffer num: 32
+I (797) wifi:Init static rx buffer size: 1600
+I (807) wifi:Init static rx buffer num: 10
+I (807) wifi:Init dynamic rx buffer num: 32
+[0;32mI (817) wifi_init: rx ba win: 6[0m
+[0;32mI (817) wifi_init: accept mbox: 6[0m
+[0;32mI (817) wifi_init: tcpip mbox: 32[0m
+[0;32mI (827) wifi_init: udp mbox: 6[0m
+[0;32mI (827) wifi_init: tcp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp tx win: 5760[0m
+[0;32mI (837) wifi_init: tcp rx win: 5760[0m
+[0;32mI (837) wifi_init: tcp mss: 1440[0m
+[0;32mI (847) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (847) wifi_init: WiFi RX IRAM OP enabled[0m
+W (857) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (867) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (957) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (957) wifi:enable tsf
+[0;32mI (957) WiFi_STA: wifi_init_sta finished.[0m
+I (967) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (967) wifi:state: init -> auth (0xb0)
+I (987) wifi:state: auth -> assoc (0x0)
+I (997) wifi:state: assoc -> run (0x10)
+I (997) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (1017) wifi:connected with Hassagi, aid = 4, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (1017) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (1027) wifi:pm start, type: 1
+
+I (1027) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1067) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4537) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (4537) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (4537) WiFi_STA: connected to ap SSID:Hassagi password:0978111969[0m
+[0;32mI (4547) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;31mE (4557) uart: uart_read_bytes(1492): uart driver error[0m
+[0;32mI (4557) MQTT_APP: Giờ hiện tại: 11:53:00 - 25/03/2025[0m
+[0;32mI (4567) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":11,"minute":53,"second":0,"day":25,"month":3,"year":2025}[0m
+[0;32mI (4577) RS485: RS485 Initialized[0m
+[0;32mI (4577) MAIN: Ethernet UP, stopping Wi-Fi.[0m
+I (4587) wifi:state: run -> init (0x0)
+[0;32mI (4587) main_task: Returned from app_main()[0m
+I (4597) wifi:pm stop, total sleep time: 2912314 us / 3568162 us
+
+I (4597) wifi:<ba-del>idx:0, tid:0
+I (4597) wifi:new:<7,0>, old:<7,2>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+E (4607) wifi:NAN WiFi stop
+[0;32mI (4617) WiFi_STA: retry to connect to the AP[0m
+[0;31mE (4617) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[0;32mI (4617) WiFi_STA: connect to the AP fail[0m
+[0;31mE (4627) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4637) mqtt_client: Error transport connect[0m
+[0;31mE (4637) MQTT_APP: MQTT lỗi[0m
+[0;32mI (4647) MQTT_APP: MQTT bị ngắt kết nối[0m
+[0;32mI (4647) MQTT_APP: pub LED thành công[0m
+I (4827) wifi:flush txq
+I (4827) wifi:stop sw txq
+I (4827) wifi:lmac stop hw txq
+CHECK_TREO
+[0;32mI (5407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.99,"current_A":23.4,"power_kW":9.46}}}
+[0m
+[0;33mW (5407) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (5407) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+[0;32mI (6257) esp_netif_handlers: eth ip: 192.168.5.111, mask: 255.255.255.0, gw: 192.168.5.1[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (15467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.93,"current_A":43.49,"power_kW":2.49}}}
+[0m
+[0;33mW (15467) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (15467) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (19647) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (19697) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (19717) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (19737) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (25567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":368.96,"current_A":5.96,"power_kW":5.5}}}
+[0m
+[0;32mI (25567) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (35667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":365.31,"current_A":11.35,"power_kW":8.01}}}
+[0m
+[0;32mI (35667) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (45777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":384.37,"current_A":36.2,"power_kW":4.94}}}
+[0m
+[0;32mI (45777) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (55877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":319.03,"current_A":6.86,"power_kW":5.43}}}
+[0m
+[0;32mI (55877) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (65977) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":379.32,"current_A":35.78,"power_kW":4.02}}}
+[0m
+[0;32mI (65977) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (76087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.2,"current_A":50.3,"power_kW":3.67}}}
+[0m
+[0;32mI (76087) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (86187) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.44,"current_A":39.49,"power_kW":9.73}}}
+[0m
+[0;32mI (86187) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (96287) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":374.16,"current_A":28.48,"power_kW":4.57}}}
+[0m
+[0;32mI (96287) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (106397) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":280.05,"current_A":17.07,"power_kW":1.27}}}
+[0m
+[0;32mI (106397) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (116497) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":294.15,"current_A":19.97,"power_kW":8.95}}}
+[0m
+[0;32mI (116497) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (126607) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":322.26,"current_A":13.98,"power_kW":2.62}}}
+[0m
+[0;32mI (126607) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (136707) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.53,"current_A":15.03,"power_kW":6.23}}}
+[0m
+[0;32mI (136707) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (146807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.21,"current_A":18.34,"power_kW":9.02}}}
+[0m
+[0;32mI (146807) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (156917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.79,"current_A":38.5,"power_kW":7.5}}}
+[0m
+[0;32mI (156917) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (167017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":315.48,"current_A":35.81,"power_kW":5.08}}}
+[0m
+[0;32mI (167017) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (177127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.78,"current_A":35.67,"power_kW":10.1}}}
+[0m
+[0;32mI (177127) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (187227) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":364.58,"current_A":4.46,"power_kW":4.56}}}
+[0m
+[0;32mI (187227) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (197327) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":255.37,"current_A":3.34,"power_kW":8.08}}}
+[0m
+[0;32mI (197327) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (207437) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":258.13,"current_A":23.24,"power_kW":5.13}}}
+[0m
+[0;32mI (207437) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (217537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.62,"current_A":21.77,"power_kW":5.47}}}
+[0m
+[0;32mI (217537) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (227647) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.53,"current_A":32.39,"power_kW":4.94}}}
+[0m
+[0;32mI (227647) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (237747) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.24,"current_A":3.58,"power_kW":4.48}}}
+[0m
+[0;32mI (237747) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (247847) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":246.01,"current_A":14.92,"power_kW":5.8}}}
+[0m
+[0;32mI (247847) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (257957) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":310.4,"current_A":12.68,"power_kW":2.63}}}
+[0m
+[0;32mI (257957) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (268057) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":285.34,"current_A":19.71,"power_kW":9.5}}}
+[0m
+[0;32mI (268057) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (278157) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":295.1,"current_A":38.25,"power_kW":8.94}}}
+[0m
+[0;32mI (278157) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (288267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":334.34,"current_A":49.46,"power_kW":5.21}}}
+[0m
+[0;32mI (288267) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (298367) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":337.89,"current_A":13.65,"power_kW":6.1}}}
+[0m
+[0;32mI (298367) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (308467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":347.09,"current_A":39.23,"power_kW":3.74}}}
+[0m
+[0;32mI (308467) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (318577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":290.94,"current_A":23.75,"power_kW":3.57}}}
+[0m
+[0;32mI (318577) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (328677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":362.22,"current_A":14.72,"power_kW":6.39}}}
+[0m
+[0;32mI (328677) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (338787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":355.17,"current_A":17.9,"power_kW":8.96}}}
+[0m
+[0;32mI (338787) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (348887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.95,"current_A":23.16,"power_kW":7.84}}}
+[0m
+[0;32mI (348887) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (358997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":343.78,"current_A":15.72,"power_kW":3.35}}}
+[0m
+[0;32mI (358997) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (369097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":392.26,"current_A":36.3,"power_kW":1.58}}}
+[0m
+[0;32mI (369097) MQTT_APP: pub RS485 thành công[0m
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+CHECK_TREO
+[0;32mI (379197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":245.12,"current_A":5.12,"power_kW":8.28}}}
+[0m
+[0;32mI (379197) MQTT_APP: pub RS485 thành công[0m

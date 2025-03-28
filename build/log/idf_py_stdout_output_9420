@@ -1,0 +1,701 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e07ch (188540) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e0a4 vaddr=3ffb0000 size=01f74h (  8052) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5a78h (744056) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5aa0 vaddr=3ffb1f74 size=02144h (  8516) load[0m
+[0;32mI (434) esp_image: segment 4: paddr=000f7bec vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  e4e4b6178...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (540) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (562) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8A88 len 00027578 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (737) RS485: RS485 Initialized[0m
+[0;32mI (737) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (757) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (757) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (777) wifi:wifi driver task: 3ffc4184, prio:23, stack:6656, core=0
+I (787) wifi:wifi firmware version: ccaebfa
+I (787) wifi:wifi certification version: v7.0
+I (787) wifi:config NVS flash: enabled
+I (787) wifi:config nano formating: disabled
+I (797) wifi:Init data frame dynamic rx buffer num: 32
+I (797) wifi:Init static rx mgmt buffer num: 5
+I (807) wifi:Init management short buffer num: 32
+I (807) wifi:Init dynamic tx buffer num: 32
+I (807) wifi:Init static rx buffer size: 1600
+I (817) wifi:Init static rx buffer num: 10
+I (817) wifi:Init dynamic rx buffer num: 32
+[0;32mI (827) wifi_init: rx ba win: 6[0m
+[0;32mI (827) wifi_init: accept mbox: 6[0m
+[0;32mI (827) wifi_init: tcpip mbox: 32[0m
+[0;32mI (837) wifi_init: udp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp mbox: 6[0m
+[0;32mI (847) wifi_init: tcp tx win: 5760[0m
+[0;32mI (847) wifi_init: tcp rx win: 5760[0m
+[0;32mI (847) wifi_init: tcp mss: 1440[0m
+[0;32mI (857) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (857) wifi_init: WiFi RX IRAM OP enabled[0m
+W (867) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (877) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (967) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (967) wifi:enable tsf
+[0;32mI (967) WiFi_STA: wifi_init_sta finished.[0m
+I (977) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (977) wifi:state: init -> auth (0xb0)
+I (997) wifi:state: auth -> assoc (0x0)
+I (1007) wifi:state: assoc -> run (0x10)
+I (1017) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (1037) wifi:connected with Hassagi, aid = 4, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (1037) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (1047) wifi:pm start, type: 1
+
+I (1047) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1097) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (3767) esp_netif_handlers: eth ip: 192.168.137.160, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4557) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (4557) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (4557) WiFi_STA: connected to ap SSID:Hassagi password:0978111969[0m
+[0;32mI (4567) MAIN: Ethernet UP, stopping Wi-Fi.[0m
+I (4567) wifi:state: run -> init (0x0)
+[0;32mI (4577) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (4577) main_task: Returned from app_main()[0m
+I (4587) wifi:pm stop, total sleep time: 2695960 us / 3540792 us
+
+I (4587) wifi:<ba-del>idx:0, tid:0
+I (4587) wifi:new:<7,0>, old:<7,2>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+E (4597) wifi:NAN WiFi stop
+[0;32mI (4607) WiFi_STA: retry to connect to the AP[0m
+[0;32mI (4607) WiFi_STA: connect to the AP fail[0m
+I (4637) wifi:flush txq
+I (4637) wifi:stop sw txq
+I (4637) wifi:lmac stop hw txq
+[0;32mI (5697) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (5737) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (5827) MQTT_APP: Giờ hiện tại: 12:02:35 - 25/03/2025[0m
+[0;32mI (5827) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":2,"second":35,"day":25,"month":3,"year":2025}[0m
+[0;32mI (5837) MQTT_APP: pub LED thành công[0m
+[0;32mI (5857) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (7347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":391.88,"current_A":40.32,"power_kW":7.56}}}
+[0m
+[0;32mI (7347) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (17447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":369.02,"current_A":3.89,"power_kW":2.94}}}
+[0m
+[0;32mI (17447) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (27557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":357.07,"current_A":45,"power_kW":0.01}}}
+[0m
+[0;32mI (27557) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (37657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":212.44,"current_A":31.74,"power_kW":0.75}}}
+[0m
+[0;32mI (37657) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (47757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":397.66,"current_A":13.91,"power_kW":6.4}}}
+[0m
+[0;32mI (47757) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (57867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":356.59,"current_A":43.97,"power_kW":10.63}}}
+[0m
+[0;32mI (57867) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (67967) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":314.85,"current_A":22.19,"power_kW":8.92}}}
+[0m
+[0;32mI (67967) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (78077) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":354.53,"current_A":6.76,"power_kW":0.97}}}
+[0m
+[0;32mI (78077) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (88177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":203.03,"current_A":6.74,"power_kW":2.03}}}
+[0m
+[0;32mI (88177) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (98277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":308.81,"current_A":47.25,"power_kW":7.25}}}
+[0m
+[0;32mI (98277) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (108387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":374.85,"current_A":5.21,"power_kW":1.6}}}
+[0m
+[0;32mI (108387) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (118487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":311.72,"current_A":21.53,"power_kW":8.81}}}
+[0m
+[0;32mI (118487) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (128587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":212.62,"current_A":15.45,"power_kW":10.7}}}
+[0m
+[0;32mI (128587) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (138697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":225,"current_A":47.47,"power_kW":9.7}}}
+[0m
+[0;32mI (138697) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (148797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":272.59,"current_A":30.79,"power_kW":4.29}}}
+[0m
+[0;32mI (148797) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (158897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":372.56,"current_A":24.81,"power_kW":5.62}}}
+[0m
+[0;32mI (158897) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (169007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":372.45,"current_A":25.54,"power_kW":1.93}}}
+[0m
+[0;32mI (169007) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (179107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":285.08,"current_A":46.66,"power_kW":2.78}}}
+[0m
+[0;32mI (179107) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (189217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":312.3,"current_A":2.26,"power_kW":2.1}}}
+[0m
+[0;32mI (189217) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (199317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.51,"current_A":35.01,"power_kW":2.79}}}
+[0m
+[0;32mI (199317) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (209417) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":244.37,"current_A":30.02,"power_kW":3.23}}}
+[0m
+[0;32mI (209417) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (219527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":370.74,"current_A":17.96,"power_kW":6.62}}}
+[0m
+[0;32mI (219527) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (229627) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":286.46,"current_A":5.55,"power_kW":2.22}}}
+[0m
+[0;32mI (229627) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (239727) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":385.57,"current_A":8.79,"power_kW":0.27}}}
+[0m
+[0;32mI (239727) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (249837) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":332.36,"current_A":10.47,"power_kW":0.84}}}
+[0m
+[0;32mI (249837) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (259937) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":304.6,"current_A":21,"power_kW":9.13}}}
+[0m
+[0;32mI (259937) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (270037) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":307.75,"current_A":34.62,"power_kW":5.06}}}
+[0m
+[0;32mI (270037) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (280147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":284.07,"current_A":12.37,"power_kW":4.55}}}
+[0m
+[0;32mI (280147) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (290247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":370.66,"current_A":16.33,"power_kW":1.57}}}
+[0m
+[0;32mI (290247) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (300347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":319.76,"current_A":1.14,"power_kW":3.35}}}
+[0m
+[0;32mI (300347) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (310457) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":251.38,"current_A":26.6,"power_kW":4.43}}}
+[0m
+[0;32mI (310457) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (320557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.55,"current_A":45.11,"power_kW":1.12}}}
+[0m
+[0;32mI (320557) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (330667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":224.9,"current_A":37.45,"power_kW":6.34}}}
+[0m
+[0;32mI (330667) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (340767) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":332.64,"current_A":22.4,"power_kW":1.18}}}
+[0m
+[0;32mI (340767) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (350867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":276.98,"current_A":28.87,"power_kW":2.88}}}
+[0m
+[0;32mI (350867) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (360977) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":348.82,"current_A":43.34,"power_kW":10.46}}}
+[0m
+[0;32mI (360977) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (371077) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.2,"current_A":32.75,"power_kW":10.42}}}
+[0m
+[0;32mI (371077) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (381187) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":307.38,"current_A":41.15,"power_kW":3.77}}}
+[0m
+[0;32mI (381187) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (391287) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":376.67,"current_A":22.8,"power_kW":6.96}}}
+[0m
+[0;32mI (391287) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (401387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":398.81,"current_A":24.72,"power_kW":3.38}}}
+[0m
+[0;32mI (401387) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (411497) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":397.2,"current_A":18.86,"power_kW":3.05}}}
+[0m
+[0;32mI (411497) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (421597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":224.95,"current_A":3.95,"power_kW":7.83}}}
+[0m
+[0;32mI (421597) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (431697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":255.27,"current_A":48.99,"power_kW":1.51}}}
+[0m
+[0;32mI (431697) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (441807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":378.06,"current_A":42.95,"power_kW":0.61}}}
+[0m
+[0;32mI (441807) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (451907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":319.25,"current_A":2.79,"power_kW":6.24}}}
+[0m
+[0;32mI (451907) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (462017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":267.22,"current_A":20.73,"power_kW":6.03}}}
+[0m
+[0;32mI (462017) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (472117) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.34,"current_A":4.57,"power_kW":8.41}}}
+[0m
+[0;32mI (472117) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (482217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.29,"current_A":44.86,"power_kW":7.94}}}
+[0m
+[0;32mI (482217) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (492327) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":208.3,"current_A":44.54,"power_kW":1.19}}}
+[0m
+[0;32mI (492327) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (502427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":337.83,"current_A":16.13,"power_kW":3.39}}}
+[0m
+[0;32mI (502427) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (512537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":257.68,"current_A":23.29,"power_kW":5.05}}}
+[0m
+[0;32mI (512537) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (522637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":239.4,"current_A":23.97,"power_kW":3.68}}}
+[0m
+[0;32mI (522637) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (532737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":354,"current_A":48.47,"power_kW":2.88}}}
+[0m
+[0;32mI (532737) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (542837) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":247.2,"current_A":6.72,"power_kW":9.3}}}
+[0m
+[0;32mI (542837) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (552947) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":293.69,"current_A":4.29,"power_kW":4.32}}}
+[0m
+[0;32mI (552947) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (563047) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":328.07,"current_A":25.62,"power_kW":7.09}}}
+[0m
+[0;32mI (563047) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (573147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":339.48,"current_A":35.08,"power_kW":5.67}}}
+[0m
+[0;32mI (573147) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (583257) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":336.14,"current_A":2.35,"power_kW":2.63}}}
+[0m
+[0;32mI (583257) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (593357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.58,"current_A":47.59,"power_kW":4.23}}}
+[0m
+[0;32mI (593357) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (603467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":359.44,"current_A":36.37,"power_kW":8.42}}}
+[0m
+[0;32mI (603467) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (613567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":322.77,"current_A":30.82,"power_kW":2.75}}}
+[0m
+[0;32mI (613567) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (623667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":357.1,"current_A":9.7,"power_kW":9.53}}}
+[0m
+[0;32mI (623667) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (633777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":230.28,"current_A":12.73,"power_kW":8.71}}}
+[0m
+[0;32mI (633777) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (643877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.05,"current_A":24.21,"power_kW":2.34}}}
+[0m
+[0;32mI (643877) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (653977) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":249.28,"current_A":45.85,"power_kW":9.58}}}
+[0m
+[0;32mI (653977) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (664087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":392.23,"current_A":0.72,"power_kW":0.35}}}
+[0m
+[0;32mI (664087) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (674187) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":323.56,"current_A":1.98,"power_kW":10.95}}}
+[0m
+[0;32mI (674187) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (684297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":305.83,"current_A":27.43,"power_kW":1.37}}}
+[0m
+[0;32mI (684297) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (688347) MQTT_APP: Giờ hiện tại: 12:13:58 - 25/03/2025[0m
+[0;32mI (688347) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":12,"minute":13,"second":58,"day":25,"month":3,"year":2025}[0m
+[0;32mI (688357) MQTT_APP: pub LED thành công[0m
+[0;32mI (688367) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (689107) MQTT_APP: Giờ hiện tại: 12:13:58 - 25/03/2025[0m
+[0;32mI (689107) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":13,"second":58,"day":25,"month":3,"year":2025}[0m
+[0;32mI (689117) MQTT_APP: pub LED thành công[0m
+[0;32mI (689127) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (690317) MQTT_APP: Giờ hiện tại: 12:14:00 - 25/03/2025[0m
+[0;32mI (690317) MQTT_APP: Sending JSON: {"inputs":[0,1,1,1,1],"hour":12,"minute":14,"second":0,"day":25,"month":3,"year":2025}[0m
+[0;32mI (690327) MQTT_APP: pub LED thành công[0m
+[0;32mI (690337) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (691077) MQTT_APP: Giờ hiện tại: 12:14:00 - 25/03/2025[0m
+[0;32mI (691077) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":14,"second":0,"day":25,"month":3,"year":2025}[0m
+[0;32mI (691087) MQTT_APP: pub LED thành công[0m
+[0;32mI (691097) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (694397) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":323.62,"current_A":29.42,"power_kW":7.03}}}
+[0m
+[0;32mI (694397) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (704507) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":302.81,"current_A":4.88,"power_kW":10.55}}}
+[0m
+[0;32mI (704507) MQTT_APP: pub RS485 thành công[0m
+[0;31mE (708767) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (708767) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (708767) MQTT_APP: MQTT bị ngắt kết nối[0m
+[0;32mI (709637) MAIN: Ethernet DOWN, starting Wi-Fi.[0m
+I (709637) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (709637) wifi:enable tsf
+I (709647) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (709647) wifi:state: init -> auth (0xb0)
+I (709667) wifi:state: auth -> assoc (0x0)
+I (709667) wifi:state: assoc -> run (0x10)
+I (709677) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (709697) wifi:connected with Hassagi, aid = 4, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (709697) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (709707) wifi:pm start, type: 1
+
+I (709727) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (713207) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (713207) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (718777) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (718877) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (718897) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (719007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":328.83,"current_A":47.65,"power_kW":5.56}}}
+[0m
+[0;32mI (719007) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (724707) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":203.51,"current_A":29.9,"power_kW":2.32}}}
+[0m
+[0;32mI (724707) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (734817) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":318.29,"current_A":5.14,"power_kW":3.25}}}
+[0m
+[0;32mI (734817) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (744917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":205.26,"current_A":21.57,"power_kW":1.07}}}
+[0m
+[0;32mI (744917) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (755027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":302.51,"current_A":15.59,"power_kW":10.65}}}
+[0m
+[0;32mI (755027) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (765127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":321.94,"current_A":11.64,"power_kW":0.29}}}
+[0m
+[0;32mI (765127) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (775237) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":370.72,"current_A":1.53,"power_kW":0.32}}}
+[0m
+[0;32mI (775237) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (785337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":337.59,"current_A":7.4,"power_kW":5.89}}}
+[0m
+[0;32mI (785337) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (795437) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":344.18,"current_A":20.86,"power_kW":9.62}}}
+[0m
+[0;32mI (795437) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (805547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":245.98,"current_A":30.27,"power_kW":8.27}}}
+[0m
+[0;32mI (805547) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (815647) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":350.09,"current_A":44.35,"power_kW":6.61}}}
+[0m
+[0;32mI (815647) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (825747) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":345.32,"current_A":43.19,"power_kW":4.03}}}
+[0m
+[0;32mI (825747) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (829637) MAIN: Ethernet UP, stopping Wi-Fi.[0m
+I (829637) wifi:state: run -> init (0x0)
+I (829647) wifi:pm stop, total sleep time: 113483400 us / 119940535 us
+
+I (829647) wifi:<ba-del>idx:0, tid:0
+I (829647) wifi:new:<7,0>, old:<7,2>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+E (829657) wifi:NAN WiFi stop
+[0;32mI (829657) WiFi_STA: retry to connect to the AP[0m
+[0;31mE (829657) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (829667) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (829657) WiFi_STA: connect to the AP fail[0m
+[0;32mI (829677) MQTT_APP: MQTT bị ngắt kết nối[0m
+I (829687) wifi:flush txq
+I (829687) wifi:stop sw txq
+I (829687) wifi:lmac stop hw txq
+[0;32mI (830267) esp_netif_handlers: eth ip: 192.168.137.236, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (839687) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (839767) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (839797) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (839907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.31,"current_A":8.04,"power_kW":3.74}}}
+[0m
+[0;32mI (839907) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (845957) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":399.11,"current_A":3.08,"power_kW":0.05}}}
+[0m
+[0;32mI (845957) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (856067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":290.92,"current_A":29.15,"power_kW":1.13}}}
+[0m
+[0;32mI (856067) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (866167) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":333.8,"current_A":28.05,"power_kW":4.49}}}
+[0m
+[0;32mI (866167) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (876267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":350.09,"current_A":34.48,"power_kW":0.07}}}
+[0m
+[0;32mI (876267) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (886377) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":342.8,"current_A":30.63,"power_kW":7.66}}}
+[0m
+[0;32mI (886377) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (896477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265,"current_A":27.42,"power_kW":9.91}}}
+[0m
+[0;32mI (896477) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (906577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":360.93,"current_A":21.98,"power_kW":1.61}}}
+[0m
+[0;32mI (906577) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (916687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":326.77,"current_A":33.97,"power_kW":1.12}}}
+[0m
+[0;32mI (916687) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (926787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":204.6,"current_A":6.65,"power_kW":9.13}}}
+[0m
+[0;32mI (926787) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (935037) MQTT_APP: Giờ hiện tại: 12:18:04 - 25/03/2025[0m
+[0;32mI (935037) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":12,"minute":18,"second":4,"day":25,"month":3,"year":2025}[0m
+[0;32mI (935047) MQTT_APP: pub LED thành công[0m
+[0;32mI (935057) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (935347) MQTT_APP: Giờ hiện tại: 12:18:05 - 25/03/2025[0m
+[0;32mI (935347) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":18,"second":5,"day":25,"month":3,"year":2025}[0m
+[0;32mI (935357) MQTT_APP: pub LED thành công[0m
+[0;32mI (935377) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (936887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":212.5,"current_A":29.23,"power_kW":1.22}}}
+[0m
+[0;32mI (936887) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (937487) MQTT_APP: Giờ hiện tại: 12:18:07 - 25/03/2025[0m
+[0;32mI (937487) MQTT_APP: Sending JSON: {"inputs":[0,1,1,1,1],"hour":12,"minute":18,"second":7,"day":25,"month":3,"year":2025}[0m
+[0;32mI (937497) MQTT_APP: pub LED thành công[0m
+[0;32mI (937507) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (937947) MQTT_APP: Giờ hiện tại: 12:18:07 - 25/03/2025[0m
+[0;32mI (937947) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":12,"minute":18,"second":7,"day":25,"month":3,"year":2025}[0m
+[0;32mI (937957) MQTT_APP: pub LED thành công[0m
+[0;32mI (937967) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (946997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":202.16,"current_A":7.77,"power_kW":2.12}}}
+[0m
+[0;32mI (946997) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (957097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":345.76,"current_A":31.41,"power_kW":0.75}}}
+[0m
+[0;32mI (957097) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (967197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":374.43,"current_A":27.81,"power_kW":4.82}}}
+[0m
+[0;32mI (967197) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (977307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.52,"current_A":21.61,"power_kW":4.17}}}
+[0m
+[0;32mI (977307) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (987407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":306.27,"current_A":12.86,"power_kW":3.56}}}
+[0m
+[0;32mI (987407) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (997517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.01,"current_A":20.11,"power_kW":6.7}}}
+[0m
+[0;32mI (997517) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1007617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":224.7,"current_A":6.85,"power_kW":6.57}}}
+[0m
+[0;32mI (1007617) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1017717) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.97,"current_A":28.99,"power_kW":4.83}}}
+[0m
+[0;32mI (1017717) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1027827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":361.19,"current_A":5.37,"power_kW":9.99}}}
+[0m
+[0;32mI (1027827) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1037927) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":203.18,"current_A":50.15,"power_kW":6.15}}}
+[0m
+[0;32mI (1037927) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1048027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":246.24,"current_A":23.66,"power_kW":3.96}}}
+[0m
+[0;32mI (1048027) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1058137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.78,"current_A":12.71,"power_kW":8.45}}}
+[0m
+[0;32mI (1058137) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1068237) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.77,"current_A":32.54,"power_kW":5.08}}}
+[0m
+[0;32mI (1068237) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1078347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":341.08,"current_A":42.52,"power_kW":4.11}}}
+[0m
+[0;32mI (1078347) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1088447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.6,"current_A":0.1,"power_kW":10.1}}}
+[0m
+[0;32mI (1088447) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1098547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":382.6,"current_A":43.2,"power_kW":9.06}}}
+[0m
+[0;32mI (1098547) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1108647) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.08,"current_A":39.24,"power_kW":1.93}}}
+[0m
+[0;32mI (1108647) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1118757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":208.16,"current_A":27.81,"power_kW":6.85}}}
+[0m
+[0;32mI (1118757) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1128857) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":357.03,"current_A":0.22,"power_kW":0.95}}}
+[0m
+[0;32mI (1128857) MQTT_APP: pub RS485 thành công[0m
+[0;31mE (1132767) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (1132767) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (1132777) MQTT_APP: MQTT bị ngắt kết nối[0m
+[0;32mI (1133697) MAIN: Ethernet DOWN, starting Wi-Fi.[0m
+I (1133697) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (1133697) wifi:enable tsf
+I (1133767) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (1133767) wifi:state: init -> auth (0xb0)
+I (1133777) wifi:state: auth -> assoc (0x0)
+I (1133787) wifi:state: assoc -> run (0x10)
+I (1133797) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (1133837) wifi:connected with Hassagi, aid = 4, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (1133837) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (1133837) wifi:pm start, type: 1
+
+I (1133867) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (1137837) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (1137837) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (1147777) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (1147827) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (1147847) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (1147957) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":354.83,"current_A":39.57,"power_kW":8.56}}}
+[0m
+[0;32mI (1147957) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1149067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":375.01,"current_A":10.1,"power_kW":4.95}}}
+[0m
+[0;32mI (1149067) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1159167) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":393.91,"current_A":12.81,"power_kW":9.2}}}
+[0m
+[0;32mI (1159167) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1169277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":367.15,"current_A":7.24,"power_kW":10.64}}}
+[0m
+[0;32mI (1169277) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1179377) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.95,"current_A":2.93,"power_kW":9.05}}}
+[0m
+[0;32mI (1179377) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1189487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.78,"current_A":9.3,"power_kW":6.87}}}
+[0m
+[0;32mI (1189487) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1199587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.74,"current_A":14.7,"power_kW":2.11}}}
+[0m
+[0;32mI (1199587) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1209687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":278.64,"current_A":24.88,"power_kW":9.62}}}
+[0m
+[0;32mI (1209687) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1219797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.16,"current_A":45.77,"power_kW":5.77}}}
+[0m
+[0;32mI (1219797) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1229897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":306.9,"current_A":15.51,"power_kW":0.21}}}
+[0m
+[0;32mI (1229897) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1239997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.4,"current_A":50.77,"power_kW":4.05}}}
+[0m
+[0;32mI (1239997) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1250107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":238.84,"current_A":6.75,"power_kW":2.39}}}
+[0m
+[0;32mI (1250107) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1260207) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.99,"current_A":10.74,"power_kW":2.66}}}
+[0m
+[0;32mI (1260207) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1270307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.22,"current_A":27.6,"power_kW":6.47}}}
+[0m
+[0;32mI (1270307) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1280417) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":400.17,"current_A":25.65,"power_kW":4.74}}}
+[0m
+[0;32mI (1280417) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1290517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":379.88,"current_A":44.58,"power_kW":0.1}}}
+[0m
+[0;32mI (1290517) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1300617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":334.1,"current_A":4.92,"power_kW":0.48}}}
+[0m
+[0;32mI (1300617) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1310727) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":318.5,"current_A":44.19,"power_kW":2.32}}}
+[0m
+[0;32mI (1310727) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1320827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":325.93,"current_A":24.11,"power_kW":4.58}}}
+[0m
+[0;32mI (1320827) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1330927) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":382.53,"current_A":27.64,"power_kW":0.02}}}
+[0m
+[0;32mI (1330927) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1341037) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":335.69,"current_A":24.14,"power_kW":3.95}}}
+[0m
+[0;32mI (1341037) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1351137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":204.67,"current_A":30.67,"power_kW":4.53}}}
+[0m
+[0;32mI (1351137) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1361247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":253.83,"current_A":5.68,"power_kW":3}}}
+[0m
+[0;32mI (1361247) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1371347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":241.37,"current_A":16.71,"power_kW":4.17}}}
+[0m
+[0;32mI (1371347) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1381447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":242.58,"current_A":2.88,"power_kW":1.73}}}
+[0m
+[0;32mI (1381447) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1391547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":305.2,"current_A":8.93,"power_kW":2.89}}}
+[0m
+[0;32mI (1391547) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1401657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.28,"current_A":9.98,"power_kW":5.5}}}
+[0m
+[0;32mI (1401657) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1411757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":252.46,"current_A":34.65,"power_kW":2.11}}}
+[0m
+[0;32mI (1411757) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1421857) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":363.43,"current_A":17.04,"power_kW":2.57}}}
+[0m
+[0;32mI (1421857) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1431967) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.46,"current_A":24.03,"power_kW":8.27}}}
+[0m
+[0;32mI (1431967) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1442067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.51,"current_A":37.29,"power_kW":7.16}}}
+[0m
+[0;32mI (1442067) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1452177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.5,"current_A":46.02,"power_kW":7.45}}}
+[0m
+[0;32mI (1452177) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1462277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":388.15,"current_A":27.88,"power_kW":9.28}}}
+[0m
+[0;32mI (1462277) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1472377) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":368.22,"current_A":10.26,"power_kW":8.61}}}
+[0m
+[0;32mI (1472377) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1482487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":251.84,"current_A":11.9,"power_kW":2.28}}}
+[0m
+[0;32mI (1482487) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1492587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":350.43,"current_A":23.52,"power_kW":2.38}}}
+[0m
+[0;32mI (1492587) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1502697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.87,"current_A":46.15,"power_kW":2.61}}}
+[0m
+[0;32mI (1502697) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1512797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":280.77,"current_A":44.28,"power_kW":1.35}}}
+[0m
+[0;32mI (1512797) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1522907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":360.39,"current_A":4.23,"power_kW":2.91}}}
+[0m
+[0;32mI (1522907) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1533007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":311.59,"current_A":22.48,"power_kW":9.52}}}
+[0m
+[0;32mI (1533007) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1543107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":276.08,"current_A":11.21,"power_kW":10.69}}}
+[0m
+[0;32mI (1543107) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1553217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":384.81,"current_A":7.13,"power_kW":0.54}}}
+[0m
+[0;32mI (1553217) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1563317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":211.69,"current_A":3.8,"power_kW":6.27}}}
+[0m
+[0;32mI (1563317) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1573417) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":395.88,"current_A":26.64,"power_kW":5.06}}}
+[0m
+[0;32mI (1573417) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1583527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":318.27,"current_A":22.31,"power_kW":10.57}}}
+[0m
+[0;32mI (1583527) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1593627) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":237.27,"current_A":32.38,"power_kW":0.42}}}
+[0m
+[0;32mI (1593627) MQTT_APP: pub RS485 thành công[0m
+[0;32mI (1603737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.65,"current_A":38.11,"power_kW":6.02}}}
+[0m
+[0;32mI (1603737) MQTT_APP: pub RS485 thành công[0m
