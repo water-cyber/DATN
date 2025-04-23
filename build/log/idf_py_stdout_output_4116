@@ -1,0 +1,923 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e944h (190788) map[0m
+[0;32mI (170) esp_image: segment 1: paddr=0003e96c vaddr=3ffb0000 size=016ach (  5804) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5d68h (744808) map[0m
+[0;32mI (431) esp_image: segment 3: paddr=000f5d90 vaddr=3ffb16ac size=02a0ch ( 10764) load[0m
+[0;32mI (435) esp_image: segment 4: paddr=000f87a4 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (493) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (493) boot: Disabling RNG early entropy source...[0m
+[0;32mI (505) cpu_start: Multicore app[0m
+[0;32mI (513) cpu_start: Pro cpu start user code[0m
+[0;32mI (513) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (513) app_init: Application information:[0m
+[0;32mI (516) app_init: Project name:     datn[0m
+[0;32mI (521) app_init: App version:      1[0m
+[0;32mI (525) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (531) app_init: ELF file SHA256:  f7d85003e...[0m
+[0;32mI (536) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (542) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (546) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (551) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (556) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (563) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFB8B88 len 00027478 (157 KiB): DRAM[0m
+[0;32mI (576) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (588) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (596) spi_flash: detected chip: generic[0m
+[0;32mI (599) spi_flash: flash io: dio[0m
+[0;33mW (603) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (628) main_task: Started on CPU0[0m
+[0;32mI (638) main_task: Calling app_main()[0m
+[0;32mI (658) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (658) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (668) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (688) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (698) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (708) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (728) RS485: RS485 Initialized[0m
+[0;32mI (728) RS485: UART2 Initialized[0m
+[0;32mI (728) wifi_manager: Initializing WiFi in SoftAP mode...[0m
+I (748) wifi:wifi driver task: 3ffc2678, prio:23, stack:6656, core=0
+I (748) wifi:wifi firmware version: ccaebfa
+I (748) wifi:wifi certification version: v7.0
+I (748) wifi:config NVS flash: enabled
+I (758) wifi:config nano formating: disabled
+I (758) wifi:Init data frame dynamic rx buffer num: 32
+I (768) wifi:Init static rx mgmt buffer num: 5
+I (768) wifi:Init management short buffer num: 32
+I (768) wifi:Init dynamic tx buffer num: 32
+I (778) wifi:Init static rx buffer size: 1600
+I (778) wifi:Init static rx buffer num: 10
+I (788) wifi:Init dynamic rx buffer num: 32
+[0;32mI (788) wifi_init: rx ba win: 6[0m
+[0;32mI (788) wifi_init: accept mbox: 6[0m
+[0;32mI (798) wifi_init: tcpip mbox: 32[0m
+[0;32mI (798) wifi_init: udp mbox: 6[0m
+[0;32mI (808) wifi_init: tcp mbox: 6[0m
+[0;32mI (808) wifi_init: tcp tx win: 5760[0m
+[0;32mI (808) wifi_init: tcp rx win: 5760[0m
+[0;32mI (818) wifi_init: tcp mss: 1440[0m
+[0;32mI (818) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (828) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (838) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (918) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (938) wifi:mode : sta (8c:4b:14:94:f3:88) + softAP (8c:4b:14:94:f3:89)
+I (938) wifi:enable tsf
+I (948) wifi:Total power save buffer number: 16
+I (948) wifi:Init max length of beacon: 752/752
+I (948) wifi:Init max length of beacon: 752/752
+[0;32mI (948) wifi_manager: SoftAP started with SSID: ESP32_Setup[0m
+[0;32mI (958) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (968) web_server: Web server started[0m
+[0;32mI (968) web_server: [APP] Free memory start_web_server: 208284 bytes[0m
+[0;32mI (978) web_server: Waiting SSID/PASS from Web...[0m
+I (28708) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (28708) wifi:station: 36:aa:19:75:d0:fc join, AID=1, bgn, 20
+[0;32mI (28858) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (29218) wifi:<ba-add>idx:2 (ifx:1, 36:aa:19:75:d0:fc), tid:0, ssn:2, winSize:64
+I (37918) wifi:<ba-add>idx:3 (ifx:1, 36:aa:19:75:d0:fc), tid:1, ssn:0, winSize:64
+[0;32mI (45838) web_server: Nhận dữ liệu từ Web: ssid=LTE-D8D7&password=12345678[0m
+[0;32mI (45838) web_server: SSID: LTE-D8D7[0m
+[0;32mI (45838) web_server: Password: 12345678[0m
+[0;32mI (45848) web_server: WiFi config saved![0m
+[0;32mI (45858) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (45878) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (45878) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (45888) wifi:station: 36:aa:19:75:d0:fc leave, AID = 1, reason = 4, bss_flags is 691299, bss:0x3ffcc4f4
+I (45888) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0
+I (45898) wifi:<ba-del>idx:2, tid:0
+I (45898) wifi:<ba-del>idx:3, tid:1
+I (45898) wifi:mode : sta (8c:4b:14:94:f3:88)
+W (45918) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (45948) WiFi_STA: wifi_init_sta finished.[0m
+E (47858) wifi:NAN WiFi stop
+I (47858) wifi:flush txq
+I (47858) wifi:stop sw txq
+I (47858) wifi:lmac stop hw txq
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e944h (190788) map[0m
+[0;32mI (170) esp_image: segment 1: paddr=0003e96c vaddr=3ffb0000 size=016ach (  5804) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5d68h (744808) map[0m
+[0;32mI (431) esp_image: segment 3: paddr=000f5d90 vaddr=3ffb16ac size=02a0ch ( 10764) load[0m
+[0;32mI (435) esp_image: segment 4: paddr=000f87a4 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (493) boot: Disabling RNG early entropy source...[0m
+[0;32mI (505) cpu_start: Multicore app[0m
+[0;32mI (513) cpu_start: Pro cpu start user code[0m
+[0;32mI (513) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (513) app_init: Application information:[0m
+[0;32mI (516) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (525) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (531) app_init: ELF file SHA256:  f7d85003e...[0m
+[0;32mI (536) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (541) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (546) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (551) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (556) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (563) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFB8B88 len 00027478 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (588) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (596) spi_flash: detected chip: generic[0m
+[0;32mI (599) spi_flash: flash io: dio[0m
+[0;33mW (603) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (628) main_task: Started on CPU0[0m
+[0;32mI (638) main_task: Calling app_main()[0m
+[0;32mI (668) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (668) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (688) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (698) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (708) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (728) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (738) RS485: RS485 Initialized[0m
+[0;32mI (738) RS485: UART2 Initialized[0m
+[0;32mI (748) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (758) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (758) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (778) wifi:wifi driver task: 3ffc4ca4, prio:23, stack:6656, core=0
+I (788) wifi:wifi firmware version: ccaebfa
+I (788) wifi:wifi certification version: v7.0
+I (788) wifi:config NVS flash: enabled
+I (788) wifi:config nano formating: disabled
+I (798) wifi:Init data frame dynamic rx buffer num: 32
+I (798) wifi:Init static rx mgmt buffer num: 5
+I (808) wifi:Init management short buffer num: 32
+I (808) wifi:Init dynamic tx buffer num: 32
+I (808) wifi:Init static rx buffer size: 1600
+I (818) wifi:Init static rx buffer num: 10
+I (818) wifi:Init dynamic rx buffer num: 32
+[0;32mI (828) wifi_init: rx ba win: 6[0m
+[0;32mI (828) wifi_init: accept mbox: 6[0m
+[0;32mI (828) wifi_init: tcpip mbox: 32[0m
+[0;32mI (838) wifi_init: udp mbox: 6[0m
+[0;32mI (838) wifi_init: tcp mbox: 6[0m
+[0;32mI (838) wifi_init: tcp tx win: 5760[0m
+[0;32mI (848) wifi_init: tcp rx win: 5760[0m
+[0;32mI (848) wifi_init: tcp mss: 1440[0m
+[0;32mI (858) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (858) wifi_init: WiFi RX IRAM OP enabled[0m
+W (868) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (878) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (968) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (968) wifi:enable tsf
+[0;32mI (968) WiFi_STA: wifi_init_sta finished.[0m
+I (1298) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (1308) wifi:state: init -> auth (0xb0)
+I (1308) wifi:state: auth -> assoc (0x0)
+I (1318) wifi:state: assoc -> run (0x10)
+I (1348) wifi:connected with LTE-D8D7, aid = 2, channel 1, 40U, bssid = e8:49:43:0c:d8:d7
+I (1348) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (1368) wifi:pm start, type: 1
+
+I (1368) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1438) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2368) esp_netif_handlers: sta ip: 192.168.1.199, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2368) WiFi_STA: got ip:192.168.1.199[0m
+[0;32mI (2368) WiFi_STA: connected to ap SSID:LTE-D8D7 password:12345678[0m
+[0;32mI (2378) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (2388) MAIN: Đã ghi thời gian vào DS1307[0m
+[0;32mI (2388) main_task: Returned from app_main()[0m
+[0;32mI (2558) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (2638) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (2788) MQTT_APP: Giờ hiện tại: 13:06:01 - 03/04/2025[0m
+[0;32mI (2788) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":6,"second":1,"day":3,"month":4,"year":2025}[0m
+[0;32mI (2798) MQTT_APP: pub LED thành công[0m
+[0;32mI (2848) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (8548) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":48.1,"pressure_Pa":100165}}}
+[0m
+[0;32mI (8548) MQTT_APP: pub Lora published[0m
+I (8718) wifi:[ADDBA]RX DELBA, reason:39, delete tid:5, initiator:1(originator)
+I (8718) wifi:<ba-add>idx:0 (ifx:0, e8:49:43:0c:d8:d7), tid:5, ssn:6, winSize:64
+I (12318) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)
+I (12318) wifi:<ba-add>idx:1 (ifx:0, e8:49:43:0c:d8:d7), tid:0, ssn:8, winSize:64
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e944h (190788) map[0m
+[0;32mI (170) esp_image: segment 1: paddr=0003e96c vaddr=3ffb0000 size=016ach (  5804) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5d68h (744808) map[0m
+[0;32mI (431) esp_image: segment 3: paddr=000f5d90 vaddr=3ffb16ac size=02a0ch ( 10764) load[0m
+[0;32mI (435) esp_image: segment 4: paddr=000f87a4 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (493) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (493) boot: Disabling RNG early entropy source...[0m
+[0;32mI (505) cpu_start: Multicore app[0m
+[0;32mI (513) cpu_start: Pro cpu start user code[0m
+[0;32mI (513) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (513) app_init: Application information:[0m
+[0;32mI (516) app_init: Project name:     datn[0m
+[0;32mI (521) app_init: App version:      1[0m
+[0;32mI (525) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (531) app_init: ELF file SHA256:  f7d85003e...[0m
+[0;32mI (536) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (542) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (546) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (551) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (556) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (563) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFB8B88 len 00027478 (157 KiB): DRAM[0m
+[0;32mI (576) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (582) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (588) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (596) spi_flash: detected chip: generic[0m
+[0;32mI (599) spi_flash: flash io: dio[0m
+[0;33mW (603) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (616) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (628) main_task: Started on CPU0[0m
+[0;32mI (638) main_task: Calling app_main()[0m
+[0;32mI (668) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (668) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (688) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (698) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (708) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (738) RS485: RS485 Initialized[0m
+[0;32mI (738) RS485: UART2 Initialized[0m
+[0;32mI (738) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (758) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (758) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (778) wifi:wifi driver task: 3ffc4d28, prio:23, stack:6656, core=0
+I (788) wifi:wifi firmware version: ccaebfa
+I (788) wifi:wifi certification version: v7.0
+I (788) wifi:config NVS flash: enabled
+I (788) wifi:config nano formating: disabled
+I (798) wifi:Init data frame dynamic rx buffer num: 32
+I (798) wifi:Init static rx mgmt buffer num: 5
+I (808) wifi:Init management short buffer num: 32
+I (808) wifi:Init dynamic tx buffer num: 32
+I (808) wifi:Init static rx buffer size: 1600
+I (818) wifi:Init static rx buffer num: 10
+I (818) wifi:Init dynamic rx buffer num: 32
+[0;32mI (828) wifi_init: rx ba win: 6[0m
+[0;32mI (828) wifi_init: accept mbox: 6[0m
+[0;32mI (828) wifi_init: tcpip mbox: 32[0m
+[0;32mI (838) wifi_init: udp mbox: 6[0m
+[0;32mI (838) wifi_init: tcp mbox: 6[0m
+[0;32mI (848) wifi_init: tcp tx win: 5760[0m
+[0;32mI (848) wifi_init: tcp rx win: 5760[0m
+[0;32mI (848) wifi_init: tcp mss: 1440[0m
+[0;32mI (858) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (858) wifi_init: WiFi RX IRAM OP enabled[0m
+W (868) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (878) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (968) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (968) wifi:enable tsf
+[0;32mI (968) WiFi_STA: wifi_init_sta finished.[0m
+I (978) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (978) wifi:state: init -> auth (0xb0)
+I (988) wifi:state: auth -> assoc (0x0)
+I (988) wifi:state: assoc -> run (0x10)
+I (1008) wifi:connected with LTE-D8D7, aid = 2, channel 1, 40U, bssid = e8:49:43:0c:d8:d7
+I (1008) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+I (1008) wifi:pm start, type: 1
+
+I (1008) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1038) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2018) esp_netif_handlers: sta ip: 192.168.1.199, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2018) WiFi_STA: got ip:192.168.1.199[0m
+[0;32mI (2018) WiFi_STA: connected to ap SSID:LTE-D8D7 password:12345678[0m
+[0;32mI (2028) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (2038) MAIN: Đã ghi thời gian vào DS1307[0m
+[0;32mI (2038) main_task: Returned from app_main()[0m
+[0;32mI (2128) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (2208) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (2338) MQTT_APP: Giờ hiện tại: 13:06:00 - 03/04/2025[0m
+[0;32mI (2338) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":6,"second":0,"day":3,"month":4,"year":2025}[0m
+[0;32mI (2348) MQTT_APP: pub LED thành công[0m
+[0;32mI (2438) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+I (9848) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)
+I (9848) wifi:<ba-add>idx:0 (ifx:0, e8:49:43:0c:d8:d7), tid:0, ssn:7, winSize:64
+[0;32mI (11098) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":51.2,"pressure_Pa":100759}}}
+[0m
+[0;32mI (11098) MQTT_APP: pub Lora published[0m
+I (11198) wifi:[ADDBA]RX DELBA, reason:39, delete tid:5, initiator:1(originator)
+I (11198) wifi:<ba-add>idx:1 (ifx:0, e8:49:43:0c:d8:d7), tid:5, ssn:6, winSize:64
+[0;32mI (21598) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.8,"humidity_%":45,"pressure_Pa":100101}}}
+[0m
+[0;32mI (21598) MQTT_APP: pub Lora published[0m
+[0;32mI (31848) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":41,"pressure_Pa":101928}}}
+[0m
+[0;32mI (31848) MQTT_APP: pub Lora published[0m
+[0;32mI (42348) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.1,"humidity_%":57.5,"pressure_Pa":100518}}}
+[0m
+[0;32mI (42348) MQTT_APP: pub Lora published[0m
+[0;32mI (52608) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":45,"pressure_Pa":100735}}}
+[0m
+[0;32mI (52608) MQTT_APP: pub Lora published[0m
+[0;32mI (63108) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.2,"humidity_%":31.6,"pressure_Pa":100714}}}
+[0m
+[0;32mI (63108) MQTT_APP: pub Lora published[0m
+[0;32mI (73368) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.6,"humidity_%":58.7,"pressure_Pa":100501}}}
+[0m
+[0;32mI (73368) MQTT_APP: pub Lora published[0m
+[0;32mI (83868) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.1,"humidity_%":52.9,"pressure_Pa":100293}}}
+[0m
+[0;32mI (83868) MQTT_APP: pub Lora published[0m
+[0;32mI (94128) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81,"humidity_%":58,"pressure_Pa":100113}}}
+[0m
+[0;32mI (94128) MQTT_APP: pub Lora published[0m
+[0;32mI (104628) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":48,"pressure_Pa":101000}}}
+[0m
+[0;32mI (104628) MQTT_APP: pub Lora published[0m
+[0;32mI (114888) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":46.1,"pressure_Pa":100824}}}
+[0m
+[0;32mI (114888) MQTT_APP: pub Lora published[0m
+[0;32mI (125388) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":44.5,"pressure_Pa":101662}}}
+[0m
+[0;32mI (125388) MQTT_APP: pub Lora published[0m
+[0;32mI (135648) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.3,"humidity_%":55.5,"pressure_Pa":100385}}}
+[0m
+[0;32mI (135648) MQTT_APP: pub Lora published[0m
+[0;32mI (146148) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":58.3,"pressure_Pa":100714}}}
+[0m
+[0;32mI (146148) MQTT_APP: pub Lora published[0m
+[0;32mI (156408) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.8,"humidity_%":58.4,"pressure_Pa":100342}}}
+[0m
+[0;32mI (156408) MQTT_APP: pub Lora published[0m
+[0;32mI (166908) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":56.2,"pressure_Pa":100363}}}
+[0m
+[0;32mI (166908) MQTT_APP: pub Lora published[0m
+[0;32mI (177168) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81,"humidity_%":54,"pressure_Pa":100978}}}
+[0m
+[0;32mI (177168) MQTT_APP: pub Lora published[0m
+[0;32mI (187668) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":54.4,"pressure_Pa":100739}}}
+[0m
+[0;32mI (187668) MQTT_APP: pub Lora published[0m
+[0;32mI (197928) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":32.8,"pressure_Pa":100671}}}
+[0m
+[0;32mI (197928) MQTT_APP: pub Lora published[0m
+[0;32mI (208428) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":58.1,"pressure_Pa":100552}}}
+[0m
+[0;32mI (208428) MQTT_APP: pub Lora published[0m
+[0;32mI (218698) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":48.7,"pressure_Pa":100353}}}
+[0m
+[0;32mI (218698) MQTT_APP: pub Lora published[0m
+[0;32mI (229198) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.4,"humidity_%":53.6,"pressure_Pa":100909}}}
+[0m
+[0;32mI (229198) MQTT_APP: pub Lora published[0m
+[0;32mI (239458) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":46.7,"pressure_Pa":100110}}}
+[0m
+[0;32mI (239458) MQTT_APP: pub Lora published[0m
+[0;32mI (249958) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.4,"humidity_%":43.5,"pressure_Pa":100231}}}
+[0m
+[0;32mI (249958) MQTT_APP: pub Lora published[0m
+[0;32mI (260228) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":54.6,"pressure_Pa":101090}}}
+[0m
+[0;32mI (260228) MQTT_APP: pub Lora published[0m
+[0;32mI (270728) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":32.1,"pressure_Pa":101213}}}
+[0m
+[0;32mI (270728) MQTT_APP: pub Lora published[0m
+[0;32mI (280978) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.4,"humidity_%":43,"pressure_Pa":100632}}}
+[0m
+[0;32mI (280978) MQTT_APP: pub Lora published[0m
+[0;32mI (291478) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":45.3,"pressure_Pa":100622}}}
+[0m
+[0;32mI (291478) MQTT_APP: pub Lora published[0m
+[0;32mI (301748) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":30.4,"pressure_Pa":101599}}}
+[0m
+[0;32mI (301748) MQTT_APP: pub Lora published[0m
+[0;32mI (312248) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88,"humidity_%":51.8,"pressure_Pa":100288}}}
+[0m
+[0;32mI (312248) MQTT_APP: pub Lora published[0m
+[0;32mI (322498) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.5,"humidity_%":58.3,"pressure_Pa":100515}}}
+[0m
+[0;32mI (322498) MQTT_APP: pub Lora published[0m
+[0;32mI (332998) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.4,"humidity_%":54,"pressure_Pa":101381}}}
+[0m
+[0;32mI (332998) MQTT_APP: pub Lora published[0m
+[0;32mI (343258) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.9,"humidity_%":31,"pressure_Pa":100172}}}
+[0m
+[0;32mI (343258) MQTT_APP: pub Lora published[0m
+[0;32mI (353758) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.6,"humidity_%":46.9,"pressure_Pa":100670}}}
+[0m
+[0;32mI (353758) MQTT_APP: pub Lora published[0m
+[0;32mI (364018) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":42,"pressure_Pa":101562}}}
+[0m
+[0;32mI (364018) MQTT_APP: pub Lora published[0m
+[0;32mI (374518) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86,"humidity_%":59.3,"pressure_Pa":101928}}}
+[0m
+[0;32mI (374518) MQTT_APP: pub Lora published[0m
+[0;32mI (384778) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.9,"humidity_%":51.7,"pressure_Pa":100793}}}
+[0m
+[0;32mI (384778) MQTT_APP: pub Lora published[0m
+[0;32mI (395278) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.6,"humidity_%":38.9,"pressure_Pa":101728}}}
+[0m
+[0;32mI (395278) MQTT_APP: pub Lora published[0m
+[0;32mI (405548) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.1,"humidity_%":37.2,"pressure_Pa":101811}}}
+[0m
+[0;32mI (405548) MQTT_APP: pub Lora published[0m
+[0;32mI (416048) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.3,"humidity_%":51.2,"pressure_Pa":101925}}}
+[0m
+[0;32mI (416048) MQTT_APP: pub Lora published[0m
+[0;32mI (426308) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.1,"humidity_%":35.8,"pressure_Pa":100694}}}
+[0m
+[0;32mI (426308) MQTT_APP: pub Lora published[0m
+[0;32mI (436808) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.3,"humidity_%":56.2,"pressure_Pa":101276}}}
+[0m
+[0;32mI (436808) MQTT_APP: pub Lora published[0m
+[0;32mI (442058) MQTT_APP: Giờ hiện tại: 13:13:20 - 03/04/2025[0m
+[0;32mI (442058) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":13,"second":20,"day":3,"month":4,"year":2025}[0m
+[0;32mI (442068) MQTT_APP: pub LED thành công[0m
+[0;32mI (442118) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (442568) MQTT_APP: Giờ hiện tại: 13:13:20 - 03/04/2025[0m
+[0;32mI (442568) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":20,"day":3,"month":4,"year":2025}[0m
+[0;32mI (442578) MQTT_APP: pub LED thành công[0m
+[0;32mI (442628) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (442828) MQTT_APP: Giờ hiện tại: 13:13:21 - 03/04/2025[0m
+[0;32mI (442828) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":13,"second":21,"day":3,"month":4,"year":2025}[0m
+[0;32mI (442838) MQTT_APP: pub LED thành công[0m
+[0;32mI (442878) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (443088) MQTT_APP: Giờ hiện tại: 13:13:21 - 03/04/2025[0m
+[0;32mI (443088) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":21,"day":3,"month":4,"year":2025}[0m
+[0;32mI (443098) MQTT_APP: pub LED thành công[0m
+[0;32mI (443148) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (444348) MQTT_APP: Giờ hiện tại: 13:13:22 - 03/04/2025[0m
+[0;32mI (444348) MQTT_APP: Sending JSON: {"inputs":[0,1,1,1,1],"hour":13,"minute":13,"second":22,"day":3,"month":4,"year":2025}[0m
+[0;32mI (444358) MQTT_APP: pub LED thành công[0m
+[0;32mI (444408) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (444608) MQTT_APP: Giờ hiện tại: 13:13:23 - 03/04/2025[0m
+[0;32mI (444608) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":23,"day":3,"month":4,"year":2025}[0m
+[0;32mI (444618) MQTT_APP: pub LED thành công[0m
+[0;32mI (444688) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (445368) MQTT_APP: Giờ hiện tại: 13:13:23 - 03/04/2025[0m
+[0;32mI (445368) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":13,"second":23,"day":3,"month":4,"year":2025}[0m
+[0;32mI (445378) MQTT_APP: pub LED thành công[0m
+[0;32mI (445418) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (445878) MQTT_APP: Giờ hiện tại: 13:13:24 - 03/04/2025[0m
+[0;32mI (445878) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":24,"day":3,"month":4,"year":2025}[0m
+[0;32mI (445888) MQTT_APP: pub LED thành công[0m
+[0;32mI (445968) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (446638) MQTT_APP: Giờ hiện tại: 13:13:25 - 03/04/2025[0m
+[0;32mI (446638) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":13,"second":25,"day":3,"month":4,"year":2025}[0m
+[0;32mI (446648) MQTT_APP: pub LED thành công[0m
+[0;32mI (446688) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (446898) MQTT_APP: Giờ hiện tại: 13:13:25 - 03/04/2025[0m
+[0;32mI (446898) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":25,"day":3,"month":4,"year":2025}[0m
+[0;32mI (446908) MQTT_APP: pub LED thành công[0m
+[0;32mI (446948) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (447158) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":44.2,"pressure_Pa":101328}}}
+[0m
+[0;32mI (447158) MQTT_APP: pub Lora published[0m
+[0;32mI (448408) MQTT_APP: Giờ hiện tại: 13:13:26 - 03/04/2025[0m
+[0;32mI (448408) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":13,"second":26,"day":3,"month":4,"year":2025}[0m
+[0;32mI (448418) MQTT_APP: pub LED thành công[0m
+[0;32mI (448478) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (448668) MQTT_APP: Giờ hiện tại: 13:13:27 - 03/04/2025[0m
+[0;32mI (448668) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":27,"day":3,"month":4,"year":2025}[0m
+[0;32mI (448678) MQTT_APP: pub LED thành công[0m
+[0;32mI (448728) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (449678) MQTT_APP: Giờ hiện tại: 13:13:28 - 03/04/2025[0m
+[0;32mI (449678) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":28,"day":3,"month":4,"year":2025}[0m
+[0;32mI (449688) MQTT_APP: pub LED thành công[0m
+[0;32mI (449728) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (450438) MQTT_APP: Giờ hiện tại: 13:13:28 - 03/04/2025[0m
+[0;32mI (450438) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":13,"second":28,"day":3,"month":4,"year":2025}[0m
+[0;32mI (450448) MQTT_APP: pub LED thành công[0m
+[0;32mI (450488) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (450698) MQTT_APP: Giờ hiện tại: 13:13:29 - 03/04/2025[0m
+[0;32mI (450698) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":29,"day":3,"month":4,"year":2025}[0m
+[0;32mI (450708) MQTT_APP: pub LED thành công[0m
+[0;32mI (450758) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (454958) MQTT_APP: Giờ hiện tại: 13:13:33 - 03/04/2025[0m
+[0;32mI (454958) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":33,"day":3,"month":4,"year":2025}[0m
+[0;32mI (454968) MQTT_APP: pub LED thành công[0m
+[0;32mI (455008) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (455218) MQTT_APP: Giờ hiện tại: 13:13:33 - 03/04/2025[0m
+[0;32mI (455218) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":13,"second":33,"day":3,"month":4,"year":2025}[0m
+[0;32mI (455228) MQTT_APP: pub LED thành công[0m
+[0;32mI (455268) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (455478) MQTT_APP: Giờ hiện tại: 13:13:33 - 03/04/2025[0m
+[0;32mI (455478) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":13,"second":33,"day":3,"month":4,"year":2025}[0m
+[0;32mI (455488) MQTT_APP: pub LED thành công[0m
+[0;32mI (455528) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (455738) MQTT_APP: Giờ hiện tại: 13:13:34 - 03/04/2025[0m
+[0;32mI (455738) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":34,"day":3,"month":4,"year":2025}[0m
+[0;32mI (455748) MQTT_APP: pub LED thành công[0m
+[0;32mI (455798) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (455998) MQTT_APP: Giờ hiện tại: 13:13:34 - 03/04/2025[0m
+[0;32mI (455998) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":13,"second":34,"day":3,"month":4,"year":2025}[0m
+[0;32mI (456008) MQTT_APP: pub LED thành công[0m
+[0;32mI (456048) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (456508) MQTT_APP: Giờ hiện tại: 13:13:34 - 03/04/2025[0m
+[0;32mI (456508) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":34,"day":3,"month":4,"year":2025}[0m
+[0;32mI (456518) MQTT_APP: pub LED thành công[0m
+[0;32mI (456568) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (456768) MQTT_APP: Giờ hiện tại: 13:13:35 - 03/04/2025[0m
+[0;32mI (456768) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":35,"day":3,"month":4,"year":2025}[0m
+[0;32mI (456778) MQTT_APP: pub LED thành công[0m
+[0;32mI (456828) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (457028) MQTT_APP: Giờ hiện tại: 13:13:35 - 03/04/2025[0m
+[0;32mI (457028) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":13,"second":35,"day":3,"month":4,"year":2025}[0m
+[0;32mI (457038) MQTT_APP: pub LED thành công[0m
+[0;32mI (457068) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (457288) MQTT_APP: Giờ hiện tại: 13:13:35 - 03/04/2025[0m
+[0;32mI (457288) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":35,"day":3,"month":4,"year":2025}[0m
+[0;32mI (457298) MQTT_APP: pub LED thành công[0m
+[0;32mI (457338) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (457548) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.8,"humidity_%":50,"pressure_Pa":100370}}}
+[0m
+[0;32mI (457548) MQTT_APP: pub Lora published[0m
+[0;32mI (457798) MQTT_APP: Giờ hiện tại: 13:13:36 - 03/04/2025[0m
+[0;32mI (457798) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":13,"second":36,"day":3,"month":4,"year":2025}[0m
+[0;32mI (457808) MQTT_APP: pub LED thành công[0m
+[0;32mI (457848) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (458058) MQTT_APP: Giờ hiện tại: 13:13:36 - 03/04/2025[0m
+[0;32mI (458058) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":36,"day":3,"month":4,"year":2025}[0m
+[0;32mI (458068) MQTT_APP: pub LED thành công[0m
+[0;32mI (458108) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (458318) MQTT_APP: Giờ hiện tại: 13:13:36 - 03/04/2025[0m
+[0;32mI (458318) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":36,"day":3,"month":4,"year":2025}[0m
+[0;32mI (458328) MQTT_APP: pub LED thành công[0m
+[0;32mI (458368) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (458828) MQTT_APP: Giờ hiện tại: 13:13:37 - 03/04/2025[0m
+[0;32mI (458828) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":13,"second":37,"day":3,"month":4,"year":2025}[0m
+[0;32mI (458838) MQTT_APP: pub LED thành công[0m
+[0;32mI (458918) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (467838) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.2,"humidity_%":56.3,"pressure_Pa":100783}}}
+[0m
+[0;32mI (467838) MQTT_APP: pub Lora published[0m
+[0;32mI (478338) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.9,"humidity_%":33.1,"pressure_Pa":101357}}}
+[0m
+[0;32mI (478338) MQTT_APP: pub Lora published[0m
+[0;32mI (488598) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":41.5,"pressure_Pa":100537}}}
+[0m
+[0;32mI (488598) MQTT_APP: pub Lora published[0m
+[0;32mI (499098) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":37.4,"pressure_Pa":100463}}}
+[0m
+[0;32mI (499098) MQTT_APP: pub Lora published[0m
+[0;32mI (509368) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":42.9,"pressure_Pa":101609}}}
+[0m
+[0;32mI (509368) MQTT_APP: pub Lora published[0m
+[0;32mI (519868) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.7,"humidity_%":38.3,"pressure_Pa":101600}}}
+[0m
+[0;32mI (519868) MQTT_APP: pub Lora published[0m
+[0;32mI (530128) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.3,"humidity_%":32.9,"pressure_Pa":100096}}}
+[0m
+[0;32mI (530128) MQTT_APP: pub Lora published[0m
+[0;32mI (532378) MQTT_APP: Giờ hiện tại: 13:14:50 - 03/04/2025[0m
+[0;32mI (532378) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":50,"day":3,"month":4,"year":2025}[0m
+[0;32mI (532388) MQTT_APP: pub LED thành công[0m
+[0;32mI (532438) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (532638) MQTT_APP: Giờ hiện tại: 13:14:51 - 03/04/2025[0m
+[0;32mI (532638) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":51,"day":3,"month":4,"year":2025}[0m
+[0;32mI (532648) MQTT_APP: pub LED thành công[0m
+[0;32mI (532698) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (532898) MQTT_APP: Giờ hiện tại: 13:14:51 - 03/04/2025[0m
+[0;32mI (532898) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":14,"second":51,"day":3,"month":4,"year":2025}[0m
+[0;32mI (532908) MQTT_APP: pub LED thành công[0m
+[0;32mI (532948) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (533158) MQTT_APP: Giờ hiện tại: 13:14:51 - 03/04/2025[0m
+[0;32mI (533158) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":14,"second":51,"day":3,"month":4,"year":2025}[0m
+[0;32mI (533168) MQTT_APP: pub LED thành công[0m
+[0;32mI (533208) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (533418) MQTT_APP: Giờ hiện tại: 13:14:51 - 03/04/2025[0m
+[0;32mI (533418) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":14,"second":51,"day":3,"month":4,"year":2025}[0m
+[0;32mI (533428) MQTT_APP: pub LED thành công[0m
+[0;32mI (533458) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (533678) MQTT_APP: Giờ hiện tại: 13:14:52 - 03/04/2025[0m
+[0;32mI (533678) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":14,"second":52,"day":3,"month":4,"year":2025}[0m
+[0;32mI (533688) MQTT_APP: pub LED thành công[0m
+[0;32mI (533728) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (533938) MQTT_APP: Giờ hiện tại: 13:14:52 - 03/04/2025[0m
+[0;32mI (533938) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":14,"second":52,"day":3,"month":4,"year":2025}[0m
+[0;32mI (533948) MQTT_APP: pub LED thành công[0m
+[0;32mI (533988) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (534198) MQTT_APP: Giờ hiện tại: 13:14:52 - 03/04/2025[0m
+[0;32mI (534198) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":52,"day":3,"month":4,"year":2025}[0m
+[0;32mI (534208) MQTT_APP: pub LED thành công[0m
+[0;32mI (534258) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (534458) MQTT_APP: Giờ hiện tại: 13:14:52 - 03/04/2025[0m
+[0;32mI (534458) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":14,"second":52,"day":3,"month":4,"year":2025}[0m
+[0;32mI (534468) MQTT_APP: pub LED thành công[0m
+[0;32mI (534518) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (534718) MQTT_APP: Giờ hiện tại: 13:14:53 - 03/04/2025[0m
+[0;32mI (534718) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":14,"second":53,"day":3,"month":4,"year":2025}[0m
+[0;32mI (534728) MQTT_APP: pub LED thành công[0m
+[0;32mI (534778) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (534978) MQTT_APP: Giờ hiện tại: 13:14:53 - 03/04/2025[0m
+[0;32mI (534978) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":53,"day":3,"month":4,"year":2025}[0m
+[0;32mI (534988) MQTT_APP: pub LED thành công[0m
+[0;32mI (535028) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (535238) MQTT_APP: Giờ hiện tại: 13:14:53 - 03/04/2025[0m
+[0;32mI (535238) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":53,"day":3,"month":4,"year":2025}[0m
+[0;32mI (535248) MQTT_APP: pub LED thành công[0m
+[0;32mI (535288) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (535498) MQTT_APP: Giờ hiện tại: 13:14:53 - 03/04/2025[0m
+[0;32mI (535498) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":14,"second":53,"day":3,"month":4,"year":2025}[0m
+[0;32mI (535508) MQTT_APP: pub LED thành công[0m
+[0;32mI (535548) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (535758) MQTT_APP: Giờ hiện tại: 13:14:54 - 03/04/2025[0m
+[0;32mI (535758) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":54,"day":3,"month":4,"year":2025}[0m
+[0;32mI (535768) MQTT_APP: pub LED thành công[0m
+[0;32mI (535808) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (536018) MQTT_APP: Giờ hiện tại: 13:14:54 - 03/04/2025[0m
+[0;32mI (536018) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":54,"day":3,"month":4,"year":2025}[0m
+[0;32mI (536028) MQTT_APP: pub LED thành công[0m
+[0;32mI (536068) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (536278) MQTT_APP: Giờ hiện tại: 13:14:54 - 03/04/2025[0m
+[0;32mI (536278) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":14,"second":54,"day":3,"month":4,"year":2025}[0m
+[0;32mI (536288) MQTT_APP: pub LED thành công[0m
+[0;32mI (536318) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (536538) MQTT_APP: Giờ hiện tại: 13:14:54 - 03/04/2025[0m
+[0;32mI (536538) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":54,"day":3,"month":4,"year":2025}[0m
+[0;32mI (536548) MQTT_APP: pub LED thành công[0m
+[0;32mI (536608) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (536798) MQTT_APP: Giờ hiện tại: 13:14:55 - 03/04/2025[0m
+[0;32mI (536798) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":14,"second":55,"day":3,"month":4,"year":2025}[0m
+[0;32mI (536808) MQTT_APP: pub LED thành công[0m
+[0;32mI (536848) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (537058) MQTT_APP: Giờ hiện tại: 13:14:55 - 03/04/2025[0m
+[0;32mI (537058) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":55,"day":3,"month":4,"year":2025}[0m
+[0;32mI (537068) MQTT_APP: pub LED thành công[0m
+[0;32mI (537108) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (537318) MQTT_APP: Giờ hiện tại: 13:14:55 - 03/04/2025[0m
+[0;32mI (537318) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":14,"second":55,"day":3,"month":4,"year":2025}[0m
+[0;32mI (537328) MQTT_APP: pub LED thành công[0m
+[0;32mI (537408) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (537578) MQTT_APP: Giờ hiện tại: 13:14:55 - 03/04/2025[0m
+[0;32mI (537578) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":55,"day":3,"month":4,"year":2025}[0m
+[0;32mI (537588) MQTT_APP: pub LED thành công[0m
+[0;32mI (537618) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (537838) MQTT_APP: Giờ hiện tại: 13:14:56 - 03/04/2025[0m
+[0;32mI (537838) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":56,"day":3,"month":4,"year":2025}[0m
+[0;32mI (537848) MQTT_APP: pub LED thành công[0m
+[0;32mI (537928) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (538098) MQTT_APP: Giờ hiện tại: 13:14:56 - 03/04/2025[0m
+[0;32mI (538098) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":14,"second":56,"day":3,"month":4,"year":2025}[0m
+[0;32mI (538108) MQTT_APP: pub LED thành công[0m
+[0;32mI (538178) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (538358) MQTT_APP: Giờ hiện tại: 13:14:56 - 03/04/2025[0m
+[0;32mI (538358) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":56,"day":3,"month":4,"year":2025}[0m
+[0;32mI (538368) MQTT_APP: pub LED thành công[0m
+[0;32mI (538438) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (538618) MQTT_APP: Giờ hiện tại: 13:14:57 - 03/04/2025[0m
+[0;32mI (538618) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":14,"second":57,"day":3,"month":4,"year":2025}[0m
+[0;32mI (538628) MQTT_APP: pub LED thành công[0m
+[0;32mI (538878) MQTT_APP: Giờ hiện tại: 13:14:57 - 03/04/2025[0m
+[0;32mI (538878) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":57,"day":3,"month":4,"year":2025}[0m
+[0;32mI (538888) MQTT_APP: pub LED thành công[0m
+[0;32mI (539138) MQTT_APP: Giờ hiện tại: 13:14:57 - 03/04/2025[0m
+[0;32mI (539138) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":57,"day":3,"month":4,"year":2025}[0m
+[0;32mI (539148) MQTT_APP: pub LED thành công[0m
+[0;32mI (539648) MQTT_APP: Giờ hiện tại: 13:14:58 - 03/04/2025[0m
+[0;32mI (539648) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":58,"day":3,"month":4,"year":2025}[0m
+[0;32mI (539658) MQTT_APP: pub LED thành công[0m
+[0;32mI (539868) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (539918) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (540068) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (540068) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (540158) MQTT_APP: Giờ hiện tại: 13:14:58 - 03/04/2025[0m
+[0;32mI (540158) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":58,"day":3,"month":4,"year":2025}[0m
+[0;32mI (540168) MQTT_APP: pub LED thành công[0m
+[0;32mI (540218) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (540418) MQTT_APP: Giờ hiện tại: 13:14:58 - 03/04/2025[0m
+[0;32mI (540418) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":14,"second":58,"day":3,"month":4,"year":2025}[0m
+[0;32mI (540428) MQTT_APP: pub LED thành công[0m
+[0;32mI (540468) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (540678) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.8,"humidity_%":48.7,"pressure_Pa":100526}}}
+[0m
+[0;32mI (540678) MQTT_APP: pub Lora published[0m
+[0;32mI (540688) MQTT_APP: Giờ hiện tại: 13:14:59 - 03/04/2025[0m
+[0;32mI (540688) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":59,"day":3,"month":4,"year":2025}[0m
+[0;32mI (540698) MQTT_APP: pub LED thành công[0m
+[0;32mI (540828) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (540958) MQTT_APP: Giờ hiện tại: 13:14:59 - 03/04/2025[0m
+[0;32mI (540958) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":14,"second":59,"day":3,"month":4,"year":2025}[0m
+[0;32mI (540968) MQTT_APP: pub LED thành công[0m
+[0;32mI (541008) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (541218) MQTT_APP: Giờ hiện tại: 13:14:59 - 03/04/2025[0m
+[0;32mI (541218) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":14,"second":59,"day":3,"month":4,"year":2025}[0m
+[0;32mI (541228) MQTT_APP: pub LED thành công[0m
+[0;32mI (541278) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (541478) MQTT_APP: Giờ hiện tại: 13:14:59 - 03/04/2025[0m
+[0;32mI (541478) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":14,"second":59,"day":3,"month":4,"year":2025}[0m
+[0;32mI (541488) MQTT_APP: pub LED thành công[0m
+[0;32mI (541538) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (541738) MQTT_APP: Giờ hiện tại: 13:15:00 - 03/04/2025[0m
+[0;32mI (541738) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":15,"second":0,"day":3,"month":4,"year":2025}[0m
+[0;32mI (541748) MQTT_APP: pub LED thành công[0m
+[0;32mI (541788) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (542248) MQTT_APP: Giờ hiện tại: 13:15:00 - 03/04/2025[0m
+[0;32mI (542248) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":0,"day":3,"month":4,"year":2025}[0m
+[0;32mI (542258) MQTT_APP: pub LED thành công[0m
+[0;32mI (542298) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (542758) MQTT_APP: Giờ hiện tại: 13:15:01 - 03/04/2025[0m
+[0;32mI (542758) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":15,"second":1,"day":3,"month":4,"year":2025}[0m
+[0;32mI (542768) MQTT_APP: pub LED thành công[0m
+[0;32mI (542808) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (543268) MQTT_APP: Giờ hiện tại: 13:15:01 - 03/04/2025[0m
+[0;32mI (543268) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":1,"day":3,"month":4,"year":2025}[0m
+[0;32mI (543278) MQTT_APP: pub LED thành công[0m
+[0;32mI (543318) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (543528) MQTT_APP: Giờ hiện tại: 13:15:01 - 03/04/2025[0m
+[0;32mI (543528) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":15,"second":1,"day":3,"month":4,"year":2025}[0m
+[0;32mI (543538) MQTT_APP: pub LED thành công[0m
+[0;32mI (543588) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (543788) MQTT_APP: Giờ hiện tại: 13:15:02 - 03/04/2025[0m
+[0;32mI (543788) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":2,"day":3,"month":4,"year":2025}[0m
+[0;32mI (543798) MQTT_APP: pub LED thành công[0m
+[0;32mI (543838) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (544048) MQTT_APP: Giờ hiện tại: 13:15:02 - 03/04/2025[0m
+[0;32mI (544048) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":15,"second":2,"day":3,"month":4,"year":2025}[0m
+[0;32mI (544058) MQTT_APP: pub LED thành công[0m
+[0;32mI (544098) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (544308) MQTT_APP: Giờ hiện tại: 13:15:02 - 03/04/2025[0m
+[0;32mI (544308) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":2,"day":3,"month":4,"year":2025}[0m
+[0;32mI (544318) MQTT_APP: pub LED thành công[0m
+[0;32mI (544358) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (544818) MQTT_APP: Giờ hiện tại: 13:15:03 - 03/04/2025[0m
+[0;32mI (544818) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":3,"day":3,"month":4,"year":2025}[0m
+[0;32mI (544828) MQTT_APP: pub LED thành công[0m
+[0;32mI (544868) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (545078) MQTT_APP: Giờ hiện tại: 13:15:03 - 03/04/2025[0m
+[0;32mI (545078) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":15,"second":3,"day":3,"month":4,"year":2025}[0m
+[0;32mI (545088) MQTT_APP: pub LED thành công[0m
+[0;32mI (545138) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (545338) MQTT_APP: Giờ hiện tại: 13:15:03 - 03/04/2025[0m
+[0;32mI (545338) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":3,"day":3,"month":4,"year":2025}[0m
+[0;32mI (545348) MQTT_APP: pub LED thành công[0m
+[0;32mI (545398) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (545598) MQTT_APP: Giờ hiện tại: 13:15:04 - 03/04/2025[0m
+[0;32mI (545598) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":4,"day":3,"month":4,"year":2025}[0m
+[0;32mI (545608) MQTT_APP: pub LED thành công[0m
+[0;32mI (545658) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (546358) MQTT_APP: Giờ hiện tại: 13:15:04 - 03/04/2025[0m
+[0;32mI (546358) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":4,"day":3,"month":4,"year":2025}[0m
+[0;32mI (546368) MQTT_APP: pub LED thành công[0m
+[0;32mI (546408) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (546868) MQTT_APP: Giờ hiện tại: 13:15:05 - 03/04/2025[0m
+[0;32mI (546868) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":5,"day":3,"month":4,"year":2025}[0m
+[0;32mI (546878) MQTT_APP: pub LED thành công[0m
+[0;32mI (546918) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (547128) MQTT_APP: Giờ hiện tại: 13:15:05 - 03/04/2025[0m
+[0;32mI (547128) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":13,"minute":15,"second":5,"day":3,"month":4,"year":2025}[0m
+[0;32mI (547138) MQTT_APP: pub LED thành công[0m
+[0;32mI (547188) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (547388) MQTT_APP: Giờ hiện tại: 13:15:05 - 03/04/2025[0m
+[0;32mI (547388) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":5,"day":3,"month":4,"year":2025}[0m
+[0;32mI (547398) MQTT_APP: pub LED thành công[0m
+[0;32mI (547438) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (547648) MQTT_APP: Giờ hiện tại: 13:15:06 - 03/04/2025[0m
+[0;32mI (547648) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":15,"second":6,"day":3,"month":4,"year":2025}[0m
+[0;32mI (547658) MQTT_APP: pub LED thành công[0m
+[0;32mI (547698) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (547908) MQTT_APP: Giờ hiện tại: 13:15:06 - 03/04/2025[0m
+[0;32mI (547908) MQTT_APP: Sending JSON: {"inputs":[1,1,0,1,1],"hour":13,"minute":15,"second":6,"day":3,"month":4,"year":2025}[0m
+[0;32mI (547918) MQTT_APP: pub LED thành công[0m
+[0;32mI (547978) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (548168) MQTT_APP: Giờ hiện tại: 13:15:06 - 03/04/2025[0m
+[0;32mI (548168) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":6,"day":3,"month":4,"year":2025}[0m
+[0;32mI (548178) MQTT_APP: pub LED thành công[0m
+[0;32mI (548218) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (548428) MQTT_APP: Giờ hiện tại: 13:15:06 - 03/04/2025[0m
+[0;32mI (548428) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":6,"day":3,"month":4,"year":2025}[0m
+[0;32mI (548438) MQTT_APP: pub LED thành công[0m
+[0;32mI (548478) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (548688) MQTT_APP: Giờ hiện tại: 13:15:07 - 03/04/2025[0m
+[0;32mI (548688) MQTT_APP: Sending JSON: {"inputs":[0,1,1,1,1],"hour":13,"minute":15,"second":7,"day":3,"month":4,"year":2025}[0m
+[0;32mI (548698) MQTT_APP: pub LED thành công[0m
+[0;32mI (548738) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (548948) MQTT_APP: Giờ hiện tại: 13:15:07 - 03/04/2025[0m
+[0;32mI (548948) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":7,"day":3,"month":4,"year":2025}[0m
+[0;32mI (548958) MQTT_APP: pub LED thành công[0m
+[0;32mI (549008) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (549208) MQTT_APP: Giờ hiện tại: 13:15:07 - 03/04/2025[0m
+[0;32mI (549208) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":7,"day":3,"month":4,"year":2025}[0m
+[0;32mI (549218) MQTT_APP: pub LED thành công[0m
+[0;32mI (549258) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (549468) MQTT_APP: Giờ hiện tại: 13:15:07 - 03/04/2025[0m
+[0;32mI (549468) MQTT_APP: Sending JSON: {"inputs":[1,1,1,0,1],"hour":13,"minute":15,"second":7,"day":3,"month":4,"year":2025}[0m
+[0;32mI (549478) MQTT_APP: pub LED thành công[0m
+[0;32mI (549518) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (549728) MQTT_APP: Giờ hiện tại: 13:15:08 - 03/04/2025[0m
+[0;32mI (549728) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":8,"day":3,"month":4,"year":2025}[0m
+[0;32mI (549738) MQTT_APP: pub LED thành công[0m
+[0;32mI (549768) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (550988) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.5,"humidity_%":57,"pressure_Pa":101474}}}
+[0m
+[0;32mI (550988) MQTT_APP: pub Lora published[0m
+[0;32mI (550988) MQTT_APP: Giờ hiện tại: 13:15:09 - 03/04/2025[0m
+[0;32mI (550998) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":15,"second":9,"day":3,"month":4,"year":2025}[0m
+[0;32mI (551008) MQTT_APP: pub LED thành công[0m
+[0;32mI (551168) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (551268) MQTT_APP: Giờ hiện tại: 13:15:09 - 03/04/2025[0m
+[0;32mI (551268) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":9,"day":3,"month":4,"year":2025}[0m
+[0;32mI (551278) MQTT_APP: pub LED thành công[0m
+[0;32mI (551318) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (551778) MQTT_APP: Giờ hiện tại: 13:15:10 - 03/04/2025[0m
+[0;32mI (551778) MQTT_APP: Sending JSON: {"inputs":[1,0,1,1,1],"hour":13,"minute":15,"second":10,"day":3,"month":4,"year":2025}[0m
+[0;32mI (551788) MQTT_APP: pub LED thành công[0m
+[0;32mI (551828) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (552038) MQTT_APP: Giờ hiện tại: 13:15:10 - 03/04/2025[0m
+[0;32mI (552038) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":10,"day":3,"month":4,"year":2025}[0m
+[0;32mI (552048) MQTT_APP: pub LED thành công[0m
+[0;32mI (552108) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (553048) MQTT_APP: Giờ hiện tại: 13:15:11 - 03/04/2025[0m
+[0;32mI (553048) MQTT_APP: Sending JSON: {"inputs":[0,1,1,1,1],"hour":13,"minute":15,"second":11,"day":3,"month":4,"year":2025}[0m
+[0;32mI (553058) MQTT_APP: pub LED thành công[0m
+[0;32mI (553118) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (553308) MQTT_APP: Giờ hiện tại: 13:15:11 - 03/04/2025[0m
+[0;32mI (553308) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":13,"minute":15,"second":11,"day":3,"month":4,"year":2025}[0m
+[0;32mI (553318) MQTT_APP: pub LED thành công[0m
+[0;32mI (553368) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (561318) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.1,"humidity_%":57.9,"pressure_Pa":101035}}}
+[0m
+[0;32mI (561318) MQTT_APP: pub Lora published[0m
+[0;32mI (571658) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":30.8,"pressure_Pa":100929}}}
+[0m
+[0;32mI (571658) MQTT_APP: pub Lora published[0m
+[0;32mI (582158) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.6,"humidity_%":48.8,"pressure_Pa":101896}}}
+[0m
+[0;32mI (582158) MQTT_APP: pub Lora published[0m
+[0;32mI (592418) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.3,"humidity_%":59.8,"pressure_Pa":101120}}}
+[0m
+[0;32mI (592418) MQTT_APP: pub Lora published[0m
+[0;32mI (602918) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":47.8,"pressure_Pa":100228}}}
+[0m
+[0;32mI (602918) MQTT_APP: pub Lora published[0m
+[0;32mI (613188) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":52.3,"pressure_Pa":101677}}}
+[0m
+[0;32mI (6

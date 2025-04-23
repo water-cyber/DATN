@@ -112,13 +112,13 @@ void wifi_init_sta(void) {
      * happened. */
     if (bits & WIFI_CONNECTED_BIT) {
         ESP_LOGI(TAG, "connected to ap SSID:%s password:%s",ssid, password);
-            gateway_data.status_wifi = true;
+            
     } else if (bits & WIFI_FAIL_BIT) {
         ESP_LOGI(TAG, "Failed to connect to SSID:%s, password:%s",ssid, password);
-            gateway_data.status_wifi = false;
+            
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
-            gateway_data.status_wifi = false;
+            
     }
 }
 

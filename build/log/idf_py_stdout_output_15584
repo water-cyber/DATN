@@ -1,0 +1,2981 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 23 2025 01:51:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2e10ch (188684) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e134 vaddr=3ffb0000 size=01ee4h (  7908) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=b5b8ch (744332) map[0m
+[0;32mI (430) esp_image: segment 3: paddr=000f5bb4 vaddr=3ffb1ee4 size=021d4h (  8660) load[0m
+[0;32mI (434) esp_image: segment 4: paddr=000f7d90 vaddr=40080000 size=1a7f0h (108528) load[0m
+[0;32mI (492) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (492) boot: Disabling RNG early entropy source...[0m
+[0;32mI (504) cpu_start: Multicore app[0m
+[0;32mI (512) cpu_start: Pro cpu start user code[0m
+[0;32mI (512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (512) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     datn[0m
+[0;32mI (520) app_init: App version:      1[0m
+[0;32mI (524) app_init: Compile time:     Mar 23 2025 01:51:01[0m
+[0;32mI (530) app_init: ELF file SHA256:  2e59bfb02...[0m
+[0;32mI (535) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (541) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (545) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (550) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (555) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (563) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFB8B88 len 00027478 (157 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 4009A7F0 len 00005810 (22 KiB): IRAM[0m
+[0;32mI (595) spi_flash: detected chip: generic[0m
+[0;32mI (598) spi_flash: flash io: dio[0m
+[0;33mW (602) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (615) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (627) main_task: Started on CPU0[0m
+[0;32mI (637) main_task: Calling app_main()[0m
+[0;32mI (667) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (667) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (687) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (697) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) RS485: RS485 Initialized[0m
+[0;32mI (737) RS485: UART2 Initialized[0m
+[0;32mI (737) ETH_W5500: Initializing W5500 Ethernet...[0m
+[0;32mI (757) esp_eth.netif.netif_glue: 00:08:dc:ab:cd:ef[0m
+[0;32mI (757) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+I (777) wifi:wifi driver task: 3ffc4dac, prio:23, stack:6656, core=0
+I (787) wifi:wifi firmware version: ccaebfa
+I (787) wifi:wifi certification version: v7.0
+I (787) wifi:config NVS flash: enabled
+I (787) wifi:config nano formating: disabled
+I (797) wifi:Init data frame dynamic rx buffer num: 32
+I (797) wifi:Init static rx mgmt buffer num: 5
+I (807) wifi:Init management short buffer num: 32
+I (807) wifi:Init dynamic tx buffer num: 32
+I (807) wifi:Init static rx buffer size: 1600
+I (817) wifi:Init static rx buffer num: 10
+I (817) wifi:Init dynamic rx buffer num: 32
+[0;32mI (827) wifi_init: rx ba win: 6[0m
+[0;32mI (827) wifi_init: accept mbox: 6[0m
+[0;32mI (827) wifi_init: tcpip mbox: 32[0m
+[0;32mI (837) wifi_init: udp mbox: 6[0m
+[0;32mI (837) wifi_init: tcp mbox: 6[0m
+[0;32mI (847) wifi_init: tcp tx win: 5760[0m
+[0;32mI (847) wifi_init: tcp rx win: 5760[0m
+[0;32mI (847) wifi_init: tcp mss: 1440[0m
+[0;32mI (857) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (857) wifi_init: WiFi RX IRAM OP enabled[0m
+W (867) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (877) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (957) wifi:mode : sta (8c:4b:14:94:f3:88)
+I (967) wifi:enable tsf
+[0;32mI (967) WiFi_STA: wifi_init_sta finished.[0m
+I (977) wifi:new:<7,2>, old:<1,0>, ap:<255,255>, sta:<7,2>, prof:1, snd_ch_cfg:0x0
+I (977) wifi:state: init -> auth (0xb0)
+I (997) wifi:state: auth -> assoc (0x0)
+I (997) wifi:state: assoc -> run (0x10)
+I (1007) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:0, winSize:64
+I (1037) wifi:connected with Hassagi, aid = 3, channel 7, 40D, bssid = c8:3a:35:1a:13:40
+I (1037) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (1047) wifi:pm start, type: 1
+
+I (1047) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1057) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (4557) esp_netif_handlers: sta ip: 192.168.5.121, mask: 255.255.255.0, gw: 192.168.5.1[0m
+[0;32mI (4557) WiFi_STA: got ip:192.168.5.121[0m
+[0;32mI (4557) WiFi_STA: connected to ap SSID:Hassagi password:0978111969[0m
+[0;32mI (4567) MQTT_APP: MQTT sự kiện khác: 7[0m
+[0;32mI (4577) main_task: Returned from app_main()[0m
+[0;32mI (4617) MQTT_APP: Đã kết nối MQTT[0m
+[0;32mI (4637) MQTT_APP: Đã đăng ký chủ đề thành công[0m
+[0;32mI (4827) MQTT_APP: Giờ hiện tại: 00:28:29 - 01/01/2000[0m
+[0;32mI (4827) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":0,"minute":28,"second":29,"day":1,"month":1,"year":2000}[0m
+[0;32mI (4837) MQTT_APP: pub LED thành công[0m
+[0;32mI (4857) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (23157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.7,"humidity_%":34.9,"pressure_Pa":100073}}}
+[0m
+[0;32mI (23157) MQTT_APP: pub Lora published[0m
+[0;32mI (23307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":258.3,"current_A":12.44,"power_kW":7.23}}}
+[0m
+[0;32mI (23407) MQTT_APP: pub RS485 published[0m
+[0;32mI (33557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.42,"current_A":7.03,"power_kW":6.29}}}
+[0m
+[0;32mI (33657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.9,"humidity_%":54,"pressure_Pa":100165}}}
+[0m
+[0;32mI (33657) MQTT_APP: pub RS485 published[0m
+[0;32mI (33667) MQTT_APP: pub Lora published[0m
+[0;32mI (43907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.09,"current_A":17.6,"power_kW":8.99}}}
+[0m
+[0;32mI (44007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84,"humidity_%":41.2,"pressure_Pa":100303}}}
+[0m
+[0;32mI (44007) MQTT_APP: pub RS485 published[0m
+[0;32mI (44007) MQTT_APP: pub Lora published[0m
+I (44027) wifi:<ba-del>idx:0, tid:0
+I (44027) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:16, winSize:64
+[0;32mI (54297) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.8,"humidity_%":41.6,"pressure_Pa":101335}}}
+[0m
+[0;32mI (54297) MQTT_APP: pub Lora published[0m
+[0;32mI (54447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":297.26,"current_A":12.67,"power_kW":7.33}}}
+[0m
+[0;32mI (54547) MQTT_APP: pub RS485 published[0m
+[0;32mI (64697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.67,"current_A":12.93,"power_kW":5.85}}}
+[0m
+[0;32mI (64797) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.9,"humidity_%":34.9,"pressure_Pa":100579}}}
+[0m
+[0;32mI (64797) MQTT_APP: pub RS485 published[0m
+[0;32mI (64797) MQTT_APP: pub Lora published[0m
+I (65017) wifi:[ADDBA]RX DELBA, reason:38, delete tid:0, initiator:0(recipient)
+[0;32mI (75057) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.5,"humidity_%":42.8,"pressure_Pa":100091}}}
+[0m
+[0;32mI (75057) MQTT_APP: pub Lora published[0m
+[0;32mI (75207) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":294.57,"current_A":1.53,"power_kW":9.44}}}
+[0m
+[0;32mI (75307) MQTT_APP: pub RS485 published[0m
+[0;32mI (85457) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.3,"current_A":3.22,"power_kW":9.49}}}
+[0m
+[0;32mI (85557) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.8,"humidity_%":59,"pressure_Pa":100124}}}
+[0m
+[0;32mI (85557) MQTT_APP: pub RS485 published[0m
+[0;32mI (85557) MQTT_APP: pub Lora published[0m
+I (85567) wifi:<ba-del>idx:0, tid:0
+I (85567) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:26, winSize:64
+[0;32mI (95817) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.4,"humidity_%":40.1,"pressure_Pa":100853}}}
+[0m
+[0;32mI (95817) MQTT_APP: pub Lora published[0m
+[0;32mI (95967) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.08,"current_A":8.33,"power_kW":9.81}}}
+[0m
+[0;32mI (96067) MQTT_APP: pub RS485 published[0m
+I (97177) wifi:[ADDBA]RX DELBA, reason:38, delete tid:0, initiator:0(recipient)
+[0;32mI (106217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.63,"current_A":16.25,"power_kW":10.15}}}
+[0m
+[0;32mI (106317) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.5,"humidity_%":31.3,"pressure_Pa":101865}}}
+[0m
+[0;32mI (106317) MQTT_APP: pub RS485 published[0m
+[0;32mI (106327) MQTT_APP: pub Lora published[0m
+[0;32mI (116587) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.4,"humidity_%":42.9,"pressure_Pa":100501}}}
+[0m
+[0;32mI (116587) MQTT_APP: pub Lora published[0m
+[0;32mI (116737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.95,"current_A":5.04,"power_kW":8.98}}}
+[0m
+[0;32mI (116837) MQTT_APP: pub RS485 published[0m
+[0;32mI (126987) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":282.52,"current_A":6.16,"power_kW":8.38}}}
+[0m
+[0;32mI (127087) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.8,"humidity_%":32.3,"pressure_Pa":101505}}}
+[0m
+[0;32mI (127087) MQTT_APP: pub RS485 published[0m
+[0;32mI (127087) MQTT_APP: pub Lora published[0m
+[0;32mI (137347) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.4,"humidity_%":50.1,"pressure_Pa":100897}}}
+[0m
+[0;32mI (137347) MQTT_APP: pub Lora published[0m
+[0;32mI (137497) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.28,"current_A":17.58,"power_kW":6.97}}}
+[0m
+[0;32mI (137597) MQTT_APP: pub RS485 published[0m
+[0;32mI (147747) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.45,"current_A":15.35,"power_kW":7.42}}}
+[0m
+[0;32mI (147847) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.4,"humidity_%":50.4,"pressure_Pa":101609}}}
+[0m
+[0;32mI (147847) MQTT_APP: pub RS485 published[0m
+[0;32mI (147857) MQTT_APP: pub Lora published[0m
+[0;32mI (158117) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":36.8,"pressure_Pa":100412}}}
+[0m
+[0;32mI (158117) MQTT_APP: pub Lora published[0m
+[0;32mI (158267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.57,"current_A":14.08,"power_kW":6.68}}}
+[0m
+[0;32mI (158367) MQTT_APP: pub RS485 published[0m
+[0;32mI (168517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":262.42,"current_A":5.82,"power_kW":9.67}}}
+[0m
+[0;32mI (168617) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.3,"humidity_%":43,"pressure_Pa":101006}}}
+[0m
+[0;32mI (168617) MQTT_APP: pub RS485 published[0m
+[0;32mI (168617) MQTT_APP: pub Lora published[0m
+[0;32mI (178877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.1,"humidity_%":49.5,"pressure_Pa":100712}}}
+[0m
+[0;32mI (178877) MQTT_APP: pub Lora published[0m
+[0;32mI (179027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.01,"current_A":10.31,"power_kW":7.57}}}
+[0m
+[0;32mI (179127) MQTT_APP: pub RS485 published[0m
+[0;32mI (189277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":279.35,"current_A":6.72,"power_kW":9.95}}}
+[0m
+[0;32mI (189377) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.6,"humidity_%":59,"pressure_Pa":101640}}}
+[0m
+[0;32mI (189377) MQTT_APP: pub RS485 published[0m
+[0;32mI (189377) MQTT_APP: pub Lora published[0m
+[0;32mI (199637) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":35.4,"pressure_Pa":101223}}}
+[0m
+[0;32mI (199637) MQTT_APP: pub Lora published[0m
+[0;32mI (199787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":289.6,"current_A":5.26,"power_kW":8.06}}}
+[0m
+[0;32mI (199887) MQTT_APP: pub RS485 published[0m
+[0;32mI (210037) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":294.2,"current_A":4.66,"power_kW":9.26}}}
+[0m
+[0;32mI (210137) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.3,"humidity_%":47,"pressure_Pa":101238}}}
+[0m
+[0;32mI (210137) MQTT_APP: pub RS485 published[0m
+[0;32mI (210137) MQTT_APP: pub Lora published[0m
+[0;32mI (220387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":244.9,"current_A":10.59,"power_kW":6.47}}}
+[0m
+[0;32mI (220487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.4,"humidity_%":46.3,"pressure_Pa":100738}}}
+[0m
+[0;32mI (220487) MQTT_APP: pub RS485 published[0m
+[0;32mI (220497) MQTT_APP: pub Lora published[0m
+[0;32mI (230777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.5,"humidity_%":51.7,"pressure_Pa":101272}}}
+[0m
+[0;32mI (230777) MQTT_APP: pub Lora published[0m
+[0;32mI (230927) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":239.47,"current_A":5.96,"power_kW":6.23}}}
+[0m
+[0;32mI (231027) MQTT_APP: pub RS485 published[0m
+[0;32mI (241177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.15,"current_A":5.34,"power_kW":9.11}}}
+[0m
+[0;32mI (241277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":34.4,"pressure_Pa":101968}}}
+[0m
+[0;32mI (241277) MQTT_APP: pub RS485 published[0m
+[0;32mI (241277) MQTT_APP: pub Lora published[0m
+[0;32mI (251537) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.9,"humidity_%":55.2,"pressure_Pa":101244}}}
+[0m
+[0;32mI (251537) MQTT_APP: pub Lora published[0m
+[0;32mI (251687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":295.18,"current_A":16.92,"power_kW":8.91}}}
+[0m
+[0;32mI (251787) MQTT_APP: pub RS485 published[0m
+[0;32mI (261937) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":253.47,"current_A":5.1,"power_kW":7.11}}}
+[0m
+[0;32mI (262037) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.3,"humidity_%":56.9,"pressure_Pa":101397}}}
+[0m
+[0;32mI (262037) MQTT_APP: pub RS485 published[0m
+[0;32mI (262037) MQTT_APP: pub Lora published[0m
+[0;32mI (272307) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":57.7,"pressure_Pa":100761}}}
+[0m
+[0;32mI (272307) MQTT_APP: pub Lora published[0m
+I (272317) wifi:<ba-del>idx:0, tid:0
+I (272317) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:68, winSize:64
+[0;32mI (272457) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":225.35,"current_A":8.95,"power_kW":5.67}}}
+[0m
+[0;32mI (272557) MQTT_APP: pub RS485 published[0m
+[0;32mI (282707) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.01,"current_A":12.6,"power_kW":7.84}}}
+[0m
+[0;32mI (282807) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.9,"humidity_%":57.4,"pressure_Pa":101331}}}
+[0m
+[0;32mI (282807) MQTT_APP: pub RS485 published[0m
+[0;32mI (282807) MQTT_APP: pub Lora published[0m
+[0;32mI (293067) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.5,"humidity_%":48.9,"pressure_Pa":101407}}}
+[0m
+[0;32mI (293067) MQTT_APP: pub Lora published[0m
+[0;32mI (293217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.93,"current_A":9.8,"power_kW":6.55}}}
+[0m
+[0;32mI (293317) MQTT_APP: pub RS485 published[0m
+[0;32mI (303467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":276.08,"current_A":9.31,"power_kW":5.38}}}
+[0m
+[0;32mI (303567) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.6,"humidity_%":36.3,"pressure_Pa":101502}}}
+[0m
+[0;32mI (303567) MQTT_APP: pub RS485 published[0m
+[0;32mI (303577) MQTT_APP: pub Lora published[0m
+[0;32mI (313837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":49.7,"pressure_Pa":100651}}}
+[0m
+[0;32mI (313837) MQTT_APP: pub Lora published[0m
+[0;32mI (313987) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":249.03,"current_A":11.31,"power_kW":9.19}}}
+[0m
+[0;32mI (314087) MQTT_APP: pub RS485 published[0m
+[0;32mI (324237) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.23,"current_A":14.6,"power_kW":8.45}}}
+[0m
+[0;32mI (324337) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":50.9,"pressure_Pa":100180}}}
+[0m
+[0;32mI (324337) MQTT_APP: pub RS485 published[0m
+[0;32mI (324347) MQTT_APP: pub Lora published[0m
+[0;32mI (334607) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.7,"humidity_%":52.5,"pressure_Pa":100200}}}
+[0m
+[0;32mI (334607) MQTT_APP: pub Lora published[0m
+[0;32mI (334757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.64,"current_A":17.48,"power_kW":5.5}}}
+[0m
+[0;32mI (334857) MQTT_APP: pub RS485 published[0m
+[0;32mI (345007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.97,"current_A":4.81,"power_kW":9.65}}}
+[0m
+[0;32mI (345107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85,"humidity_%":37.6,"pressure_Pa":101412}}}
+[0m
+[0;32mI (345107) MQTT_APP: pub RS485 published[0m
+[0;32mI (345107) MQTT_APP: pub Lora published[0m
+[0;32mI (355357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.53,"current_A":3.47,"power_kW":8.73}}}
+[0m
+[0;32mI (355457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.8,"humidity_%":59.9,"pressure_Pa":100209}}}
+[0m
+[0;32mI (355457) MQTT_APP: pub RS485 published[0m
+[0;32mI (355467) MQTT_APP: pub Lora published[0m
+[0;32mI (365747) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.2,"humidity_%":40.5,"pressure_Pa":101176}}}
+[0m
+[0;32mI (365747) MQTT_APP: pub Lora published[0m
+[0;32mI (365897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":253.24,"current_A":10.66,"power_kW":5.44}}}
+[0m
+[0;32mI (365997) MQTT_APP: pub RS485 published[0m
+[0;32mI (376147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.55,"current_A":13.57,"power_kW":7.78}}}
+[0m
+[0;32mI (376247) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":58.5,"pressure_Pa":101016}}}
+[0m
+[0;32mI (376247) MQTT_APP: pub RS485 published[0m
+[0;32mI (376257) MQTT_APP: pub Lora published[0m
+[0;32mI (386507) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":55.7,"pressure_Pa":101711}}}
+[0m
+[0;32mI (386507) MQTT_APP: pub Lora published[0m
+[0;32mI (386657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":278.14,"current_A":19.37,"power_kW":10.91}}}
+[0m
+[0;32mI (386757) MQTT_APP: pub RS485 published[0m
+[0;32mI (396907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":297.31,"current_A":8.89,"power_kW":8.77}}}
+[0m
+[0;32mI (397007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":56.2,"pressure_Pa":100633}}}
+[0m
+[0;32mI (397007) MQTT_APP: pub RS485 published[0m
+[0;32mI (397007) MQTT_APP: pub Lora published[0m
+[0;32mI (407277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":55.8,"pressure_Pa":101200}}}
+[0m
+[0;32mI (407277) MQTT_APP: pub Lora published[0m
+[0;32mI (407427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.6,"current_A":15.47,"power_kW":7.3}}}
+[0m
+[0;32mI (407527) MQTT_APP: pub RS485 published[0m
+[0;32mI (417677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":238,"current_A":6.35,"power_kW":8.13}}}
+[0m
+[0;32mI (417777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.5,"humidity_%":54.6,"pressure_Pa":101107}}}
+[0m
+[0;32mI (417777) MQTT_APP: pub RS485 published[0m
+[0;32mI (417787) MQTT_APP: pub Lora published[0m
+[0;32mI (428027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.18,"current_A":17.85,"power_kW":8.15}}}
+[0m
+[0;32mI (428127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":59.3,"pressure_Pa":101360}}}
+[0m
+[0;32mI (428127) MQTT_APP: pub RS485 published[0m
+[0;32mI (428137) MQTT_APP: pub Lora published[0m
+[0;32mI (438417) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.3,"humidity_%":40.2,"pressure_Pa":100917}}}
+[0m
+[0;32mI (438417) MQTT_APP: pub Lora published[0m
+[0;32mI (438567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.19,"current_A":7.47,"power_kW":10.95}}}
+[0m
+[0;32mI (438667) MQTT_APP: pub RS485 published[0m
+[0;32mI (448817) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":248.85,"current_A":18.59,"power_kW":5.3}}}
+[0m
+[0;32mI (448917) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":57.3,"pressure_Pa":101103}}}
+[0m
+[0;32mI (448917) MQTT_APP: pub RS485 published[0m
+[0;32mI (448917) MQTT_APP: pub Lora published[0m
+[0;32mI (459187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.4,"humidity_%":43.2,"pressure_Pa":100973}}}
+[0m
+[0;32mI (459187) MQTT_APP: pub Lora published[0m
+[0;32mI (459337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":203.97,"current_A":0.5,"power_kW":8.8}}}
+[0m
+[0;32mI (459437) MQTT_APP: pub RS485 published[0m
+[0;32mI (469587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.58,"current_A":3.76,"power_kW":9.34}}}
+[0m
+[0;32mI (469687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":50,"pressure_Pa":100520}}}
+[0m
+[0;32mI (469687) MQTT_APP: pub RS485 published[0m
+[0;32mI (469687) MQTT_APP: pub Lora published[0m
+[0;32mI (479937) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":274.49,"current_A":2.49,"power_kW":10.1}}}
+[0m
+[0;32mI (480037) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88,"humidity_%":37.9,"pressure_Pa":101832}}}
+[0m
+[0;32mI (480037) MQTT_APP: pub RS485 published[0m
+[0;32mI (480037) MQTT_APP: pub Lora published[0m
+[0;32mI (490317) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.9,"humidity_%":58.3,"pressure_Pa":101970}}}
+[0m
+[0;32mI (490317) MQTT_APP: pub Lora published[0m
+[0;32mI (490467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.23,"current_A":10.71,"power_kW":8.18}}}
+[0m
+[0;32mI (490567) MQTT_APP: pub RS485 published[0m
+[0;32mI (500717) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.76,"current_A":4.44,"power_kW":7.96}}}
+[0m
+[0;32mI (500817) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.6,"humidity_%":59.9,"pressure_Pa":101230}}}
+[0m
+[0;32mI (500817) MQTT_APP: pub RS485 published[0m
+[0;32mI (500817) MQTT_APP: pub Lora published[0m
+[0;32mI (511087) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.1,"humidity_%":56.4,"pressure_Pa":101560}}}
+[0m
+[0;32mI (511087) MQTT_APP: pub Lora published[0m
+[0;32mI (511237) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.51,"current_A":0.03,"power_kW":8.01}}}
+[0m
+[0;32mI (511337) MQTT_APP: pub RS485 published[0m
+[0;32mI (521487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":274.49,"current_A":13.2,"power_kW":10.12}}}
+[0m
+[0;32mI (521587) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.5,"humidity_%":48,"pressure_Pa":100418}}}
+[0m
+[0;32mI (521587) MQTT_APP: pub RS485 published[0m
+[0;32mI (521597) MQTT_APP: pub Lora published[0m
+[0;32mI (531847) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.3,"humidity_%":38.8,"pressure_Pa":100117}}}
+[0m
+[0;32mI (531847) MQTT_APP: pub Lora published[0m
+[0;32mI (531997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":208.5,"current_A":4.95,"power_kW":6.11}}}
+[0m
+[0;32mI (532097) MQTT_APP: pub RS485 published[0m
+[0;32mI (542247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":293.53,"current_A":5.6,"power_kW":7.03}}}
+[0m
+[0;32mI (542347) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89,"humidity_%":36.6,"pressure_Pa":100410}}}
+[0m
+[0;32mI (542347) MQTT_APP: pub RS485 published[0m
+[0;32mI (542347) MQTT_APP: pub Lora published[0m
+[0;32mI (552607) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":40.7,"pressure_Pa":100141}}}
+[0m
+[0;32mI (552607) MQTT_APP: pub Lora published[0m
+[0;32mI (552757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":210,"current_A":19.27,"power_kW":10.87}}}
+[0m
+[0;32mI (552857) MQTT_APP: pub RS485 published[0m
+[0;32mI (563007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.48,"current_A":2.15,"power_kW":9.45}}}
+[0m
+[0;32mI (563107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":42.5,"pressure_Pa":100641}}}
+[0m
+[0;32mI (563107) MQTT_APP: pub RS485 published[0m
+[0;32mI (563117) MQTT_APP: pub Lora published[0m
+[0;32mI (573377) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.3,"humidity_%":32,"pressure_Pa":101911}}}
+[0m
+[0;32mI (573377) MQTT_APP: pub Lora published[0m
+[0;32mI (573527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":239.54,"current_A":5.29,"power_kW":6.89}}}
+[0m
+[0;32mI (573627) MQTT_APP: pub RS485 published[0m
+[0;32mI (583777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.98,"current_A":12.2,"power_kW":5.8}}}
+[0m
+[0;32mI (583877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":35.6,"pressure_Pa":101304}}}
+[0m
+[0;32mI (583877) MQTT_APP: pub RS485 published[0m
+[0;32mI (583887) MQTT_APP: pub Lora published[0m
+[0;32mI (594127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.01,"current_A":11.16,"power_kW":10.71}}}
+[0m
+[0;32mI (594227) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.7,"humidity_%":55.2,"pressure_Pa":100939}}}
+[0m
+[0;32mI (594227) MQTT_APP: pub RS485 published[0m
+[0;32mI (594227) MQTT_APP: pub Lora published[0m
+[0;32mI (604517) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":47.1,"pressure_Pa":101661}}}
+[0m
+[0;32mI (604517) MQTT_APP: pub Lora published[0m
+[0;32mI (604667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":245.2,"current_A":0.58,"power_kW":8.27}}}
+[0m
+[0;32mI (604767) MQTT_APP: pub RS485 published[0m
+[0;32mI (614917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":294.33,"current_A":7.27,"power_kW":10.31}}}
+[0m
+[0;32mI (615017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85,"humidity_%":51.1,"pressure_Pa":101563}}}
+[0m
+[0;32mI (615017) MQTT_APP: pub RS485 published[0m
+[0;32mI (615017) MQTT_APP: pub Lora published[0m
+[0;32mI (625277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.2,"humidity_%":41.6,"pressure_Pa":101006}}}
+[0m
+[0;32mI (625277) MQTT_APP: pub Lora published[0m
+[0;32mI (625427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.24,"current_A":1.97,"power_kW":6.03}}}
+[0m
+[0;32mI (625527) MQTT_APP: pub RS485 published[0m
+[0;32mI (635677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":281.15,"current_A":10.16,"power_kW":10.73}}}
+[0m
+[0;32mI (635777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.4,"humidity_%":40.8,"pressure_Pa":100936}}}
+[0m
+[0;32mI (635777) MQTT_APP: pub RS485 published[0m
+[0;32mI (635777) MQTT_APP: pub Lora published[0m
+I (635807) wifi:<ba-del>idx:0, tid:0
+I (635807) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:150, winSize:64
+[0;32mI (646047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":42,"pressure_Pa":100791}}}
+[0m
+[0;32mI (646047) MQTT_APP: pub Lora published[0m
+[0;32mI (646197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.65,"current_A":7.36,"power_kW":7.25}}}
+[0m
+[0;32mI (646297) MQTT_APP: pub RS485 published[0m
+[0;32mI (656447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":276.46,"current_A":16.66,"power_kW":8.2}}}
+[0m
+[0;32mI (656547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.4,"humidity_%":46.7,"pressure_Pa":101949}}}
+[0m
+[0;32mI (656547) MQTT_APP: pub RS485 published[0m
+[0;32mI (656547) MQTT_APP: pub Lora published[0m
+[0;32mI (666807) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.4,"humidity_%":59.1,"pressure_Pa":101210}}}
+[0m
+[0;32mI (666807) MQTT_APP: pub Lora published[0m
+[0;32mI (666957) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":258.11,"current_A":4.18,"power_kW":9.34}}}
+[0m
+[0;32mI (667057) MQTT_APP: pub RS485 published[0m
+[0;32mI (677207) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":218.14,"current_A":5.18,"power_kW":9.29}}}
+[0m
+[0;32mI (677307) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.5,"humidity_%":46.7,"pressure_Pa":100689}}}
+[0m
+[0;32mI (677307) MQTT_APP: pub RS485 published[0m
+[0;32mI (677317) MQTT_APP: pub Lora published[0m
+[0;32mI (687577) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.4,"humidity_%":52.7,"pressure_Pa":101240}}}
+[0m
+[0;32mI (687577) MQTT_APP: pub Lora published[0m
+[0;32mI (687727) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.4,"current_A":16.35,"power_kW":8.48}}}
+[0m
+[0;32mI (687827) MQTT_APP: pub RS485 published[0m
+[0;32mI (697977) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.76,"current_A":17.75,"power_kW":6.1}}}
+[0m
+[0;32mI (698077) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":51.1,"pressure_Pa":101252}}}
+[0m
+[0;32mI (698077) MQTT_APP: pub RS485 published[0m
+[0;32mI (698087) MQTT_APP: pub Lora published[0m
+[0;32mI (708347) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.5,"humidity_%":39.2,"pressure_Pa":100710}}}
+[0m
+[0;32mI (708347) MQTT_APP: pub Lora published[0m
+[0;32mI (708497) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":247.37,"current_A":19.47,"power_kW":8.93}}}
+[0m
+[0;32mI (708597) MQTT_APP: pub RS485 published[0m
+[0;32mI (718747) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":279.01,"current_A":5.89,"power_kW":9.33}}}
+[0m
+[0;32mI (718847) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.9,"humidity_%":42.9,"pressure_Pa":101164}}}
+[0m
+[0;32mI (718847) MQTT_APP: pub RS485 published[0m
+[0;32mI (718847) MQTT_APP: pub Lora published[0m
+[0;32mI (729097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.46,"current_A":18.43,"power_kW":7.36}}}
+[0m
+[0;32mI (729197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80,"humidity_%":48.9,"pressure_Pa":101670}}}
+[0m
+[0;32mI (729197) MQTT_APP: pub RS485 published[0m
+[0;32mI (729197) MQTT_APP: pub Lora published[0m
+[0;32mI (739487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.1,"humidity_%":41.9,"pressure_Pa":100496}}}
+[0m
+[0;32mI (739487) MQTT_APP: pub Lora published[0m
+[0;32mI (739637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":247.88,"current_A":19.87,"power_kW":8.35}}}
+[0m
+[0;32mI (739737) MQTT_APP: pub RS485 published[0m
+[0;32mI (749887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":284.34,"current_A":7.19,"power_kW":10.45}}}
+[0m
+[0;32mI (749987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":58.4,"pressure_Pa":101989}}}
+[0m
+[0;32mI (749987) MQTT_APP: pub RS485 published[0m
+[0;32mI (749997) MQTT_APP: pub Lora published[0m
+[0;32mI (760257) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.6,"humidity_%":56.1,"pressure_Pa":101825}}}
+[0m
+[0;32mI (760257) MQTT_APP: pub Lora published[0m
+[0;32mI (760407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.31,"current_A":3.98,"power_kW":9.39}}}
+[0m
+[0;32mI (760507) MQTT_APP: pub RS485 published[0m
+[0;32mI (770657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.91,"current_A":7.24,"power_kW":6.21}}}
+[0m
+[0;32mI (770757) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":30.3,"pressure_Pa":100679}}}
+[0m
+[0;32mI (770757) MQTT_APP: pub RS485 published[0m
+[0;32mI (770757) MQTT_APP: pub Lora published[0m
+[0;32mI (781027) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.4,"humidity_%":30.6,"pressure_Pa":101450}}}
+[0m
+[0;32mI (781027) MQTT_APP: pub Lora published[0m
+[0;32mI (781177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":203.32,"current_A":12.41,"power_kW":9.77}}}
+[0m
+[0;32mI (781277) MQTT_APP: pub RS485 published[0m
+[0;32mI (791427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.47,"current_A":2.79,"power_kW":8.16}}}
+[0m
+[0;32mI (791527) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.7,"humidity_%":40,"pressure_Pa":101289}}}
+[0m
+[0;32mI (791527) MQTT_APP: pub RS485 published[0m
+[0;32mI (791527) MQTT_APP: pub Lora published[0m
+[0;32mI (801777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":239.08,"current_A":3.57,"power_kW":8.52}}}
+[0m
+[0;32mI (801877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.8,"humidity_%":56.2,"pressure_Pa":101029}}}
+[0m
+[0;32mI (801877) MQTT_APP: pub RS485 published[0m
+[0;32mI (801887) MQTT_APP: pub Lora published[0m
+[0;32mI (812167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":32.1,"pressure_Pa":100557}}}
+[0m
+[0;32mI (812167) MQTT_APP: pub Lora published[0m
+[0;32mI (812317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.55,"current_A":10.94,"power_kW":6.21}}}
+[0m
+[0;32mI (812417) MQTT_APP: pub RS485 published[0m
+[0;32mI (822567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":232.44,"current_A":11.98,"power_kW":7.56}}}
+[0m
+[0;32mI (822667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":49.3,"pressure_Pa":101427}}}
+[0m
+[0;32mI (822667) MQTT_APP: pub RS485 published[0m
+[0;32mI (822677) MQTT_APP: pub Lora published[0m
+[0;32mI (832937) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":50.3,"pressure_Pa":101439}}}
+[0m
+[0;32mI (832937) MQTT_APP: pub Lora published[0m
+[0;32mI (833087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.99,"current_A":6.35,"power_kW":6.43}}}
+[0m
+[0;32mI (833187) MQTT_APP: pub RS485 published[0m
+[0;32mI (843337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":250.1,"current_A":3.69,"power_kW":6.43}}}
+[0m
+[0;32mI (843437) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":58.6,"pressure_Pa":101719}}}
+[0m
+[0;32mI (843437) MQTT_APP: pub RS485 published[0m
+[0;32mI (843447) MQTT_APP: pub Lora published[0m
+I (843447) wifi:<ba-del>idx:0, tid:0
+I (843447) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:196, winSize:64
+[0;32mI (853687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":216.99,"current_A":11.39,"power_kW":7.36}}}
+[0m
+[0;32mI (853787) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":33.1,"pressure_Pa":101992}}}
+[0m
+[0;32mI (853787) MQTT_APP: pub RS485 published[0m
+[0;32mI (853797) MQTT_APP: pub Lora published[0m
+[0;32mI (864077) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.1,"humidity_%":55.7,"pressure_Pa":100833}}}
+[0m
+[0;32mI (864077) MQTT_APP: pub Lora published[0m
+[0;32mI (864227) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":228.77,"current_A":10.83,"power_kW":5.89}}}
+[0m
+[0;32mI (864327) MQTT_APP: pub RS485 published[0m
+[0;32mI (874477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":204.26,"current_A":11.9,"power_kW":9.64}}}
+[0m
+[0;32mI (874577) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.1,"humidity_%":43.4,"pressure_Pa":100711}}}
+[0m
+[0;32mI (874577) MQTT_APP: pub RS485 published[0m
+[0;32mI (874577) MQTT_APP: pub Lora published[0m
+[0;32mI (884847) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89,"humidity_%":48.4,"pressure_Pa":100813}}}
+[0m
+[0;32mI (884847) MQTT_APP: pub Lora published[0m
+[0;32mI (884997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":241.27,"current_A":19.84,"power_kW":10.7}}}
+[0m
+[0;32mI (885097) MQTT_APP: pub RS485 published[0m
+[0;32mI (895247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":202.32,"current_A":12.54,"power_kW":6.47}}}
+[0m
+[0;32mI (895347) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":48.1,"pressure_Pa":100165}}}
+[0m
+[0;32mI (895347) MQTT_APP: pub RS485 published[0m
+[0;32mI (895357) MQTT_APP: pub Lora published[0m
+[0;32mI (905607) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.7,"humidity_%":36.2,"pressure_Pa":101010}}}
+[0m
+[0;32mI (905607) MQTT_APP: pub Lora published[0m
+[0;32mI (905757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.5,"current_A":17.41,"power_kW":7.2}}}
+[0m
+[0;32mI (905857) MQTT_APP: pub RS485 published[0m
+[0;32mI (916007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.9,"current_A":12.48,"power_kW":9.44}}}
+[0m
+[0;32mI (916107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":51.2,"pressure_Pa":100759}}}
+[0m
+[0;32mI (916107) MQTT_APP: pub RS485 published[0m
+[0;32mI (916117) MQTT_APP: pub Lora published[0m
+[0;32mI (926377) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.8,"humidity_%":45,"pressure_Pa":100101}}}
+[0m
+[0;32mI (926377) MQTT_APP: pub Lora published[0m
+[0;32mI (926527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":295.21,"current_A":11.01,"power_kW":8.61}}}
+[0m
+[0;32mI (926627) MQTT_APP: pub RS485 published[0m
+[0;32mI (936777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":205.73,"current_A":17.69,"power_kW":7.03}}}
+[0m
+[0;32mI (936877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":41,"pressure_Pa":101928}}}
+[0m
+[0;32mI (936877) MQTT_APP: pub RS485 published[0m
+[0;32mI (936877) MQTT_APP: pub Lora published[0m
+[0;32mI (947127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.89,"current_A":2.54,"power_kW":8.43}}}
+[0m
+[0;32mI (947227) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.1,"humidity_%":57.5,"pressure_Pa":100518}}}
+[0m
+[0;32mI (947227) MQTT_APP: pub RS485 published[0m
+[0;32mI (947237) MQTT_APP: pub Lora published[0m
+[0;32mI (957517) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":45,"pressure_Pa":100735}}}
+[0m
+[0;32mI (957517) MQTT_APP: pub Lora published[0m
+[0;32mI (957667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.64,"current_A":14.63,"power_kW":5.52}}}
+[0m
+[0;32mI (957767) MQTT_APP: pub RS485 published[0m
+[0;32mI (967917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.6,"current_A":10.68,"power_kW":8.47}}}
+[0m
+[0;32mI (968017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.2,"humidity_%":31.6,"pressure_Pa":100714}}}
+[0m
+[0;32mI (968017) MQTT_APP: pub RS485 published[0m
+[0;32mI (968027) MQTT_APP: pub Lora published[0m
+[0;32mI (978287) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.6,"humidity_%":58.7,"pressure_Pa":100501}}}
+[0m
+[0;32mI (978287) MQTT_APP: pub Lora published[0m
+[0;32mI (978437) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":234.28,"current_A":11.48,"power_kW":10.53}}}
+[0m
+[0;32mI (978537) MQTT_APP: pub RS485 published[0m
+[0;32mI (980787) MQTT_APP: Giờ hiện tại: 00:40:25 - 01/01/2000[0m
+[0;32mI (980787) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":0,"minute":40,"second":25,"day":1,"month":1,"year":2000}[0m
+[0;32mI (980797) MQTT_APP: pub LED thành công[0m
+[0;32mI (980817) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (988697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.71,"current_A":0.64,"power_kW":6.3}}}
+[0m
+[0;32mI (988797) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.1,"humidity_%":52.9,"pressure_Pa":100293}}}
+[0m
+[0;32mI (988797) MQTT_APP: pub RS485 published[0m
+[0;32mI (988807) MQTT_APP: pub Lora published[0m
+[0;32mI (999037) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":242.38,"current_A":2.44,"power_kW":5.93}}}
+[0m
+[0;32mI (999137) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81,"humidity_%":58,"pressure_Pa":100113}}}
+[0m
+[0;32mI (999137) MQTT_APP: pub RS485 published[0m
+[0;32mI (999137) MQTT_APP: pub Lora published[0m
+[0;32mI (1009417) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":48,"pressure_Pa":101000}}}
+[0m
+[0;32mI (1009417) MQTT_APP: pub Lora published[0m
+[0;32mI (1009567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.47,"current_A":10.87,"power_kW":6.33}}}
+[0m
+[0;32mI (1009667) MQTT_APP: pub RS485 published[0m
+[0;32mI (1019817) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.8,"current_A":18.57,"power_kW":8.98}}}
+[0m
+[0;32mI (1019917) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":46.1,"pressure_Pa":100824}}}
+[0m
+[0;32mI (1019917) MQTT_APP: pub RS485 published[0m
+[0;32mI (1019927) MQTT_APP: pub Lora published[0m
+[0;32mI (1030187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":44.5,"pressure_Pa":101662}}}
+[0m
+[0;32mI (1030187) MQTT_APP: pub Lora published[0m
+[0;32mI (1030337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.1,"current_A":9.18,"power_kW":7.55}}}
+[0m
+[0;32mI (1030437) MQTT_APP: pub RS485 published[0m
+[0;32mI (1040587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":234.75,"current_A":1.51,"power_kW":7.51}}}
+[0m
+[0;32mI (1040687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.3,"humidity_%":55.5,"pressure_Pa":100385}}}
+[0m
+[0;32mI (1040687) MQTT_APP: pub RS485 published[0m
+[0;32mI (1040687) MQTT_APP: pub Lora published[0m
+[0;32mI (1050947) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":58.3,"pressure_Pa":100714}}}
+[0m
+[0;32mI (1050947) MQTT_APP: pub Lora published[0m
+[0;32mI (1051097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":237.79,"current_A":18,"power_kW":6.85}}}
+[0m
+[0;32mI (1051197) MQTT_APP: pub RS485 published[0m
+[0;32mI (1061347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.6,"current_A":7.4,"power_kW":10.66}}}
+[0m
+[0;32mI (1061447) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.8,"humidity_%":58.4,"pressure_Pa":100342}}}
+[0m
+[0;32mI (1061447) MQTT_APP: pub RS485 published[0m
+[0;32mI (1061447) MQTT_APP: pub Lora published[0m
+[0;32mI (1071717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":56.2,"pressure_Pa":100363}}}
+[0m
+[0;32mI (1071717) MQTT_APP: pub Lora published[0m
+I (1071737) wifi:<ba-del>idx:0, tid:0
+I (1071747) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:250, winSize:64
+[0;32mI (1071867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.9,"current_A":3.78,"power_kW":8.61}}}
+[0m
+[0;32mI (1071967) MQTT_APP: pub RS485 published[0m
+[0;32mI (1082117) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.94,"current_A":7.56,"power_kW":10.86}}}
+[0m
+[0;32mI (1082217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81,"humidity_%":54,"pressure_Pa":100978}}}
+[0m
+[0;32mI (1082217) MQTT_APP: pub RS485 published[0m
+[0;32mI (1082217) MQTT_APP: pub Lora published[0m
+[0;32mI (1092467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":276.84,"current_A":12.08,"power_kW":7.54}}}
+[0m
+[0;32mI (1092567) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":54.4,"pressure_Pa":100739}}}
+[0m
+[0;32mI (1092567) MQTT_APP: pub RS485 published[0m
+[0;32mI (1092577) MQTT_APP: pub Lora published[0m
+[0;32mI (1102857) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":32.8,"pressure_Pa":100671}}}
+[0m
+[0;32mI (1102857) MQTT_APP: pub Lora published[0m
+[0;32mI (1103007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":270.63,"current_A":7.24,"power_kW":10.54}}}
+[0m
+[0;32mI (1103107) MQTT_APP: pub RS485 published[0m
+[0;32mI (1113257) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.63,"current_A":19.19,"power_kW":10.56}}}
+[0m
+[0;32mI (1113357) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":58.1,"pressure_Pa":100552}}}
+[0m
+[0;32mI (1113357) MQTT_APP: pub RS485 published[0m
+[0;32mI (1113367) MQTT_APP: pub Lora published[0m
+[0;32mI (1123627) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":48.7,"pressure_Pa":100353}}}
+[0m
+[0;32mI (1123627) MQTT_APP: pub Lora published[0m
+[0;32mI (1123777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.88,"current_A":4.8,"power_kW":5.83}}}
+[0m
+[0;32mI (1123877) MQTT_APP: pub RS485 published[0m
+[0;32mI (1134027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":267.34,"current_A":19.84,"power_kW":8.49}}}
+[0m
+[0;32mI (1134127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.4,"humidity_%":53.6,"pressure_Pa":100909}}}
+[0m
+[0;32mI (1134127) MQTT_APP: pub RS485 published[0m
+[0;32mI (1134137) MQTT_APP: pub Lora published[0m
+[0;32mI (1144387) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":46.7,"pressure_Pa":100110}}}
+[0m
+[0;32mI (1144387) MQTT_APP: pub Lora published[0m
+[0;32mI (1144537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":289.27,"current_A":13.81,"power_kW":10.36}}}
+[0m
+[0;32mI (1144637) MQTT_APP: pub RS485 published[0m
+[0;32mI (1154787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":272.28,"current_A":18.7,"power_kW":8.97}}}
+[0m
+[0;32mI (1154887) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.4,"humidity_%":43.5,"pressure_Pa":100231}}}
+[0m
+[0;32mI (1154887) MQTT_APP: pub RS485 published[0m
+[0;32mI (1154897) MQTT_APP: pub Lora published[0m
+[0;32mI (1165157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":54.6,"pressure_Pa":101090}}}
+[0m
+[0;32mI (1165157) MQTT_APP: pub Lora published[0m
+[0;32mI (1165307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":211.12,"current_A":3.12,"power_kW":6.51}}}
+[0m
+[0;32mI (1165407) MQTT_APP: pub RS485 published[0m
+[0;32mI (1175557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":228.5,"current_A":0.59,"power_kW":5.92}}}
+[0m
+[0;32mI (1175657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":32.1,"pressure_Pa":101213}}}
+[0m
+[0;32mI (1175657) MQTT_APP: pub RS485 published[0m
+[0;32mI (1175657) MQTT_APP: pub Lora published[0m
+[0;32mI (1185907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.77,"current_A":19.32,"power_kW":5.83}}}
+[0m
+[0;32mI (1186007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.4,"humidity_%":43,"pressure_Pa":100632}}}
+[0m
+[0;32mI (1186007) MQTT_APP: pub RS485 published[0m
+[0;32mI (1186017) MQTT_APP: pub Lora published[0m
+[0;32mI (1196297) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":45.3,"pressure_Pa":100622}}}
+[0m
+[0;32mI (1196297) MQTT_APP: pub Lora published[0m
+[0;32mI (1196447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.56,"current_A":18.91,"power_kW":9.96}}}
+[0m
+[0;32mI (1196547) MQTT_APP: pub RS485 published[0m
+[0;32mI (1206697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.44,"current_A":15.7,"power_kW":9.99}}}
+[0m
+[0;32mI (1206797) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":30.4,"pressure_Pa":101599}}}
+[0m
+[0;32mI (1206797) MQTT_APP: pub RS485 published[0m
+[0;32mI (1206807) MQTT_APP: pub Lora published[0m
+[0;32mI (1217057) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88,"humidity_%":51.8,"pressure_Pa":100288}}}
+[0m
+[0;32mI (1217057) MQTT_APP: pub Lora published[0m
+[0;32mI (1217207) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":252.28,"current_A":0.62,"power_kW":7.49}}}
+[0m
+[0;32mI (1217307) MQTT_APP: pub RS485 published[0m
+[0;32mI (1227457) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.78,"current_A":19.61,"power_kW":5.48}}}
+[0m
+[0;32mI (1227557) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.5,"humidity_%":58.3,"pressure_Pa":100515}}}
+[0m
+[0;32mI (1227557) MQTT_APP: pub RS485 published[0m
+[0;32mI (1227557) MQTT_APP: pub Lora published[0m
+[0;32mI (1237827) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.4,"humidity_%":54,"pressure_Pa":101381}}}
+[0m
+[0;32mI (1237827) MQTT_APP: pub Lora published[0m
+[0;32mI (1237977) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":270.28,"current_A":11.44,"power_kW":10.95}}}
+[0m
+[0;32mI (1238077) MQTT_APP: pub RS485 published[0m
+[0;32mI (1248227) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.25,"current_A":19.5,"power_kW":8.43}}}
+[0m
+[0;32mI (1248327) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.9,"humidity_%":31,"pressure_Pa":100172}}}
+[0m
+[0;32mI (1248327) MQTT_APP: pub RS485 published[0m
+[0;32mI (1248337) MQTT_APP: pub Lora published[0m
+[0;32mI (1258577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":294.1,"current_A":12.64,"power_kW":5.61}}}
+[0m
+[0;32mI (1258677) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.6,"humidity_%":46.9,"pressure_Pa":100670}}}
+[0m
+[0;32mI (1258677) MQTT_APP: pub RS485 published[0m
+[0;32mI (1258687) MQTT_APP: pub Lora published[0m
+I (1258697) wifi:<ba-del>idx:0, tid:0
+I (1258697) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:292, winSize:64
+[0;32mI (1268967) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":42,"pressure_Pa":101562}}}
+[0m
+[0;32mI (1268967) MQTT_APP: pub Lora published[0m
+[0;32mI (1269117) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":261.25,"current_A":14.49,"power_kW":5.22}}}
+[0m
+[0;32mI (1269217) MQTT_APP: pub RS485 published[0m
+[0;32mI (1279367) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":222.81,"current_A":6.68,"power_kW":6.22}}}
+[0m
+[0;32mI (1279467) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86,"humidity_%":59.3,"pressure_Pa":101928}}}
+[0m
+[0;32mI (1279467) MQTT_APP: pub RS485 published[0m
+[0;32mI (1279467) MQTT_APP: pub Lora published[0m
+[0;32mI (1289727) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.9,"humidity_%":51.7,"pressure_Pa":100793}}}
+[0m
+[0;32mI (1289727) MQTT_APP: pub Lora published[0m
+[0;32mI (1289877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.78,"current_A":16.71,"power_kW":6.55}}}
+[0m
+[0;32mI (1289977) MQTT_APP: pub RS485 published[0m
+[0;32mI (1300127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.02,"current_A":12.16,"power_kW":6.46}}}
+[0m
+[0;32mI (1300227) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.6,"humidity_%":38.9,"pressure_Pa":101728}}}
+[0m
+[0;32mI (1300227) MQTT_APP: pub RS485 published[0m
+[0;32mI (1300227) MQTT_APP: pub Lora published[0m
+[0;32mI (1310497) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.1,"humidity_%":37.2,"pressure_Pa":101811}}}
+[0m
+[0;32mI (1310497) MQTT_APP: pub Lora published[0m
+[0;32mI (1310647) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.36,"current_A":5.07,"power_kW":10.66}}}
+[0m
+[0;32mI (1310747) MQTT_APP: pub RS485 published[0m
+[0;32mI (1320897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.53,"current_A":17.33,"power_kW":8.39}}}
+[0m
+[0;32mI (1320997) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.3,"humidity_%":51.2,"pressure_Pa":101925}}}
+[0m
+[0;32mI (1320997) MQTT_APP: pub RS485 published[0m
+[0;32mI (1320997) MQTT_APP: pub Lora published[0m
+[0;32mI (1331267) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.1,"humidity_%":35.8,"pressure_Pa":100694}}}
+[0m
+[0;32mI (1331267) MQTT_APP: pub Lora published[0m
+[0;32mI (1331417) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.38,"current_A":9.75,"power_kW":7.92}}}
+[0m
+[0;32mI (1331517) MQTT_APP: pub RS485 published[0m
+[0;32mI (1341667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":236.46,"current_A":13.64,"power_kW":7.92}}}
+[0m
+[0;32mI (1341767) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.3,"humidity_%":56.2,"pressure_Pa":101276}}}
+[0m
+[0;32mI (1341767) MQTT_APP: pub RS485 published[0m
+[0;32mI (1341777) MQTT_APP: pub Lora published[0m
+[0;32mI (1352037) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":44.2,"pressure_Pa":101328}}}
+[0m
+[0;32mI (1352037) MQTT_APP: pub Lora published[0m
+[0;32mI (1352187) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.62,"current_A":5.16,"power_kW":8.72}}}
+[0m
+[0;32mI (1352287) MQTT_APP: pub RS485 published[0m
+[0;32mI (1362437) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.92,"current_A":5.28,"power_kW":9.43}}}
+[0m
+[0;32mI (1362537) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.8,"humidity_%":50,"pressure_Pa":100370}}}
+[0m
+[0;32mI (1362537) MQTT_APP: pub RS485 published[0m
+[0;32mI (1362547) MQTT_APP: pub Lora published[0m
+[0;32mI (1372787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":272.01,"current_A":9.21,"power_kW":7.13}}}
+[0m
+[0;32mI (1372887) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.2,"humidity_%":56.3,"pressure_Pa":100783}}}
+[0m
+[0;32mI (1372887) MQTT_APP: pub RS485 published[0m
+[0;32mI (1372897) MQTT_APP: pub Lora published[0m
+[0;32mI (1383177) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.9,"humidity_%":33.1,"pressure_Pa":101357}}}
+[0m
+[0;32mI (1383177) MQTT_APP: pub Lora published[0m
+[0;32mI (1383327) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.86,"current_A":16.16,"power_kW":7.54}}}
+[0m
+[0;32mI (1383427) MQTT_APP: pub RS485 published[0m
+[0;32mI (1393577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":266.97,"current_A":17.6,"power_kW":5.91}}}
+[0m
+[0;32mI (1393677) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":41.5,"pressure_Pa":100537}}}
+[0m
+[0;32mI (1393677) MQTT_APP: pub RS485 published[0m
+[0;32mI (1393687) MQTT_APP: pub Lora published[0m
+[0;32mI (1403947) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":37.4,"pressure_Pa":100463}}}
+[0m
+[0;32mI (1403947) MQTT_APP: pub Lora published[0m
+[0;32mI (1404097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.24,"current_A":4.33,"power_kW":7.27}}}
+[0m
+[0;32mI (1404197) MQTT_APP: pub RS485 published[0m
+[0;32mI (1414347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":244.64,"current_A":11.12,"power_kW":10.34}}}
+[0m
+[0;32mI (1414447) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":42.9,"pressure_Pa":101609}}}
+[0m
+[0;32mI (1414447) MQTT_APP: pub RS485 published[0m
+[0;32mI (1414457) MQTT_APP: pub Lora published[0m
+[0;32mI (1424717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.7,"humidity_%":38.3,"pressure_Pa":101600}}}
+[0m
+[0;32mI (1424717) MQTT_APP: pub Lora published[0m
+[0;32mI (1424867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.1,"current_A":13.91,"power_kW":6.25}}}
+[0m
+[0;32mI (1424967) MQTT_APP: pub RS485 published[0m
+[0;32mI (1435117) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":253.61,"current_A":18.91,"power_kW":8.2}}}
+[0m
+[0;32mI (1435217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.3,"humidity_%":32.9,"pressure_Pa":100096}}}
+[0m
+[0;32mI (1435217) MQTT_APP: pub RS485 published[0m
+[0;32mI (1435217) MQTT_APP: pub Lora published[0m
+[0;32mI (1445477) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.8,"humidity_%":48.7,"pressure_Pa":100526}}}
+[0m
+[0;32mI (1445477) MQTT_APP: pub Lora published[0m
+[0;32mI (1445627) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":272.19,"current_A":1.04,"power_kW":8.92}}}
+[0m
+[0;32mI (1445727) MQTT_APP: pub RS485 published[0m
+[0;32mI (1455877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":262.76,"current_A":17.26,"power_kW":6.44}}}
+[0m
+[0;32mI (1455977) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.5,"humidity_%":57,"pressure_Pa":101474}}}
+[0m
+[0;32mI (1455977) MQTT_APP: pub RS485 published[0m
+[0;32mI (1455987) MQTT_APP: pub Lora published[0m
+[0;32mI (1466237) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.1,"humidity_%":57.9,"pressure_Pa":101035}}}
+[0m
+[0;32mI (1466237) MQTT_APP: pub Lora published[0m
+[0;32mI (1466387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.88,"current_A":8.78,"power_kW":8.23}}}
+[0m
+[0;32mI (1466487) MQTT_APP: pub RS485 published[0m
+[0;32mI (1476637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":226.68,"current_A":6.99,"power_kW":8.29}}}
+[0m
+[0;32mI (1476737) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":30.8,"pressure_Pa":100929}}}
+[0m
+[0;32mI (1476737) MQTT_APP: pub RS485 published[0m
+[0;32mI (1476737) MQTT_APP: pub Lora published[0m
+[0;32mI (1487007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.6,"humidity_%":48.8,"pressure_Pa":101896}}}
+[0m
+[0;32mI (1487007) MQTT_APP: pub Lora published[0m
+[0;32mI (1487157) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.64,"current_A":17.16,"power_kW":9.91}}}
+[0m
+[0;32mI (1487257) MQTT_APP: pub RS485 published[0m
+[0;32mI (1497407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":248.61,"current_A":11.18,"power_kW":8.46}}}
+[0m
+[0;32mI (1497507) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.3,"humidity_%":59.8,"pressure_Pa":101120}}}
+[0m
+[0;32mI (1497507) MQTT_APP: pub RS485 published[0m
+[0;32mI (1497517) MQTT_APP: pub Lora published[0m
+[0;32mI (1507777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":47.8,"pressure_Pa":100228}}}
+[0m
+[0;32mI (1507777) MQTT_APP: pub Lora published[0m
+[0;32mI (1507927) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.35,"current_A":6.08,"power_kW":9.79}}}
+[0m
+[0;32mI (1508027) MQTT_APP: pub RS485 published[0m
+[0;32mI (1518177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.53,"current_A":18.53,"power_kW":6.71}}}
+[0m
+[0;32mI (1518277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":52.3,"pressure_Pa":101677}}}
+[0m
+[0;32mI (1518277) MQTT_APP: pub RS485 published[0m
+[0;32mI (1518287) MQTT_APP: pub Lora published[0m
+I (1518297) wifi:<ba-del>idx:0, tid:0
+I (1518297) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:350, winSize:64
+[0;32mI (1528547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":40.4,"pressure_Pa":100962}}}
+[0m
+[0;32mI (1528547) MQTT_APP: pub Lora published[0m
+[0;32mI (1528697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":232.19,"current_A":11.35,"power_kW":7.68}}}
+[0m
+[0;32mI (1528797) MQTT_APP: pub RS485 published[0m
+[0;32mI (1538947) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":278.65,"current_A":5.79,"power_kW":8.27}}}
+[0m
+[0;32mI (1539047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81,"humidity_%":53.4,"pressure_Pa":101270}}}
+[0m
+[0;32mI (1539047) MQTT_APP: pub RS485 published[0m
+[0;32mI (1539047) MQTT_APP: pub Lora published[0m
+[0;32mI (1549297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":266.34,"current_A":3.75,"power_kW":5.55}}}
+[0m
+[0;32mI (1549397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":46.3,"pressure_Pa":101037}}}
+[0m
+[0;32mI (1549397) MQTT_APP: pub RS485 published[0m
+[0;32mI (1549397) MQTT_APP: pub Lora published[0m
+[0;32mI (1559687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.6,"humidity_%":39.9,"pressure_Pa":101664}}}
+[0m
+[0;32mI (1559687) MQTT_APP: pub Lora published[0m
+[0;32mI (1559837) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":293.86,"current_A":13.24,"power_kW":8.94}}}
+[0m
+[0;32mI (1559937) MQTT_APP: pub RS485 published[0m
+[0;32mI (1570087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":210.82,"current_A":5.14,"power_kW":7.41}}}
+[0m
+[0;32mI (1570187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":36.7,"pressure_Pa":101665}}}
+[0m
+[0;32mI (1570187) MQTT_APP: pub RS485 published[0m
+[0;32mI (1570187) MQTT_APP: pub Lora published[0m
+[0;32mI (1580457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.5,"humidity_%":59.1,"pressure_Pa":101806}}}
+[0m
+[0;32mI (1580457) MQTT_APP: pub Lora published[0m
+[0;32mI (1580607) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.6,"current_A":12.03,"power_kW":9.85}}}
+[0m
+[0;32mI (1580707) MQTT_APP: pub RS485 published[0m
+[0;32mI (1590857) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":284.88,"current_A":0.86,"power_kW":9.95}}}
+[0m
+[0;32mI (1590957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80,"humidity_%":38.5,"pressure_Pa":100467}}}
+[0m
+[0;32mI (1590957) MQTT_APP: pub RS485 published[0m
+[0;32mI (1590967) MQTT_APP: pub Lora published[0m
+[0;32mI (1601207) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":283.17,"current_A":16.02,"power_kW":8.78}}}
+[0m
+[0;32mI (1601307) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":50.2,"pressure_Pa":100428}}}
+[0m
+[0;32mI (1601307) MQTT_APP: pub RS485 published[0m
+[0;32mI (1601317) MQTT_APP: pub Lora published[0m
+[0;32mI (1611597) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.5,"humidity_%":38.9,"pressure_Pa":100722}}}
+[0m
+[0;32mI (1611597) MQTT_APP: pub Lora published[0m
+[0;32mI (1611747) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":295.05,"current_A":19.91,"power_kW":8.74}}}
+[0m
+[0;32mI (1611847) MQTT_APP: pub RS485 published[0m
+[0;32mI (1621997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":283.26,"current_A":19.01,"power_kW":7.44}}}
+[0m
+[0;32mI (1622097) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":56.2,"pressure_Pa":101706}}}
+[0m
+[0;32mI (1622097) MQTT_APP: pub RS485 published[0m
+[0;32mI (1622107) MQTT_APP: pub Lora published[0m
+[0;32mI (1632367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":35.8,"pressure_Pa":101462}}}
+[0m
+[0;32mI (1632367) MQTT_APP: pub Lora published[0m
+[0;32mI (1632517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.36,"current_A":0.08,"power_kW":7.47}}}
+[0m
+[0;32mI (1632617) MQTT_APP: pub RS485 published[0m
+[0;32mI (1642767) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.14,"current_A":16.99,"power_kW":8.33}}}
+[0m
+[0;32mI (1642867) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":41.1,"pressure_Pa":101397}}}
+[0m
+[0;32mI (1642867) MQTT_APP: pub RS485 published[0m
+[0;32mI (1642877) MQTT_APP: pub Lora published[0m
+[0;32mI (1653137) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":53.9,"pressure_Pa":101754}}}
+[0m
+[0;32mI (1653137) MQTT_APP: pub Lora published[0m
+[0;32mI (1653287) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.86,"current_A":16.1,"power_kW":9.73}}}
+[0m
+[0;32mI (1653387) MQTT_APP: pub RS485 published[0m
+[0;32mI (1663537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.38,"current_A":1.91,"power_kW":6.6}}}
+[0m
+[0;32mI (1663637) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.3,"humidity_%":53.5,"pressure_Pa":100988}}}
+[0m
+[0;32mI (1663637) MQTT_APP: pub RS485 published[0m
+[0;32mI (1663637) MQTT_APP: pub Lora published[0m
+[0;32mI (1673897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":49.2,"pressure_Pa":100743}}}
+[0m
+[0;32mI (1673897) MQTT_APP: pub Lora published[0m
+[0;32mI (1674047) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":275.68,"current_A":13.15,"power_kW":7.91}}}
+[0m
+[0;32mI (1674147) MQTT_APP: pub RS485 published[0m
+[0;32mI (1684297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":234.28,"current_A":3.79,"power_kW":9.54}}}
+[0m
+[0;32mI (1684397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.7,"humidity_%":56.9,"pressure_Pa":100832}}}
+[0m
+[0;32mI (1684397) MQTT_APP: pub RS485 published[0m
+[0;32mI (1684407) MQTT_APP: pub Lora published[0m
+[0;32mI (1694667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.7,"humidity_%":43.7,"pressure_Pa":101203}}}
+[0m
+[0;32mI (1694667) MQTT_APP: pub Lora published[0m
+[0;32mI (1694817) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.47,"current_A":14.49,"power_kW":7.59}}}
+[0m
+[0;32mI (1694917) MQTT_APP: pub RS485 published[0m
+[0;32mI (1705067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":286.96,"current_A":5.24,"power_kW":7.63}}}
+[0m
+[0;32mI (1705167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":35,"pressure_Pa":101183}}}
+[0m
+[0;32mI (1705167) MQTT_APP: pub RS485 published[0m
+[0;32mI (1705167) MQTT_APP: pub Lora published[0m
+[0;32mI (1715427) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":31.2,"pressure_Pa":101251}}}
+[0m
+[0;32mI (1715427) MQTT_APP: pub Lora published[0m
+[0;32mI (1715577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":202.95,"current_A":16.54,"power_kW":7.8}}}
+[0m
+[0;32mI (1715677) MQTT_APP: pub RS485 published[0m
+[0;32mI (1725827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.12,"current_A":16.37,"power_kW":8.85}}}
+[0m
+[0;32mI (1725927) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":53,"pressure_Pa":100095}}}
+[0m
+[0;32mI (1725927) MQTT_APP: pub RS485 published[0m
+[0;32mI (1725927) MQTT_APP: pub Lora published[0m
+[0;32mI (1736197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":58.1,"pressure_Pa":101610}}}
+[0m
+[0;32mI (1736197) MQTT_APP: pub Lora published[0m
+[0;32mI (1736347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":208.09,"current_A":19.67,"power_kW":8.66}}}
+[0m
+[0;32mI (1736447) MQTT_APP: pub RS485 published[0m
+[0;32mI (1746597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.22,"current_A":2.8,"power_kW":8.85}}}
+[0m
+[0;32mI (1746697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":42,"pressure_Pa":100515}}}
+[0m
+[0;32mI (1746697) MQTT_APP: pub RS485 published[0m
+[0;32mI (1746707) MQTT_APP: pub Lora published[0m
+[0;32mI (1755957) MQTT_APP: Giờ hiện tại: 00:49:53 - 01/01/2000[0m
+[0;32mI (1755957) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":0,"minute":49,"second":53,"day":1,"month":1,"year":2000}[0m
+[0;32mI (1755967) MQTT_APP: pub LED thành công[0m
+[0;32mI (1755977) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (1756947) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":294.45,"current_A":2.33,"power_kW":5.56}}}
+[0m
+[0;32mI (1757047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":42.5,"pressure_Pa":100436}}}
+[0m
+[0;32mI (1757047) MQTT_APP: pub RS485 published[0m
+[0;32mI (1757047) MQTT_APP: pub Lora published[0m
+[0;32mI (1767337) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.4,"humidity_%":41.7,"pressure_Pa":100881}}}
+[0m
+[0;32mI (1767337) MQTT_APP: pub Lora published[0m
+[0;32mI (1767487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":281.58,"current_A":5.92,"power_kW":7.51}}}
+[0m
+[0;32mI (1767587) MQTT_APP: pub RS485 published[0m
+[0;32mI (1777737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.55,"current_A":12.43,"power_kW":7.13}}}
+[0m
+[0;32mI (1777837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":44.2,"pressure_Pa":101944}}}
+[0m
+[0;32mI (1777837) MQTT_APP: pub RS485 published[0m
+[0;32mI (1777847) MQTT_APP: pub Lora published[0m
+[0;32mI (1788097) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.1,"humidity_%":58.1,"pressure_Pa":101779}}}
+[0m
+[0;32mI (1788097) MQTT_APP: pub Lora published[0m
+[0;32mI (1788247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":218.6,"current_A":9.55,"power_kW":9.64}}}
+[0m
+[0;32mI (1788347) MQTT_APP: pub RS485 published[0m
+[0;32mI (1798497) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":228.04,"current_A":15.11,"power_kW":6.1}}}
+[0m
+[0;32mI (1798597) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.2,"humidity_%":51.3,"pressure_Pa":101195}}}
+[0m
+[0;32mI (1798597) MQTT_APP: pub RS485 published[0m
+[0;32mI (1798607) MQTT_APP: pub Lora published[0m
+[0;32mI (1808867) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":55.1,"pressure_Pa":101616}}}
+[0m
+[0;32mI (1808867) MQTT_APP: pub Lora published[0m
+I (1808877) wifi:<ba-del>idx:0, tid:0
+I (1808887) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:418, winSize:64
+[0;32mI (1809017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":261.64,"current_A":5.22,"power_kW":6.43}}}
+[0m
+[0;32mI (1809117) MQTT_APP: pub RS485 published[0m
+[0;32mI (1819267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.43,"current_A":19.02,"power_kW":8.7}}}
+[0m
+[0;32mI (1819367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.6,"humidity_%":41.8,"pressure_Pa":100994}}}
+[0m
+[0;32mI (1819367) MQTT_APP: pub RS485 published[0m
+[0;32mI (1819377) MQTT_APP: pub Lora published[0m
+[0;32mI (1829627) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":51.2,"pressure_Pa":101317}}}
+[0m
+[0;32mI (1829627) MQTT_APP: pub Lora published[0m
+[0;32mI (1829777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":232.82,"current_A":17.59,"power_kW":6.9}}}
+[0m
+[0;32mI (1829877) MQTT_APP: pub RS485 published[0m
+[0;32mI (1840027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.78,"current_A":2.45,"power_kW":7.62}}}
+[0m
+[0;32mI (1840127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":51,"pressure_Pa":100911}}}
+[0m
+[0;32mI (1840127) MQTT_APP: pub RS485 published[0m
+[0;32mI (1840127) MQTT_APP: pub Lora published[0m
+[0;32mI (1850397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":38.3,"pressure_Pa":101099}}}
+[0m
+[0;32mI (1850397) MQTT_APP: pub Lora published[0m
+[0;32mI (1850547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.13,"current_A":10.51,"power_kW":8.02}}}
+[0m
+[0;32mI (1850647) MQTT_APP: pub RS485 published[0m
+[0;32mI (1860797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":216.84,"current_A":9.42,"power_kW":10.15}}}
+[0m
+[0;32mI (1860897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.7,"humidity_%":55.3,"pressure_Pa":101299}}}
+[0m
+[0;32mI (1860897) MQTT_APP: pub RS485 published[0m
+[0;32mI (1860897) MQTT_APP: pub Lora published[0m
+[0;32mI (1871167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.9,"humidity_%":45.7,"pressure_Pa":101382}}}
+[0m
+[0;32mI (1871167) MQTT_APP: pub Lora published[0m
+[0;32mI (1871317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.52,"current_A":14.26,"power_kW":8.55}}}
+[0m
+[0;32mI (1871417) MQTT_APP: pub RS485 published[0m
+[0;32mI (1881567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":222.29,"current_A":6.49,"power_kW":6.98}}}
+[0m
+[0;32mI (1881667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":45.2,"pressure_Pa":101386}}}
+[0m
+[0;32mI (1881667) MQTT_APP: pub RS485 published[0m
+[0;32mI (1881677) MQTT_APP: pub Lora published[0m
+[0;32mI (1891917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.27,"current_A":5.98,"power_kW":6.17}}}
+[0m
+[0;32mI (1892017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89,"humidity_%":50.3,"pressure_Pa":100686}}}
+[0m
+[0;32mI (1892017) MQTT_APP: pub RS485 published[0m
+[0;32mI (1892027) MQTT_APP: pub Lora published[0m
+[0;32mI (1902307) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":37.6,"pressure_Pa":101461}}}
+[0m
+[0;32mI (1902307) MQTT_APP: pub Lora published[0m
+I (1902317) wifi:<ba-del>idx:0, tid:0
+I (1902317) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:440, winSize:64
+[0;32mI (1902457) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.14,"current_A":3.32,"power_kW":5.11}}}
+[0m
+[0;32mI (1902557) MQTT_APP: pub RS485 published[0m
+[0;32mI (1912707) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.53,"current_A":10.8,"power_kW":7.15}}}
+[0m
+[0;32mI (1912807) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.1,"humidity_%":57.1,"pressure_Pa":100142}}}
+[0m
+[0;32mI (1912807) MQTT_APP: pub RS485 published[0m
+[0;32mI (1912817) MQTT_APP: pub Lora published[0m
+[0;32mI (1923077) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":51,"pressure_Pa":100681}}}
+[0m
+[0;32mI (1923077) MQTT_APP: pub Lora published[0m
+[0;32mI (1923227) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":258.86,"current_A":13.4,"power_kW":6.36}}}
+[0m
+[0;32mI (1923327) MQTT_APP: pub RS485 published[0m
+[0;32mI (1933477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":226.26,"current_A":12.95,"power_kW":6.77}}}
+[0m
+[0;32mI (1933577) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":43.8,"pressure_Pa":101754}}}
+[0m
+[0;32mI (1933577) MQTT_APP: pub RS485 published[0m
+[0;32mI (1933577) MQTT_APP: pub Lora published[0m
+[0;32mI (1943827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.97,"current_A":7.51,"power_kW":7.32}}}
+[0m
+[0;32mI (1943927) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.1,"humidity_%":35.8,"pressure_Pa":101054}}}
+[0m
+[0;32mI (1943927) MQTT_APP: pub RS485 published[0m
+[0;32mI (1943937) MQTT_APP: pub Lora published[0m
+I (1943947) wifi:<ba-del>idx:0, tid:0
+I (1943947) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:448, winSize:64
+[0;32mI (1954217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.7,"humidity_%":40.4,"pressure_Pa":100057}}}
+[0m
+[0;32mI (1954217) MQTT_APP: pub Lora published[0m
+[0;32mI (1954367) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":205.07,"current_A":3.58,"power_kW":8.43}}}
+[0m
+[0;32mI (1954467) MQTT_APP: pub RS485 published[0m
+[0;32mI (1964617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":257.05,"current_A":17.12,"power_kW":9.84}}}
+[0m
+[0;32mI (1964717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.7,"humidity_%":48.1,"pressure_Pa":100965}}}
+[0m
+[0;32mI (1964717) MQTT_APP: pub RS485 published[0m
+[0;32mI (1964717) MQTT_APP: pub Lora published[0m
+[0;32mI (1974987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":39.9,"pressure_Pa":100216}}}
+[0m
+[0;32mI (1974987) MQTT_APP: pub Lora published[0m
+[0;32mI (1975137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.51,"current_A":6.22,"power_kW":8.15}}}
+[0m
+[0;32mI (1975237) MQTT_APP: pub RS485 published[0m
+[0;32mI (1985387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.96,"current_A":3.96,"power_kW":7.5}}}
+[0m
+[0;32mI (1985487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.9,"humidity_%":46.1,"pressure_Pa":101649}}}
+[0m
+[0;32mI (1985487) MQTT_APP: pub RS485 published[0m
+[0;32mI (1985497) MQTT_APP: pub Lora published[0m
+[0;32mI (1995747) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":33.1,"pressure_Pa":101359}}}
+[0m
+[0;32mI (1995747) MQTT_APP: pub Lora published[0m
+I (1995767) wifi:<ba-del>idx:0, tid:0
+I (1995777) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:460, winSize:64
+[0;32mI (1995897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.65,"current_A":1.87,"power_kW":8.48}}}
+[0m
+[0;32mI (1995997) MQTT_APP: pub RS485 published[0m
+[0;32mI (2006147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":275.03,"current_A":9.86,"power_kW":8.43}}}
+[0m
+[0;32mI (2006247) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":42.4,"pressure_Pa":101894}}}
+[0m
+[0;32mI (2006247) MQTT_APP: pub RS485 published[0m
+[0;32mI (2006247) MQTT_APP: pub Lora published[0m
+[0;32mI (2016517) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":33.2,"pressure_Pa":101261}}}
+[0m
+[0;32mI (2016517) MQTT_APP: pub Lora published[0m
+[0;32mI (2016677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":278.04,"current_A":2.31,"power_kW":9.86}}}
+[0m
+[0;32mI (2016777) MQTT_APP: pub RS485 published[0m
+[0;32mI (2026927) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":248.44,"current_A":17.49,"power_kW":6.73}}}
+[0m
+[0;32mI (2027027) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":34.3,"pressure_Pa":100367}}}
+[0m
+[0;32mI (2027027) MQTT_APP: pub RS485 published[0m
+[0;32mI (2027027) MQTT_APP: pub Lora published[0m
+[0;32mI (2037267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":248.79,"current_A":17.14,"power_kW":10.89}}}
+[0m
+[0;32mI (2037367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.3,"humidity_%":51.6,"pressure_Pa":100680}}}
+[0m
+[0;32mI (2037367) MQTT_APP: pub RS485 published[0m
+[0;32mI (2037377) MQTT_APP: pub Lora published[0m
+[0;32mI (2047657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.7,"humidity_%":40.5,"pressure_Pa":100527}}}
+[0m
+[0;32mI (2047657) MQTT_APP: pub Lora published[0m
+[0;32mI (2047807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.15,"current_A":8.97,"power_kW":8.95}}}
+[0m
+[0;32mI (2047907) MQTT_APP: pub RS485 published[0m
+[0;32mI (2058057) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.85,"current_A":2.18,"power_kW":6.79}}}
+[0m
+[0;32mI (2058157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.9,"humidity_%":42.6,"pressure_Pa":101866}}}
+[0m
+[0;32mI (2058157) MQTT_APP: pub RS485 published[0m
+[0;32mI (2058157) MQTT_APP: pub Lora published[0m
+[0;32mI (2068427) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":58.3,"pressure_Pa":100723}}}
+[0m
+[0;32mI (2068427) MQTT_APP: pub Lora published[0m
+[0;32mI (2068577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.21,"current_A":14.34,"power_kW":8.02}}}
+[0m
+[0;32mI (2068677) MQTT_APP: pub RS485 published[0m
+[0;32mI (2078827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":250.13,"current_A":10.92,"power_kW":9.83}}}
+[0m
+[0;32mI (2078927) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.6,"humidity_%":57.9,"pressure_Pa":100915}}}
+[0m
+[0;32mI (2078927) MQTT_APP: pub RS485 published[0m
+[0;32mI (2078927) MQTT_APP: pub Lora published[0m
+I (2078957) wifi:<ba-del>idx:0, tid:0
+I (2078967) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:480, winSize:64
+[0;32mI (2089197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":44.7,"pressure_Pa":101208}}}
+[0m
+[0;32mI (2089197) MQTT_APP: pub Lora published[0m
+[0;32mI (2089347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":206.78,"current_A":6.67,"power_kW":7.1}}}
+[0m
+[0;32mI (2089447) MQTT_APP: pub RS485 published[0m
+[0;32mI (2099597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":246.04,"current_A":16.63,"power_kW":8.98}}}
+[0m
+[0;32mI (2099697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":35.8,"pressure_Pa":100617}}}
+[0m
+[0;32mI (2099697) MQTT_APP: pub RS485 published[0m
+[0;32mI (2099697) MQTT_APP: pub Lora published[0m
+[0;32mI (2109947) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":212.13,"current_A":0.24,"power_kW":7.13}}}
+[0m
+[0;32mI (2110047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.4,"humidity_%":55.6,"pressure_Pa":100508}}}
+[0m
+[0;32mI (2110047) MQTT_APP: pub RS485 published[0m
+[0;32mI (2110047) MQTT_APP: pub Lora published[0m
+[0;32mI (2120337) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.3,"humidity_%":46.2,"pressure_Pa":100979}}}
+[0m
+[0;32mI (2120337) MQTT_APP: pub Lora published[0m
+[0;32mI (2120487) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.69,"current_A":7.31,"power_kW":8.33}}}
+[0m
+[0;32mI (2120587) MQTT_APP: pub RS485 published[0m
+[0;32mI (2130737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":297.24,"current_A":11.58,"power_kW":9.48}}}
+[0m
+[0;32mI (2130837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.9,"humidity_%":52,"pressure_Pa":101194}}}
+[0m
+[0;32mI (2130837) MQTT_APP: pub RS485 published[0m
+[0;32mI (2130847) MQTT_APP: pub Lora published[0m
+[0;32mI (2141107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.8,"humidity_%":30.1,"pressure_Pa":100517}}}
+[0m
+[0;32mI (2141107) MQTT_APP: pub Lora published[0m
+[0;32mI (2141257) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.13,"current_A":0.56,"power_kW":7.94}}}
+[0m
+[0;32mI (2141357) MQTT_APP: pub RS485 published[0m
+[0;32mI (2151507) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":249.34,"current_A":5.71,"power_kW":6.5}}}
+[0m
+[0;32mI (2151607) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.8,"humidity_%":47,"pressure_Pa":100463}}}
+[0m
+[0;32mI (2151607) MQTT_APP: pub RS485 published[0m
+[0;32mI (2151607) MQTT_APP: pub Lora published[0m
+[0;32mI (2161857) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":225.01,"current_A":14.92,"power_kW":9.7}}}
+[0m
+[0;32mI (2161957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.7,"humidity_%":31,"pressure_Pa":100654}}}
+[0m
+[0;32mI (2161957) MQTT_APP: pub RS485 published[0m
+[0;32mI (2161957) MQTT_APP: pub Lora published[0m
+[0;32mI (2172237) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.6,"humidity_%":58.7,"pressure_Pa":100121}}}
+[0m
+[0;32mI (2172237) MQTT_APP: pub Lora published[0m
+[0;32mI (2172387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.89,"current_A":11.65,"power_kW":9.1}}}
+[0m
+[0;32mI (2172487) MQTT_APP: pub RS485 published[0m
+[0;32mI (2182637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.34,"current_A":14.14,"power_kW":7.23}}}
+[0m
+[0;32mI (2182737) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":40.9,"pressure_Pa":101694}}}
+[0m
+[0;32mI (2182737) MQTT_APP: pub RS485 published[0m
+[0;32mI (2182747) MQTT_APP: pub Lora published[0m
+[0;32mI (2193007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":47.7,"pressure_Pa":101357}}}
+[0m
+[0;32mI (2193007) MQTT_APP: pub Lora published[0m
+[0;32mI (2193157) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.22,"current_A":14.72,"power_kW":10.39}}}
+[0m
+[0;32mI (2193257) MQTT_APP: pub RS485 published[0m
+[0;32mI (2203407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":290.06,"current_A":16.12,"power_kW":6.38}}}
+[0m
+[0;32mI (2203507) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.3,"humidity_%":31.7,"pressure_Pa":100530}}}
+[0m
+[0;32mI (2203507) MQTT_APP: pub RS485 published[0m
+[0;32mI (2203507) MQTT_APP: pub Lora published[0m
+I (2203517) wifi:<ba-del>idx:0, tid:0
+I (2203527) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:509, winSize:64
+[0;32mI (2211767) MQTT_APP: Giờ hiện tại: 00:55:26 - 01/01/2000[0m
+[0;32mI (2211767) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":0,"minute":55,"second":26,"day":1,"month":1,"year":2000}[0m
+[0;32mI (2211777) MQTT_APP: pub LED thành công[0m
+[0;32mI (2211787) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (2213777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.78,"current_A":0.72,"power_kW":8.35}}}
+[0m
+[0;32mI (2213877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.6,"humidity_%":32.1,"pressure_Pa":101684}}}
+[0m
+[0;32mI (2213877) MQTT_APP: pub RS485 published[0m
+[0;32mI (2213887) MQTT_APP: pub Lora published[0m
+[0;32mI (2224157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":42.6,"pressure_Pa":101194}}}
+[0m
+[0;32mI (2224157) MQTT_APP: pub Lora published[0m
+[0;32mI (2224307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":230.95,"current_A":18.19,"power_kW":7.43}}}
+[0m
+[0;32mI (2224407) MQTT_APP: pub RS485 published[0m
+[0;32mI (2234557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":293.26,"current_A":6.26,"power_kW":6.81}}}
+[0m
+[0;32mI (2234657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":50.6,"pressure_Pa":100628}}}
+[0m
+[0;32mI (2234657) MQTT_APP: pub RS485 published[0m
+[0;32mI (2234657) MQTT_APP: pub Lora published[0m
+[0;32mI (2244927) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.6,"humidity_%":39.2,"pressure_Pa":100061}}}
+[0m
+[0;32mI (2244927) MQTT_APP: pub Lora published[0m
+[0;32mI (2245077) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.77,"current_A":4.22,"power_kW":5.52}}}
+[0m
+[0;32mI (2245177) MQTT_APP: pub RS485 published[0m
+[0;32mI (2255327) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":251.52,"current_A":13.77,"power_kW":10.26}}}
+[0m
+[0;32mI (2255427) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.5,"humidity_%":38,"pressure_Pa":101292}}}
+[0m
+[0;32mI (2255427) MQTT_APP: pub RS485 published[0m
+[0;32mI (2255427) MQTT_APP: pub Lora published[0m
+[0;32mI (2265687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":36.1,"pressure_Pa":100739}}}
+[0m
+[0;32mI (2265687) MQTT_APP: pub Lora published[0m
+[0;32mI (2265837) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":249.07,"current_A":19.3,"power_kW":7.25}}}
+[0m
+[0;32mI (2265937) MQTT_APP: pub RS485 published[0m
+[0;32mI (2276087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":297.93,"current_A":5.29,"power_kW":7.48}}}
+[0m
+[0;32mI (2276187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":32.7,"pressure_Pa":100659}}}
+[0m
+[0;32mI (2276187) MQTT_APP: pub RS485 published[0m
+[0;32mI (2276187) MQTT_APP: pub Lora published[0m
+[0;32mI (2286457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.3,"humidity_%":37.9,"pressure_Pa":101468}}}
+[0m
+[0;32mI (2286457) MQTT_APP: pub Lora published[0m
+[0;32mI (2286607) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.24,"current_A":11.77,"power_kW":5}}}
+[0m
+[0;32mI (2286707) MQTT_APP: pub RS485 published[0m
+[0;32mI (2296857) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.77,"current_A":9.94,"power_kW":8.52}}}
+[0m
+[0;32mI (2296957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.2,"humidity_%":50.1,"pressure_Pa":101930}}}
+[0m
+[0;32mI (2296957) MQTT_APP: pub RS485 published[0m
+[0;32mI (2296967) MQTT_APP: pub Lora published[0m
+[0;32mI (2307217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":47.7,"pressure_Pa":100670}}}
+[0m
+[0;32mI (2307217) MQTT_APP: pub Lora published[0m
+[0;32mI (2307367) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":251.24,"current_A":4.2,"power_kW":6.19}}}
+[0m
+[0;32mI (2307467) MQTT_APP: pub RS485 published[0m
+[0;32mI (2317617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264,"current_A":18.17,"power_kW":6.17}}}
+[0m
+[0;32mI (2317717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.7,"humidity_%":39.5,"pressure_Pa":100895}}}
+[0m
+[0;32mI (2317717) MQTT_APP: pub RS485 published[0m
+[0;32mI (2317727) MQTT_APP: pub Lora published[0m
+[0;32mI (2327987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.4,"humidity_%":56.8,"pressure_Pa":100587}}}
+[0m
+[0;32mI (2327987) MQTT_APP: pub Lora published[0m
+[0;32mI (2328137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":275.13,"current_A":2.57,"power_kW":5.82}}}
+[0m
+[0;32mI (2328237) MQTT_APP: pub RS485 published[0m
+[0;32mI (2338387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.05,"current_A":10.06,"power_kW":8.19}}}
+[0m
+[0;32mI (2338487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.2,"humidity_%":56.2,"pressure_Pa":100008}}}
+[0m
+[0;32mI (2338487) MQTT_APP: pub RS485 published[0m
+[0;32mI (2338487) MQTT_APP: pub Lora published[0m
+[0;32mI (2348737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.52,"current_A":14.35,"power_kW":5.31}}}
+[0m
+[0;32mI (2348837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":56.2,"pressure_Pa":100317}}}
+[0m
+[0;32mI (2348837) MQTT_APP: pub RS485 published[0m
+[0;32mI (2348837) MQTT_APP: pub Lora published[0m
+[0;32mI (2359127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.3,"humidity_%":55.1,"pressure_Pa":101847}}}
+[0m
+[0;32mI (2359127) MQTT_APP: pub Lora published[0m
+[0;32mI (2359277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":251.1,"current_A":9.47,"power_kW":9.48}}}
+[0m
+[0;32mI (2359377) MQTT_APP: pub RS485 published[0m
+[0;32mI (2369527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":232.59,"current_A":16.45,"power_kW":9.23}}}
+[0m
+[0;32mI (2369627) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.3,"humidity_%":48.8,"pressure_Pa":100771}}}
+[0m
+[0;32mI (2369627) MQTT_APP: pub RS485 published[0m
+[0;32mI (2369627) MQTT_APP: pub Lora published[0m
+[0;32mI (2379897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":51.9,"pressure_Pa":101494}}}
+[0m
+[0;32mI (2379897) MQTT_APP: pub Lora published[0m
+[0;32mI (2380047) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":286.07,"current_A":12,"power_kW":5.01}}}
+[0m
+[0;32mI (2380147) MQTT_APP: pub RS485 published[0m
+[0;32mI (2390297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":274.17,"current_A":15.95,"power_kW":9.64}}}
+[0m
+[0;32mI (2390397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":34.4,"pressure_Pa":100756}}}
+[0m
+[0;32mI (2390397) MQTT_APP: pub RS485 published[0m
+[0;32mI (2390407) MQTT_APP: pub Lora published[0m
+[0;32mI (2400657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.1,"humidity_%":49.1,"pressure_Pa":101940}}}
+[0m
+[0;32mI (2400657) MQTT_APP: pub Lora published[0m
+[0;32mI (2400807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.59,"current_A":17.97,"power_kW":6.63}}}
+[0m
+[0;32mI (2400907) MQTT_APP: pub RS485 published[0m
+[0;32mI (2411057) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.2,"current_A":12.48,"power_kW":6.76}}}
+[0m
+[0;32mI (2411157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.2,"humidity_%":38.5,"pressure_Pa":100899}}}
+[0m
+[0;32mI (2411157) MQTT_APP: pub RS485 published[0m
+[0;32mI (2411167) MQTT_APP: pub Lora published[0m
+[0;32mI (2421427) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.6,"humidity_%":33.3,"pressure_Pa":101797}}}
+[0m
+[0;32mI (2421427) MQTT_APP: pub Lora published[0m
+[0;32mI (2421577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":293.03,"current_A":8.74,"power_kW":7.03}}}
+[0m
+[0;32mI (2421677) MQTT_APP: pub RS485 published[0m
+[0;32mI (2431827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":225.69,"current_A":5.58,"power_kW":6.99}}}
+[0m
+[0;32mI (2431927) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":58.1,"pressure_Pa":101186}}}
+[0m
+[0;32mI (2431927) MQTT_APP: pub RS485 published[0m
+[0;32mI (2431927) MQTT_APP: pub Lora published[0m
+[0;32mI (2442187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.1,"humidity_%":31.4,"pressure_Pa":100260}}}
+[0m
+[0;32mI (2442187) MQTT_APP: pub Lora published[0m
+[0;32mI (2442337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.72,"current_A":13.53,"power_kW":10.81}}}
+[0m
+[0;32mI (2442437) MQTT_APP: pub RS485 published[0m
+[0;32mI (2452587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":245.52,"current_A":10.31,"power_kW":5.63}}}
+[0m
+[0;32mI (2452687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.5,"humidity_%":56.2,"pressure_Pa":101048}}}
+[0m
+[0;32mI (2452687) MQTT_APP: pub RS485 published[0m
+[0;32mI (2452697) MQTT_APP: pub Lora published[0m
+[0;32mI (2462957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.7,"humidity_%":51.9,"pressure_Pa":101370}}}
+[0m
+[0;32mI (2462957) MQTT_APP: pub Lora published[0m
+[0;32mI (2463107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":201.59,"current_A":2.79,"power_kW":7.29}}}
+[0m
+[0;32mI (2463207) MQTT_APP: pub RS485 published[0m
+[0;32mI (2473357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":281.2,"current_A":2.51,"power_kW":8.7}}}
+[0m
+[0;32mI (2473457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":45.6,"pressure_Pa":100930}}}
+[0m
+[0;32mI (2473457) MQTT_APP: pub RS485 published[0m
+[0;32mI (2473467) MQTT_APP: pub Lora published[0m
+[0;32mI (2483727) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.4,"humidity_%":35.7,"pressure_Pa":101093}}}
+[0m
+[0;32mI (2483727) MQTT_APP: pub Lora published[0m
+[0;32mI (2483887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.08,"current_A":1.66,"power_kW":6.78}}}
+[0m
+[0;32mI (2483987) MQTT_APP: pub RS485 published[0m
+[0;32mI (2494137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":226.79,"current_A":10.32,"power_kW":6.72}}}
+[0m
+[0;32mI (2494237) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.6,"humidity_%":33,"pressure_Pa":101052}}}
+[0m
+[0;32mI (2494237) MQTT_APP: pub RS485 published[0m
+[0;32mI (2494247) MQTT_APP: pub Lora published[0m
+[0;32mI (2504477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":208.37,"current_A":16.02,"power_kW":9.23}}}
+[0m
+[0;32mI (2504577) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":38.7,"pressure_Pa":100879}}}
+[0m
+[0;32mI (2504577) MQTT_APP: pub RS485 published[0m
+[0;32mI (2504577) MQTT_APP: pub Lora published[0m
+[0;32mI (2514867) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.8,"humidity_%":57.4,"pressure_Pa":100509}}}
+[0m
+[0;32mI (2514867) MQTT_APP: pub Lora published[0m
+[0;32mI (2515017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.23,"current_A":2.23,"power_kW":9.79}}}
+[0m
+[0;32mI (2515117) MQTT_APP: pub RS485 published[0m
+[0;32mI (2516867) MQTT_APP: Giờ hiện tại: 00:59:07 - 01/01/2000[0m
+[0;32mI (2516867) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":0,"minute":59,"second":7,"day":1,"month":1,"year":2000}[0m
+[0;32mI (2516877) MQTT_APP: pub LED thành công[0m
+[0;32mI (2516897) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (2525277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.57,"current_A":11.79,"power_kW":5.27}}}
+[0m
+[0;32mI (2525377) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.5,"humidity_%":57.4,"pressure_Pa":100722}}}
+[0m
+[0;32mI (2525377) MQTT_APP: pub RS485 published[0m
+[0;32mI (2525387) MQTT_APP: pub Lora published[0m
+[0;32mI (2535627) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":247.13,"current_A":4.57,"power_kW":7.57}}}
+[0m
+[0;32mI (2535727) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.6,"humidity_%":53.6,"pressure_Pa":100216}}}
+[0m
+[0;32mI (2535727) MQTT_APP: pub RS485 published[0m
+[0;32mI (2535737) MQTT_APP: pub Lora published[0m
+[0;32mI (2546017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80,"humidity_%":33.6,"pressure_Pa":101513}}}
+[0m
+[0;32mI (2546017) MQTT_APP: pub Lora published[0m
+[0;32mI (2546167) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.75,"current_A":10.62,"power_kW":5.06}}}
+[0m
+[0;32mI (2546267) MQTT_APP: pub RS485 published[0m
+[0;32mI (2546767) MQTT_APP: Giờ hiện tại: 00:59:29 - 01/01/2000[0m
+[0;32mI (2546767) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":0,"minute":59,"second":29,"day":1,"month":1,"year":2000}[0m
+[0;32mI (2546777) MQTT_APP: pub LED thành công[0m
+[0;32mI (2546797) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (2556427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":237.96,"current_A":15.24,"power_kW":5.08}}}
+[0m
+[0;32mI (2556527) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":50.7,"pressure_Pa":100173}}}
+[0m
+[0;32mI (2556527) MQTT_APP: pub RS485 published[0m
+[0;32mI (2556527) MQTT_APP: pub Lora published[0m
+[0;32mI (2566777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.76,"current_A":14.14,"power_kW":10.35}}}
+[0m
+[0;32mI (2566877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.3,"humidity_%":56.1,"pressure_Pa":100557}}}
+[0m
+[0;32mI (2566877) MQTT_APP: pub RS485 published[0m
+[0;32mI (2566877) MQTT_APP: pub Lora published[0m
+[0;32mI (2577167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":43.8,"pressure_Pa":100694}}}
+[0m
+[0;32mI (2577167) MQTT_APP: pub Lora published[0m
+[0;32mI (2577317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.27,"current_A":3.42,"power_kW":10.21}}}
+[0m
+[0;32mI (2577417) MQTT_APP: pub RS485 published[0m
+[0;32mI (2587567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.9,"current_A":3.45,"power_kW":7.34}}}
+[0m
+[0;32mI (2587667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":48,"pressure_Pa":101612}}}
+[0m
+[0;32mI (2587667) MQTT_APP: pub RS485 published[0m
+[0;32mI (2587677) MQTT_APP: pub Lora published[0m
+[0;32mI (2597927) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":46.4,"pressure_Pa":100481}}}
+[0m
+[0;32mI (2597927) MQTT_APP: pub Lora published[0m
+[0;32mI (2598077) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.5,"current_A":18.75,"power_kW":9.74}}}
+[0m
+[0;32mI (2598177) MQTT_APP: pub RS485 published[0m
+[0;32mI (2608327) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.82,"current_A":5.34,"power_kW":5.46}}}
+[0m
+[0;32mI (2608427) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":54.2,"pressure_Pa":101588}}}
+[0m
+[0;32mI (2608427) MQTT_APP: pub RS485 published[0m
+[0;32mI (2608437) MQTT_APP: pub Lora published[0m
+[0;32mI (2618697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":32,"pressure_Pa":100850}}}
+[0m
+[0;32mI (2618697) MQTT_APP: pub Lora published[0m
+[0;32mI (2618847) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":275.62,"current_A":2.7,"power_kW":5.42}}}
+[0m
+[0;32mI (2618947) MQTT_APP: pub RS485 published[0m
+[0;32mI (2629097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":234.67,"current_A":14.8,"power_kW":9.96}}}
+[0m
+[0;32mI (2629197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.5,"humidity_%":43.5,"pressure_Pa":101177}}}
+[0m
+[0;32mI (2629197) MQTT_APP: pub RS485 published[0m
+[0;32mI (2629207) MQTT_APP: pub Lora published[0m
+[0;32mI (2639447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":272.55,"current_A":18.75,"power_kW":9.75}}}
+[0m
+[0;32mI (2639547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.6,"humidity_%":48.1,"pressure_Pa":100043}}}
+[0m
+[0;32mI (2639547) MQTT_APP: pub RS485 published[0m
+[0;32mI (2639547) MQTT_APP: pub Lora published[0m
+I (2639567) wifi:<ba-del>idx:0, tid:0
+I (2639567) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:612, winSize:64
+[0;32mI (2649837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.6,"humidity_%":39.7,"pressure_Pa":101305}}}
+[0m
+[0;32mI (2649837) MQTT_APP: pub Lora published[0m
+[0;32mI (2649987) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":237.95,"current_A":3.95,"power_kW":7.83}}}
+[0m
+[0;32mI (2650087) MQTT_APP: pub RS485 published[0m
+[0;32mI (2660237) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.05,"current_A":11.77,"power_kW":5.9}}}
+[0m
+[0;32mI (2660337) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.2,"humidity_%":52.7,"pressure_Pa":101151}}}
+[0m
+[0;32mI (2660337) MQTT_APP: pub RS485 published[0m
+[0;32mI (2660337) MQTT_APP: pub Lora published[0m
+[0;32mI (2670607) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.5,"humidity_%":59.6,"pressure_Pa":101661}}}
+[0m
+[0;32mI (2670607) MQTT_APP: pub Lora published[0m
+[0;32mI (2670757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.25,"current_A":6.79,"power_kW":7.24}}}
+[0m
+[0;32mI (2670857) MQTT_APP: pub RS485 published[0m
+[0;32mI (2681007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":273.8,"current_A":3.83,"power_kW":7.82}}}
+[0m
+[0;32mI (2681107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":52.2,"pressure_Pa":100053}}}
+[0m
+[0;32mI (2681107) MQTT_APP: pub RS485 published[0m
+[0;32mI (2681117) MQTT_APP: pub Lora published[0m
+[0;32mI (2691377) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":56.3,"pressure_Pa":100041}}}
+[0m
+[0;32mI (2691377) MQTT_APP: pub Lora published[0m
+[0;32mI (2691527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":237.29,"current_A":7.86,"power_kW":10.94}}}
+[0m
+[0;32mI (2691627) MQTT_APP: pub RS485 published[0m
+[0;32mI (2701777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.06,"current_A":19.17,"power_kW":6.39}}}
+[0m
+[0;32mI (2701877) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.2,"humidity_%":43,"pressure_Pa":101630}}}
+[0m
+[0;32mI (2701877) MQTT_APP: pub RS485 published[0m
+[0;32mI (2701877) MQTT_APP: pub Lora published[0m
+[0;32mI (2712127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":244.68,"current_A":3.29,"power_kW":10.05}}}
+[0m
+[0;32mI (2712227) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.3,"humidity_%":49.2,"pressure_Pa":100639}}}
+[0m
+[0;32mI (2712227) MQTT_APP: pub RS485 published[0m
+[0;32mI (2712237) MQTT_APP: pub Lora published[0m
+[0;32mI (2722517) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":44,"pressure_Pa":100287}}}
+[0m
+[0;32mI (2722517) MQTT_APP: pub Lora published[0m
+[0;32mI (2722667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":297.79,"current_A":8.63,"power_kW":5.99}}}
+[0m
+[0;32mI (2722767) MQTT_APP: pub RS485 published[0m
+[0;32mI (2732917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":205.2,"current_A":4.72,"power_kW":5.3}}}
+[0m
+[0;32mI (2733017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.7,"humidity_%":30.1,"pressure_Pa":100488}}}
+[0m
+[0;32mI (2733017) MQTT_APP: pub RS485 published[0m
+[0;32mI (2733017) MQTT_APP: pub Lora published[0m
+[0;32mI (2743277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":36.9,"pressure_Pa":100988}}}
+[0m
+[0;32mI (2743277) MQTT_APP: pub Lora published[0m
+[0;32mI (2743427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.52,"current_A":12.58,"power_kW":6.81}}}
+[0m
+[0;32mI (2743527) MQTT_APP: pub RS485 published[0m
+[0;32mI (2753677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":245.48,"current_A":5.08,"power_kW":8.67}}}
+[0m
+[0;32mI (2753777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":41.6,"pressure_Pa":100409}}}
+[0m
+[0;32mI (2753777) MQTT_APP: pub RS485 published[0m
+[0;32mI (2753787) MQTT_APP: pub Lora published[0m
+[0;32mI (2764047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.5,"humidity_%":41.4,"pressure_Pa":101654}}}
+[0m
+[0;32mI (2764047) MQTT_APP: pub Lora published[0m
+[0;32mI (2764197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.7,"current_A":3.79,"power_kW":7.39}}}
+[0m
+[0;32mI (2764297) MQTT_APP: pub RS485 published[0m
+[0;32mI (2774447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":248.44,"current_A":17.37,"power_kW":6.42}}}
+[0m
+[0;32mI (2774547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":34.5,"pressure_Pa":100523}}}
+[0m
+[0;32mI (2774547) MQTT_APP: pub RS485 published[0m
+[0;32mI (2774557) MQTT_APP: pub Lora published[0m
+[0;32mI (2784817) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.8,"humidity_%":47.7,"pressure_Pa":100004}}}
+[0m
+[0;32mI (2784817) MQTT_APP: pub Lora published[0m
+I (2784827) wifi:<ba-del>idx:0, tid:0
+I (2784827) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:645, winSize:64
+[0;32mI (2784967) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":282.56,"current_A":15.33,"power_kW":5.92}}}
+[0m
+[0;32mI (2785067) MQTT_APP: pub RS485 published[0m
+[0;32mI (2795217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":253.28,"current_A":8.73,"power_kW":7.71}}}
+[0m
+[0;32mI (2795317) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":57,"pressure_Pa":100953}}}
+[0m
+[0;32mI (2795317) MQTT_APP: pub RS485 published[0m
+[0;32mI (2795317) MQTT_APP: pub Lora published[0m
+I (2797847) wifi:<ba-del>idx:0, tid:0
+I (2797847) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:650, winSize:64
+[0;32mI (2805557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":221.84,"current_A":14.47,"power_kW":9.88}}}
+[0m
+[0;32mI (2805657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80,"humidity_%":30.5,"pressure_Pa":101455}}}
+[0m
+[0;32mI (2805657) MQTT_APP: pub RS485 published[0m
+[0;32mI (2805657) MQTT_APP: pub Lora published[0m
+[0;32mI (2815957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.5,"humidity_%":40.8,"pressure_Pa":100158}}}
+[0m
+[0;32mI (2815957) MQTT_APP: pub Lora published[0m
+[0;32mI (2816107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":274.23,"current_A":1.72,"power_kW":5.35}}}
+[0m
+[0;32mI (2816207) MQTT_APP: pub RS485 published[0m
+[0;32mI (2826357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.47,"current_A":15.67,"power_kW":8.76}}}
+[0m
+[0;32mI (2826457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":35.6,"pressure_Pa":101344}}}
+[0m
+[0;32mI (2826457) MQTT_APP: pub RS485 published[0m
+[0;32mI (2826467) MQTT_APP: pub Lora published[0m
+[0;32mI (2836717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.3,"humidity_%":33.6,"pressure_Pa":100537}}}
+[0m
+[0;32mI (2836717) MQTT_APP: pub Lora published[0m
+[0;32mI (2836867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":246.62,"current_A":17.42,"power_kW":5.03}}}
+[0m
+[0;32mI (2836967) MQTT_APP: pub RS485 published[0m
+[0;32mI (2847117) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.04,"current_A":15.87,"power_kW":10.17}}}
+[0m
+[0;32mI (2847217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":38.1,"pressure_Pa":101294}}}
+[0m
+[0;32mI (2847217) MQTT_APP: pub RS485 published[0m
+[0;32mI (2847217) MQTT_APP: pub Lora published[0m
+[0;32mI (2857487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":39.3,"pressure_Pa":100256}}}
+[0m
+[0;32mI (2857487) MQTT_APP: pub Lora published[0m
+[0;32mI (2857637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":238.51,"current_A":7.9,"power_kW":7.32}}}
+[0m
+[0;32mI (2857737) MQTT_APP: pub RS485 published[0m
+[0;32mI (2867887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.17,"current_A":5.38,"power_kW":5.45}}}
+[0m
+[0;32mI (2867987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.6,"humidity_%":52.9,"pressure_Pa":100707}}}
+[0m
+[0;32mI (2867987) MQTT_APP: pub RS485 published[0m
+[0;32mI (2867987) MQTT_APP: pub Lora published[0m
+[0;32mI (2876497) MQTT_APP: Giờ hiện tại: 01:03:26 - 01/01/2000[0m
+[0;32mI (2876497) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":1,"minute":3,"second":26,"day":1,"month":1,"year":2000}[0m
+[0;32mI (2876507) MQTT_APP: pub LED thành công[0m
+[0;32mI (2876527) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (2878247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":279.51,"current_A":1.59,"power_kW":10.65}}}
+[0m
+[0;32mI (2878347) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":52.5,"pressure_Pa":100307}}}
+[0m
+[0;32mI (2878347) MQTT_APP: pub RS485 published[0m
+[0;32mI (2878347) MQTT_APP: pub Lora published[0m
+[0;32mI (2888637) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.5,"humidity_%":39.4,"pressure_Pa":101893}}}
+[0m
+[0;32mI (2888637) MQTT_APP: pub Lora published[0m
+[0;32mI (2888787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.63,"current_A":9.01,"power_kW":5.4}}}
+[0m
+[0;32mI (2888887) MQTT_APP: pub RS485 published[0m
+[0;32mI (2899037) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":280.59,"current_A":14.4,"power_kW":7.89}}}
+[0m
+[0;32mI (2899137) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.3,"humidity_%":52.9,"pressure_Pa":100232}}}
+[0m
+[0;32mI (2899137) MQTT_APP: pub RS485 published[0m
+[0;32mI (2899137) MQTT_APP: pub Lora published[0m
+[0;32mI (2909407) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":31.8,"pressure_Pa":100968}}}
+[0m
+[0;32mI (2909407) MQTT_APP: pub Lora published[0m
+[0;32mI (2909557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":286.66,"current_A":2.74,"power_kW":7.21}}}
+[0m
+[0;32mI (2909657) MQTT_APP: pub RS485 published[0m
+[0;32mI (2919807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":241.09,"current_A":18.35,"power_kW":6.61}}}
+[0m
+[0;32mI (2919907) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.7,"humidity_%":51.5,"pressure_Pa":100227}}}
+[0m
+[0;32mI (2919907) MQTT_APP: pub RS485 published[0m
+[0;32mI (2919907) MQTT_APP: pub Lora published[0m
+[0;32mI (2930167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":43.2,"pressure_Pa":100272}}}
+[0m
+[0;32mI (2930167) MQTT_APP: pub Lora published[0m
+[0;32mI (2930317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.94,"current_A":3.54,"power_kW":8.16}}}
+[0m
+[0;32mI (2930417) MQTT_APP: pub RS485 published[0m
+[0;32mI (2940567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":213.11,"current_A":4.08,"power_kW":8.05}}}
+[0m
+[0;32mI (2940667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":38.3,"pressure_Pa":101474}}}
+[0m
+[0;32mI (2940667) MQTT_APP: pub RS485 published[0m
+[0;32mI (2940677) MQTT_APP: pub Lora published[0m
+[0;32mI (2950937) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.2,"humidity_%":49.2,"pressure_Pa":101172}}}
+[0m
+[0;32mI (2950937) MQTT_APP: pub Lora published[0m
+[0;32mI (2951087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.29,"current_A":13.43,"power_kW":7.09}}}
+[0m
+[0;32mI (2951187) MQTT_APP: pub RS485 published[0m
+[0;32mI (2961337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":211.09,"current_A":3.48,"power_kW":8.07}}}
+[0m
+[0;32mI (2961437) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.5,"humidity_%":38.4,"pressure_Pa":101049}}}
+[0m
+[0;32mI (2961437) MQTT_APP: pub RS485 published[0m
+[0;32mI (2961437) MQTT_APP: pub Lora published[0m
+[0;32mI (2971687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.33,"current_A":6.85,"power_kW":5.85}}}
+[0m
+[0;32mI (2971787) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86,"humidity_%":58,"pressure_Pa":100989}}}
+[0m
+[0;32mI (2971787) MQTT_APP: pub RS485 published[0m
+[0;32mI (2971787) MQTT_APP: pub Lora published[0m
+[0;32mI (2982077) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.2,"humidity_%":37.4,"pressure_Pa":101391}}}
+[0m
+[0;32mI (2982077) MQTT_APP: pub Lora published[0m
+[0;32mI (2982227) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.93,"current_A":3.98,"power_kW":6.61}}}
+[0m
+[0;32mI (2982327) MQTT_APP: pub RS485 published[0m
+[0;32mI (2992477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":297.29,"current_A":12.69,"power_kW":9.31}}}
+[0m
+[0;32mI (2992577) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.1,"humidity_%":57.7,"pressure_Pa":101089}}}
+[0m
+[0;32mI (2992577) MQTT_APP: pub RS485 published[0m
+[0;32mI (2992587) MQTT_APP: pub Lora published[0m
+[0;32mI (3002847) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":51.1,"pressure_Pa":101513}}}
+[0m
+[0;32mI (3002847) MQTT_APP: pub Lora published[0m
+[0;32mI (3002997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.5,"current_A":4.23,"power_kW":9.22}}}
+[0m
+[0;32mI (3003097) MQTT_APP: pub RS485 published[0m
+[0;32mI (3013247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.72,"current_A":12.8,"power_kW":5}}}
+[0m
+[0;32mI (3013347) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":31.6,"pressure_Pa":100365}}}
+[0m
+[0;32mI (3013347) MQTT_APP: pub RS485 published[0m
+[0;32mI (3013347) MQTT_APP: pub Lora published[0m
+[0;32mI (3023597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.43,"current_A":3.81,"power_kW":7.82}}}
+[0m
+[0;32mI (3023697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.1,"humidity_%":31.8,"pressure_Pa":100475}}}
+[0m
+[0;32mI (3023697) MQTT_APP: pub RS485 published[0m
+[0;32mI (3023697) MQTT_APP: pub Lora published[0m
+[0;32mI (3033987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.7,"humidity_%":55.2,"pressure_Pa":100551}}}
+[0m
+[0;32mI (3033987) MQTT_APP: pub Lora published[0m
+[0;32mI (3034137) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":261.95,"current_A":17.29,"power_kW":6.91}}}
+[0m
+[0;32mI (3034237) MQTT_APP: pub RS485 published[0m
+[0;32mI (3044387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.01,"current_A":19.11,"power_kW":5.7}}}
+[0m
+[0;32mI (3044487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.6,"humidity_%":56,"pressure_Pa":101456}}}
+[0m
+[0;32mI (3044487) MQTT_APP: pub RS485 published[0m
+[0;32mI (3044487) MQTT_APP: pub Lora published[0m
+[0;32mI (3054737) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":285.2,"current_A":17.45,"power_kW":10.79}}}
+[0m
+[0;32mI (3054837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.3,"humidity_%":57,"pressure_Pa":100308}}}
+[0m
+[0;32mI (3054837) MQTT_APP: pub RS485 published[0m
+[0;32mI (3054847) MQTT_APP: pub Lora published[0m
+I (3054857) wifi:<ba-del>idx:0, tid:0
+I (3054857) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:709, winSize:64
+[0;32mI (3065127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.9,"humidity_%":50.2,"pressure_Pa":101783}}}
+[0m
+[0;32mI (3065127) MQTT_APP: pub Lora published[0m
+[0;32mI (3065277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":267.19,"current_A":9.37,"power_kW":6.99}}}
+[0m
+[0;32mI (3065377) MQTT_APP: pub RS485 published[0m
+[0;32mI (3075527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.37,"current_A":15.29,"power_kW":5.15}}}
+[0m
+[0;32mI (3075627) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.8,"humidity_%":51.8,"pressure_Pa":100805}}}
+[0m
+[0;32mI (3075627) MQTT_APP: pub RS485 published[0m
+[0;32mI (3075627) MQTT_APP: pub Lora published[0m
+[0;32mI (3085897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":47.2,"pressure_Pa":100496}}}
+[0m
+[0;32mI (3085897) MQTT_APP: pub Lora published[0m
+[0;32mI (3086047) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.78,"current_A":19.71,"power_kW":9.45}}}
+[0m
+[0;32mI (3086147) MQTT_APP: pub RS485 published[0m
+[0;32mI (3096297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.15,"current_A":8.21,"power_kW":5.45}}}
+[0m
+[0;32mI (3096397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88,"humidity_%":47.7,"pressure_Pa":100558}}}
+[0m
+[0;32mI (3096397) MQTT_APP: pub RS485 published[0m
+[0;32mI (3096397) MQTT_APP: pub Lora published[0m
+[0;32mI (3106657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":49.5,"pressure_Pa":100211}}}
+[0m
+[0;32mI (3106657) MQTT_APP: pub Lora published[0m
+[0;32mI (3106807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":210.6,"current_A":2.1,"power_kW":5.1}}}
+[0m
+[0;32mI (3106907) MQTT_APP: pub RS485 published[0m
+[0;32mI (3117057) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.84,"current_A":6.05,"power_kW":9.77}}}
+[0m
+[0;32mI (3117157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":56,"pressure_Pa":101635}}}
+[0m
+[0;32mI (3117157) MQTT_APP: pub RS485 published[0m
+[0;32mI (3117167) MQTT_APP: pub Lora published[0m
+[0;32mI (3127407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":244.16,"current_A":4.81,"power_kW":6.85}}}
+[0m
+[0;32mI (3127507) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.4,"humidity_%":44.9,"pressure_Pa":100993}}}
+[0m
+[0;32mI (3127507) MQTT_APP: pub RS485 published[0m
+[0;32mI (3127507) MQTT_APP: pub Lora published[0m
+[0;32mI (3137797) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":40.3,"pressure_Pa":101507}}}
+[0m
+[0;32mI (3137797) MQTT_APP: pub Lora published[0m
+I (3137807) wifi:<ba-del>idx:0, tid:0
+I (3137817) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:727, winSize:64
+[0;32mI (3137947) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":222.13,"current_A":15.51,"power_kW":8.98}}}
+[0m
+[0;32mI (3138047) MQTT_APP: pub RS485 published[0m
+[0;32mI (3148197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":289.01,"current_A":19.1,"power_kW":7.95}}}
+[0m
+[0;32mI (3148297) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.7,"humidity_%":40,"pressure_Pa":100356}}}
+[0m
+[0;32mI (3148297) MQTT_APP: pub RS485 published[0m
+[0;32mI (3148297) MQTT_APP: pub Lora published[0m
+[0;32mI (3158567) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":49.1,"pressure_Pa":100647}}}
+[0m
+[0;32mI (3158567) MQTT_APP: pub Lora published[0m
+[0;32mI (3158717) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":281.93,"current_A":0.68,"power_kW":8.76}}}
+[0m
+[0;32mI (3158817) MQTT_APP: pub RS485 published[0m
+[0;32mI (3168967) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":287.95,"current_A":19.93,"power_kW":9.05}}}
+[0m
+[0;32mI (3169067) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.4,"humidity_%":55.3,"pressure_Pa":100764}}}
+[0m
+[0;32mI (3169067) MQTT_APP: pub RS485 published[0m
+[0;32mI (3169077) MQTT_APP: pub Lora published[0m
+[0;32mI (3179327) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.1,"humidity_%":37.8,"pressure_Pa":101349}}}
+[0m
+[0;32mI (3179327) MQTT_APP: pub Lora published[0m
+[0;32mI (3179477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":230.09,"current_A":7.32,"power_kW":5.84}}}
+[0m
+[0;32mI (3179577) MQTT_APP: pub RS485 published[0m
+[0;32mI (3189727) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.64,"current_A":18.88,"power_kW":8.62}}}
+[0m
+[0;32mI (3189827) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":45.3,"pressure_Pa":100911}}}
+[0m
+[0;32mI (3189827) MQTT_APP: pub RS485 published[0m
+[0;32mI (3189837) MQTT_APP: pub Lora published[0m
+[0;32mI (3200097) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.8,"humidity_%":31.6,"pressure_Pa":101175}}}
+[0m
+[0;32mI (3200097) MQTT_APP: pub Lora published[0m
+[0;32mI (3200247) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.92,"current_A":17.29,"power_kW":5.6}}}
+[0m
+[0;32mI (3200347) MQTT_APP: pub RS485 published[0m
+[0;32mI (3210497) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":239.4,"current_A":4.77,"power_kW":5.05}}}
+[0m
+[0;32mI (3210597) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.1,"humidity_%":42.7,"pressure_Pa":100521}}}
+[0m
+[0;32mI (3210597) MQTT_APP: pub RS485 published[0m
+[0;32mI (3210597) MQTT_APP: pub Lora published[0m
+[0;32mI (3220857) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":58.4,"pressure_Pa":100655}}}
+[0m
+[0;32mI (3220857) MQTT_APP: pub Lora published[0m
+[0;32mI (3221007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":275.59,"current_A":19.49,"power_kW":10.72}}}
+[0m
+[0;32mI (3221107) MQTT_APP: pub RS485 published[0m
+[0;32mI (3231257) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":242.22,"current_A":1.6,"power_kW":9.47}}}
+[0m
+[0;32mI (3231357) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.4,"humidity_%":59,"pressure_Pa":101466}}}
+[0m
+[0;32mI (3231357) MQTT_APP: pub RS485 published[0m
+[0;32mI (3231367) MQTT_APP: pub Lora published[0m
+[0;32mI (3241617) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.3,"humidity_%":41.7,"pressure_Pa":100101}}}
+[0m
+[0;32mI (3241617) MQTT_APP: pub Lora published[0m
+[0;32mI (3241767) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.48,"current_A":14.32,"power_kW":7.65}}}
+[0m
+[0;32mI (3241867) MQTT_APP: pub RS485 published[0m
+[0;32mI (3252017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.1,"current_A":17.92,"power_kW":5.48}}}
+[0m
+[0;32mI (3252117) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.8,"humidity_%":30.2,"pressure_Pa":101310}}}
+[0m
+[0;32mI (3252117) MQTT_APP: pub RS485 published[0m
+[0;32mI (3252117) MQTT_APP: pub Lora published[0m
+[0;32mI (3262387) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":35,"pressure_Pa":100933}}}
+[0m
+[0;32mI (3262387) MQTT_APP: pub Lora published[0m
+[0;32mI (3262537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.37,"current_A":12.94,"power_kW":8.1}}}
+[0m
+[0;32mI (3262637) MQTT_APP: pub RS485 published[0m
+[0;32mI (3272787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":207.53,"current_A":14.64,"power_kW":8.02}}}
+[0m
+[0;32mI (3272887) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":50.5,"pressure_Pa":101458}}}
+[0m
+[0;32mI (3272887) MQTT_APP: pub RS485 published[0m
+[0;32mI (3272897) MQTT_APP: pub Lora published[0m
+[0;32mI (3283157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.4,"humidity_%":46.9,"pressure_Pa":101439}}}
+[0m
+[0;32mI (3283157) MQTT_APP: pub Lora published[0m
+[0;32mI (3283307) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.87,"current_A":15.48,"power_kW":10.13}}}
+[0m
+[0;32mI (3283407) MQTT_APP: pub RS485 published[0m
+[0;32mI (3293557) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":270.83,"current_A":16.68,"power_kW":9}}}
+[0m
+[0;32mI (3293657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.7,"humidity_%":36,"pressure_Pa":100253}}}
+[0m
+[0;32mI (3293657) MQTT_APP: pub RS485 published[0m
+[0;32mI (3293657) MQTT_APP: pub Lora published[0m
+I (3293677) wifi:<ba-del>idx:0, tid:0
+I (3293677) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:763, winSize:64
+[0;32mI (3303907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.96,"current_A":17.41,"power_kW":5.35}}}
+[0m
+[0;32mI (3304007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.2,"humidity_%":43.7,"pressure_Pa":101199}}}
+[0m
+[0;32mI (3304007) MQTT_APP: pub RS485 published[0m
+[0;32mI (3304007) MQTT_APP: pub Lora published[0m
+[0;32mI (3314297) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.8,"humidity_%":47.1,"pressure_Pa":101873}}}
+[0m
+[0;32mI (3314297) MQTT_APP: pub Lora published[0m
+[0;32mI (3314447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":207.2,"current_A":12.93,"power_kW":9.89}}}
+[0m
+[0;32mI (3314547) MQTT_APP: pub RS485 published[0m
+[0;32mI (3324697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":298.17,"current_A":10.88,"power_kW":7.43}}}
+[0m
+[0;32mI (3324797) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.3,"humidity_%":32.8,"pressure_Pa":101603}}}
+[0m
+[0;32mI (3324797) MQTT_APP: pub RS485 published[0m
+[0;32mI (3324807) MQTT_APP: pub Lora published[0m
+[0;32mI (3335067) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":38.8,"pressure_Pa":100811}}}
+[0m
+[0;32mI (3335067) MQTT_APP: pub Lora published[0m
+[0;32mI (3335217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":266.43,"current_A":18.04,"power_kW":8.57}}}
+[0m
+[0;32mI (3335317) MQTT_APP: pub RS485 published[0m
+[0;32mI (3345467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":203.2,"current_A":7.64,"power_kW":10.05}}}
+[0m
+[0;32mI (3345567) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.2,"humidity_%":54.6,"pressure_Pa":101331}}}
+[0m
+[0;32mI (3345567) MQTT_APP: pub RS485 published[0m
+[0;32mI (3345567) MQTT_APP: pub Lora published[0m
+[0;32mI (3355837) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.9,"humidity_%":54.2,"pressure_Pa":100416}}}
+[0m
+[0;32mI (3355837) MQTT_APP: pub Lora published[0m
+[0;32mI (3355987) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.5,"current_A":5.02,"power_kW":6.45}}}
+[0m
+[0;32mI (3356087) MQTT_APP: pub RS485 published[0m
+[0;32mI (3366237) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.86,"current_A":8.17,"power_kW":5.23}}}
+[0m
+[0;32mI (3366337) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.7,"humidity_%":41.5,"pressure_Pa":101252}}}
+[0m
+[0;32mI (3366337) MQTT_APP: pub RS485 published[0m
+[0;32mI (3366347) MQTT_APP: pub Lora published[0m
+[0;32mI (3376597) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.6,"humidity_%":49.6,"pressure_Pa":101661}}}
+[0m
+[0;32mI (3376597) MQTT_APP: pub Lora published[0m
+[0;32mI (3376747) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":279.84,"current_A":2.9,"power_kW":8.28}}}
+[0m
+[0;32mI (3376847) MQTT_APP: pub RS485 published[0m
+[0;32mI (3386997) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":252.25,"current_A":18.72,"power_kW":6.57}}}
+[0m
+[0;32mI (3387097) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":34.3,"pressure_Pa":101544}}}
+[0m
+[0;32mI (3387097) MQTT_APP: pub RS485 published[0m
+[0;32mI (3387107) MQTT_APP: pub Lora published[0m
+[0;32mI (3397367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.5,"humidity_%":32.7,"pressure_Pa":101761}}}
+[0m
+[0;32mI (3397367) MQTT_APP: pub Lora published[0m
+[0;32mI (3397517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":282.77,"current_A":4.28,"power_kW":10.35}}}
+[0m
+[0;32mI (3397617) MQTT_APP: pub RS485 published[0m
+[0;32mI (3407767) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.64,"current_A":11.58,"power_kW":10.43}}}
+[0m
+[0;32mI (3407867) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":53.9,"pressure_Pa":100723}}}
+[0m
+[0;32mI (3407867) MQTT_APP: pub RS485 published[0m
+[0;32mI (3407867) MQTT_APP: pub Lora published[0m
+[0;32mI (3418137) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.8,"humidity_%":42.7,"pressure_Pa":101452}}}
+[0m
+[0;32mI (3418137) MQTT_APP: pub Lora published[0m
+[0;32mI (3418287) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.08,"current_A":1.21,"power_kW":6.69}}}
+[0m
+[0;32mI (3418387) MQTT_APP: pub RS485 published[0m
+[0;32mI (3428537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":213.07,"current_A":14.98,"power_kW":10.15}}}
+[0m
+[0;32mI (3428637) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":58.1,"pressure_Pa":101576}}}
+[0m
+[0;32mI (3428637) MQTT_APP: pub RS485 published[0m
+[0;32mI (3428647) MQTT_APP: pub Lora published[0m
+[0;32mI (3438887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":275.88,"current_A":6.64,"power_kW":10.06}}}
+[0m
+[0;32mI (3438987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88,"humidity_%":34.7,"pressure_Pa":100827}}}
+[0m
+[0;32mI (3438987) MQTT_APP: pub RS485 published[0m
+[0;32mI (3438987) MQTT_APP: pub Lora published[0m
+I (3440387) wifi:<ba-del>idx:0, tid:0
+I (3440387) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:795, winSize:64
+[0;32mI (3449277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":32.7,"pressure_Pa":100702}}}
+[0m
+[0;32mI (3449277) MQTT_APP: pub Lora published[0m
+[0;32mI (3449427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.79,"current_A":17.46,"power_kW":8.4}}}
+[0m
+[0;32mI (3449527) MQTT_APP: pub RS485 published[0m
+[0;32mI (3459677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":202.65,"current_A":9.11,"power_kW":5.02}}}
+[0m
+[0;32mI (3459777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.8,"humidity_%":54.1,"pressure_Pa":100842}}}
+[0m
+[0;32mI (3459777) MQTT_APP: pub RS485 published[0m
+[0;32mI (3459787) MQTT_APP: pub Lora published[0m
+[0;32mI (3470047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.3,"humidity_%":47.3,"pressure_Pa":101080}}}
+[0m
+[0;32mI (3470047) MQTT_APP: pub Lora published[0m
+[0;32mI (3470197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":236.02,"current_A":4.7,"power_kW":6.87}}}
+[0m
+[0;32mI (3470297) MQTT_APP: pub RS485 published[0m
+[0;32mI (3480447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":205.87,"current_A":14.01,"power_kW":6.99}}}
+[0m
+[0;32mI (3480547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84,"humidity_%":50.8,"pressure_Pa":101955}}}
+[0m
+[0;32mI (3480547) MQTT_APP: pub RS485 published[0m
+[0;32mI (3480547) MQTT_APP: pub Lora published[0m
+[0;32mI (3490797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":243.82,"current_A":2.03,"power_kW":10.84}}}
+[0m
+[0;32mI (3490897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":35.7,"pressure_Pa":101390}}}
+[0m
+[0;32mI (3490897) MQTT_APP: pub RS485 published[0m
+[0;32mI (3490907) MQTT_APP: pub Lora published[0m
+[0;32mI (3501187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":40.4,"pressure_Pa":100432}}}
+[0m
+[0;32mI (3501187) MQTT_APP: pub Lora published[0m
+[0;32mI (3501337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.84,"current_A":4.56,"power_kW":9.07}}}
+[0m
+[0;32mI (3501437) MQTT_APP: pub RS485 published[0m
+[0;32mI (3511587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":287.35,"current_A":12.36,"power_kW":6.25}}}
+[0m
+[0;32mI (3511687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.8,"humidity_%":50.8,"pressure_Pa":101904}}}
+[0m
+[0;32mI (3511687) MQTT_APP: pub RS485 published[0m
+[0;32mI (3511697) MQTT_APP: pub Lora published[0m
+[0;32mI (3521957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.4,"humidity_%":45.4,"pressure_Pa":100328}}}
+[0m
+[0;32mI (3521957) MQTT_APP: pub Lora published[0m
+[0;32mI (3522107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.23,"current_A":10.44,"power_kW":7.32}}}
+[0m
+[0;32mI (3522207) MQTT_APP: pub RS485 published[0m
+[0;32mI (3532357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.55,"current_A":6.79,"power_kW":7.2}}}
+[0m
+[0;32mI (3532457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":48.5,"pressure_Pa":100679}}}
+[0m
+[0;32mI (3532457) MQTT_APP: pub RS485 published[0m
+[0;32mI (3532457) MQTT_APP: pub Lora published[0m
+[0;32mI (3542727) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89,"humidity_%":50.1,"pressure_Pa":101224}}}
+[0m
+[0;32mI (3542727) MQTT_APP: pub Lora published[0m
+[0;32mI (3542877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":249.67,"current_A":2.1,"power_kW":7.63}}}
+[0m
+[0;32mI (3542977) MQTT_APP: pub RS485 published[0m
+[0;32mI (3553127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.01,"current_A":0.82,"power_kW":7.85}}}
+[0m
+[0;32mI (3553227) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86,"humidity_%":46.4,"pressure_Pa":101928}}}
+[0m
+[0;32mI (3553227) MQTT_APP: pub RS485 published[0m
+[0;32mI (3553227) MQTT_APP: pub Lora published[0m
+[0;32mI (3563477) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":268.78,"current_A":7.69,"power_kW":9.21}}}
+[0m
+[0;32mI (3563577) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.9,"humidity_%":32.3,"pressure_Pa":100855}}}
+[0m
+[0;32mI (3563577) MQTT_APP: pub RS485 published[0m
+[0;32mI (3563587) MQTT_APP: pub Lora published[0m
+[0;32mI (3573867) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.7,"humidity_%":35.7,"pressure_Pa":101320}}}
+[0m
+[0;32mI (3573867) MQTT_APP: pub Lora published[0m
+[0;32mI (3574017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":289.12,"current_A":2.83,"power_kW":9.41}}}
+[0m
+[0;32mI (3574117) MQTT_APP: pub RS485 published[0m
+[0;32mI (3584267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.07,"current_A":13.32,"power_kW":10.03}}}
+[0m
+[0;32mI (3584367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":36.7,"pressure_Pa":100987}}}
+[0m
+[0;32mI (3584367) MQTT_APP: pub RS485 published[0m
+[0;32mI (3584367) MQTT_APP: pub Lora published[0m
+[0;32mI (3594627) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.2,"humidity_%":42.7,"pressure_Pa":101750}}}
+[0m
+[0;32mI (3594627) MQTT_APP: pub Lora published[0m
+[0;32mI (3594777) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":285.7,"current_A":19.23,"power_kW":10.74}}}
+[0m
+[0;32mI (3594877) MQTT_APP: pub RS485 published[0m
+[0;32mI (3605027) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.34,"current_A":11.57,"power_kW":10.45}}}
+[0m
+[0;32mI (3605127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.7,"humidity_%":51.8,"pressure_Pa":101793}}}
+[0m
+[0;32mI (3605127) MQTT_APP: pub RS485 published[0m
+[0;32mI (3605127) MQTT_APP: pub Lora published[0m
+[0;32mI (3615397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.3,"humidity_%":51.2,"pressure_Pa":101079}}}
+[0m
+[0;32mI (3615397) MQTT_APP: pub Lora published[0m
+I (3615427) wifi:<ba-del>idx:0, tid:0
+I (3615427) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:835, winSize:64
+[0;32mI (3615547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.18,"current_A":10.98,"power_kW":8.57}}}
+[0m
+[0;32mI (3615647) MQTT_APP: pub RS485 published[0m
+[0;32mI (3625797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":226.72,"current_A":12.17,"power_kW":6.11}}}
+[0m
+[0;32mI (3625897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89,"humidity_%":36.8,"pressure_Pa":100808}}}
+[0m
+[0;32mI (3625897) MQTT_APP: pub RS485 published[0m
+[0;32mI (3625907) MQTT_APP: pub Lora published[0m
+[0;32mI (3636167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.1,"humidity_%":53.1,"pressure_Pa":100707}}}
+[0m
+[0;32mI (3636167) MQTT_APP: pub Lora published[0m
+[0;32mI (3636317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":268.63,"current_A":1.22,"power_kW":10.58}}}
+[0m
+[0;32mI (3636417) MQTT_APP: pub RS485 published[0m
+[0;32mI (3646567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.83,"current_A":10.84,"power_kW":6.87}}}
+[0m
+[0;32mI (3646667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.8,"humidity_%":54.6,"pressure_Pa":101194}}}
+[0m
+[0;32mI (3646667) MQTT_APP: pub RS485 published[0m
+[0;32mI (3646677) MQTT_APP: pub Lora published[0m
+[0;32mI (3656937) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.2,"humidity_%":56.9,"pressure_Pa":101307}}}
+[0m
+[0;32mI (3656937) MQTT_APP: pub Lora published[0m
+[0;32mI (3657087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":262.84,"current_A":8.35,"power_kW":9.98}}}
+[0m
+[0;32mI (3657187) MQTT_APP: pub RS485 published[0m
+[0;32mI (3667337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":234.15,"current_A":8.91,"power_kW":10.71}}}
+[0m
+[0;32mI (3667437) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.4,"humidity_%":42.6,"pressure_Pa":101050}}}
+[0m
+[0;32mI (3667437) MQTT_APP: pub RS485 published[0m
+[0;32mI (3667447) MQTT_APP: pub Lora published[0m
+[0;32mI (3677697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.9,"humidity_%":40.1,"pressure_Pa":101396}}}
+[0m
+[0;32mI (3677697) MQTT_APP: pub Lora published[0m
+[0;32mI (3677847) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":210.73,"current_A":12.11,"power_kW":7}}}
+[0m
+[0;32mI (3677947) MQTT_APP: pub RS485 published[0m
+[0;32mI (3688097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.51,"current_A":14.64,"power_kW":9.11}}}
+[0m
+[0;32mI (3688197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":37.9,"pressure_Pa":100539}}}
+[0m
+[0;32mI (3688197) MQTT_APP: pub RS485 published[0m
+[0;32mI (3688207) MQTT_APP: pub Lora published[0m
+[0;32mI (3698467) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.4,"humidity_%":59.1,"pressure_Pa":101127}}}
+[0m
+[0;32mI (3698467) MQTT_APP: pub Lora published[0m
+[0;32mI (3698617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":241.99,"current_A":17.95,"power_kW":5.91}}}
+[0m
+[0;32mI (3698717) MQTT_APP: pub RS485 published[0m
+[0;32mI (3708867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":253.18,"current_A":3.03,"power_kW":5.08}}}
+[0m
+[0;32mI (3708967) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":43.8,"pressure_Pa":101882}}}
+[0m
+[0;32mI (3708967) MQTT_APP: pub RS485 published[0m
+[0;32mI (3708967) MQTT_APP: pub Lora published[0m
+[0;32mI (3719237) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.3,"humidity_%":33.7,"pressure_Pa":100180}}}
+[0m
+[0;32mI (3719237) MQTT_APP: pub Lora published[0m
+[0;32mI (3719387) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.93,"current_A":9.43,"power_kW":9.46}}}
+[0m
+[0;32mI (3719487) MQTT_APP: pub RS485 published[0m
+[0;32mI (3729637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":276.3,"current_A":15.28,"power_kW":9.97}}}
+[0m
+[0;32mI (3729737) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":57.5,"pressure_Pa":100281}}}
+[0m
+[0;32mI (3729737) MQTT_APP: pub RS485 published[0m
+[0;32mI (3729747) MQTT_APP: pub Lora published[0m
+[0;32mI (3739997) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":36.1,"pressure_Pa":101247}}}
+[0m
+[0;32mI (3739997) MQTT_APP: pub Lora published[0m
+[0;32mI (3740147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":237.14,"current_A":15.3,"power_kW":8.56}}}
+[0m
+[0;32mI (3740247) MQTT_APP: pub RS485 published[0m
+[0;32mI (3750397) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.5,"current_A":2.75,"power_kW":8.65}}}
+[0m
+[0;32mI (3750497) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.5,"humidity_%":54.3,"pressure_Pa":101666}}}
+[0m
+[0;32mI (3750497) MQTT_APP: pub RS485 published[0m
+[0;32mI (3750497) MQTT_APP: pub Lora published[0m
+[0;32mI (3760767) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":42.9,"pressure_Pa":101380}}}
+[0m
+[0;32mI (3760767) MQTT_APP: pub Lora published[0m
+[0;32mI (3760917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":273.57,"current_A":16.23,"power_kW":10.06}}}
+[0m
+[0;32mI (3761017) MQTT_APP: pub RS485 published[0m
+[0;32mI (3771167) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":238.11,"current_A":6.94,"power_kW":10.82}}}
+[0m
+[0;32mI (3771267) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":37.6,"pressure_Pa":101362}}}
+[0m
+[0;32mI (3771267) MQTT_APP: pub RS485 published[0m
+[0;32mI (3771267) MQTT_APP: pub Lora published[0m
+[0;32mI (3781537) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.6,"humidity_%":50.9,"pressure_Pa":101296}}}
+[0m
+[0;32mI (3781537) MQTT_APP: pub Lora published[0m
+[0;32mI (3781687) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":244.35,"current_A":5.58,"power_kW":8.03}}}
+[0m
+[0;32mI (3781787) MQTT_APP: pub RS485 published[0m
+[0;32mI (3791937) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":250.75,"current_A":7.63,"power_kW":7.11}}}
+[0m
+[0;32mI (3792037) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.4,"humidity_%":44.6,"pressure_Pa":100955}}}
+[0m
+[0;32mI (3792037) MQTT_APP: pub RS485 published[0m
+[0;32mI (3792047) MQTT_APP: pub Lora published[0m
+[0;32mI (3802297) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.4,"humidity_%":48.7,"pressure_Pa":100116}}}
+[0m
+[0;32mI (3802297) MQTT_APP: pub Lora published[0m
+[0;32mI (3802447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.51,"current_A":10.83,"power_kW":9.99}}}
+[0m
+[0;32mI (3802547) MQTT_APP: pub RS485 published[0m
+[0;32mI (3812697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":236.62,"current_A":0.69,"power_kW":5.78}}}
+[0m
+[0;32mI (3812797) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89,"humidity_%":44.2,"pressure_Pa":100311}}}
+[0m
+[0;32mI (3812797) MQTT_APP: pub RS485 published[0m
+[0;32mI (3812797) MQTT_APP: pub Lora published[0m
+[0;32mI (3814807) MQTT_APP: Giờ hiện tại: 01:14:36 - 01/01/2000[0m
+[0;32mI (3814807) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":1,"minute":14,"second":36,"day":1,"month":1,"year":2000}[0m
+[0;32mI (3814817) MQTT_APP: pub LED thành công[0m
+[0;32mI (3814837) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (3823057) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":250.19,"current_A":18.43,"power_kW":5.76}}}
+[0m
+[0;32mI (3823157) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":55.7,"pressure_Pa":101899}}}
+[0m
+[0;32mI (3823157) MQTT_APP: pub RS485 published[0m
+[0;32mI (3823167) MQTT_APP: pub Lora published[0m
+[0;32mI (3833447) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":54.6,"pressure_Pa":101488}}}
+[0m
+[0;32mI (3833447) MQTT_APP: pub Lora published[0m
+I (3833517) wifi:<ba-del>idx:0, tid:0
+I (3833517) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:887, winSize:64
+[0;32mI (3833597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.81,"current_A":9.11,"power_kW":8.44}}}
+[0m
+[0;32mI (3833697) MQTT_APP: pub RS485 published[0m
+[0;32mI (3843847) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":256.36,"current_A":2.39,"power_kW":10.79}}}
+[0m
+[0;32mI (3843947) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.6,"humidity_%":49.6,"pressure_Pa":100078}}}
+[0m
+[0;32mI (3843947) MQTT_APP: pub RS485 published[0m
+[0;32mI (3843947) MQTT_APP: pub Lora published[0m
+[0;32mI (3854217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":46.6,"pressure_Pa":101100}}}
+[0m
+[0;32mI (3854217) MQTT_APP: pub Lora published[0m
+[0;32mI (3854367) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":206.91,"current_A":16.98,"power_kW":9.7}}}
+[0m
+[0;32mI (3854467) MQTT_APP: pub RS485 published[0m
+[0;32mI (3864617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":284.58,"current_A":7.94,"power_kW":7.97}}}
+[0m
+[0;32mI (3864717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.3,"humidity_%":40.1,"pressure_Pa":101590}}}
+[0m
+[0;32mI (3864717) MQTT_APP: pub RS485 published[0m
+[0;32mI (3864717) MQTT_APP: pub Lora published[0m
+[0;32mI (3874977) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.9,"humidity_%":43.5,"pressure_Pa":101727}}}
+[0m
+[0;32mI (3874977) MQTT_APP: pub Lora published[0m
+[0;32mI (3875127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":268,"current_A":4.4,"power_kW":9.1}}}
+[0m
+[0;32mI (3875227) MQTT_APP: pub RS485 published[0m
+[0;32mI (3885377) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.56,"current_A":14.12,"power_kW":10.52}}}
+[0m
+[0;32mI (3885477) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.3,"humidity_%":42.3,"pressure_Pa":101831}}}
+[0m
+[0;32mI (3885477) MQTT_APP: pub RS485 published[0m
+[0;32mI (3885477) MQTT_APP: pub Lora published[0m
+[0;32mI (3895747) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":58.1,"pressure_Pa":101935}}}
+[0m
+[0;32mI (3895747) MQTT_APP: pub Lora published[0m
+[0;32mI (3895897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.71,"current_A":4.7,"power_kW":9.93}}}
+[0m
+[0;32mI (3895997) MQTT_APP: pub RS485 published[0m
+[0;32mI (3906147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.03,"current_A":6.88,"power_kW":10.89}}}
+[0m
+[0;32mI (3906247) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":32.6,"pressure_Pa":100333}}}
+[0m
+[0;32mI (3906247) MQTT_APP: pub RS485 published[0m
+[0;32mI (3906257) MQTT_APP: pub Lora published[0m
+[0;32mI (3916507) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":58.1,"pressure_Pa":100415}}}
+[0m
+[0;32mI (3916507) MQTT_APP: pub Lora published[0m
+[0;32mI (3916657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.98,"current_A":12.68,"power_kW":10.89}}}
+[0m
+[0;32mI (3916757) MQTT_APP: pub RS485 published[0m
+[0;32mI (3926907) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":220.13,"current_A":2.26,"power_kW":7.56}}}
+[0m
+[0;32mI (3927007) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":38.3,"pressure_Pa":100993}}}
+[0m
+[0;32mI (3927007) MQTT_APP: pub RS485 published[0m
+[0;32mI (3927007) MQTT_APP: pub Lora published[0m
+[0;32mI (3937277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.2,"humidity_%":30.6,"pressure_Pa":101892}}}
+[0m
+[0;32mI (3937277) MQTT_APP: pub Lora published[0m
+[0;32mI (3937427) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.02,"current_A":6.9,"power_kW":10.02}}}
+[0m
+[0;32mI (3937527) MQTT_APP: pub RS485 published[0m
+[0;32mI (3947677) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":232.94,"current_A":9.43,"power_kW":10.27}}}
+[0m
+[0;32mI (3947777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.4,"humidity_%":57.5,"pressure_Pa":101992}}}
+[0m
+[0;32mI (3947777) MQTT_APP: pub RS485 published[0m
+[0;32mI (3947787) MQTT_APP: pub Lora published[0m
+[0;32mI (3958047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.5,"humidity_%":36.4,"pressure_Pa":100793}}}
+[0m
+[0;32mI (3958047) MQTT_APP: pub Lora published[0m
+[0;32mI (3958197) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":266.94,"current_A":4.58,"power_kW":10.66}}}
+[0m
+[0;32mI (3958297) MQTT_APP: pub RS485 published[0m
+[0;32mI (3968447) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":254.29,"current_A":5.47,"power_kW":5.8}}}
+[0m
+[0;32mI (3968547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":34.2,"pressure_Pa":101592}}}
+[0m
+[0;32mI (3968547) MQTT_APP: pub RS485 published[0m
+[0;32mI (3968547) MQTT_APP: pub Lora published[0m
+[0;32mI (3978797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.06,"current_A":0.43,"power_kW":6.14}}}
+[0m
+[0;32mI (3978897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.6,"humidity_%":39.7,"pressure_Pa":100246}}}
+[0m
+[0;32mI (3978897) MQTT_APP: pub RS485 published[0m
+[0;32mI (3978897) MQTT_APP: pub Lora published[0m
+[0;32mI (3989187) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":31.7,"pressure_Pa":101302}}}
+[0m
+[0;32mI (3989187) MQTT_APP: pub Lora published[0m
+[0;32mI (3989337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.11,"current_A":8.75,"power_kW":6.98}}}
+[0m
+[0;32mI (3989437) MQTT_APP: pub RS485 published[0m
+[0;32mI (3999587) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":286.92,"current_A":4.6,"power_kW":6.15}}}
+[0m
+[0;32mI (3999687) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.2,"humidity_%":43.7,"pressure_Pa":101766}}}
+[0m
+[0;32mI (3999687) MQTT_APP: pub RS485 published[0m
+[0;32mI (3999697) MQTT_APP: pub Lora published[0m
+[0;32mI (4009957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.5,"humidity_%":58.5,"pressure_Pa":101281}}}
+[0m
+[0;32mI (4009957) MQTT_APP: pub Lora published[0m
+[0;32mI (4010107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.68,"current_A":4.78,"power_kW":10.04}}}
+[0m
+[0;32mI (4010207) MQTT_APP: pub RS485 published[0m
+[0;32mI (4020357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":240.23,"current_A":8.5,"power_kW":6.2}}}
+[0m
+[0;32mI (4020457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.5,"humidity_%":52.6,"pressure_Pa":101586}}}
+[0m
+[0;32mI (4020457) MQTT_APP: pub RS485 published[0m
+[0;32mI (4020467) MQTT_APP: pub Lora published[0m
+[0;32mI (4030717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.7,"humidity_%":47.9,"pressure_Pa":101018}}}
+[0m
+[0;32mI (4030717) MQTT_APP: pub Lora published[0m
+[0;32mI (4030867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.57,"current_A":10.21,"power_kW":8.71}}}
+[0m
+[0;32mI (4030967) MQTT_APP: pub RS485 published[0m
+[0;32mI (4041117) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":252.56,"current_A":9.76,"power_kW":5.48}}}
+[0m
+[0;32mI (4041217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":32.2,"pressure_Pa":101599}}}
+[0m
+[0;32mI (4041217) MQTT_APP: pub RS485 published[0m
+[0;32mI (4041217) MQTT_APP: pub Lora published[0m
+[0;32mI (4051487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":53.3,"pressure_Pa":100014}}}
+[0m
+[0;32mI (4051487) MQTT_APP: pub Lora published[0m
+[0;32mI (4051637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":257.59,"current_A":10.76,"power_kW":7.16}}}
+[0m
+[0;32mI (4051737) MQTT_APP: pub RS485 published[0m
+[0;32mI (4061887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":242.86,"current_A":14.86,"power_kW":8.83}}}
+[0m
+[0;32mI (4061987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87,"humidity_%":37.2,"pressure_Pa":100555}}}
+[0m
+[0;32mI (4061987) MQTT_APP: pub RS485 published[0m
+[0;32mI (4061997) MQTT_APP: pub Lora published[0m
+[0;32mI (4072247) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.7,"humidity_%":38.7,"pressure_Pa":101731}}}
+[0m
+[0;32mI (4072247) MQTT_APP: pub Lora published[0m
+[0;32mI (4072397) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":259.85,"current_A":19.19,"power_kW":6.69}}}
+[0m
+[0;32mI (4072497) MQTT_APP: pub RS485 published[0m
+[0;32mI (4082647) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":241.98,"current_A":8.37,"power_kW":9.21}}}
+[0m
+[0;32mI (4082747) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":45.3,"pressure_Pa":101596}}}
+[0m
+[0;32mI (4082747) MQTT_APP: pub RS485 published[0m
+[0;32mI (4082747) MQTT_APP: pub Lora published[0m
+[0;32mI (4093017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.8,"humidity_%":39.4,"pressure_Pa":100563}}}
+[0m
+[0;32mI (4093017) MQTT_APP: pub Lora published[0m
+[0;32mI (4093167) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.47,"current_A":18.31,"power_kW":9.9}}}
+[0m
+[0;32mI (4093267) MQTT_APP: pub RS485 published[0m
+[0;32mI (4103417) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.07,"current_A":3.39,"power_kW":5.33}}}
+[0m
+[0;32mI (4103517) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":42.3,"pressure_Pa":101617}}}
+[0m
+[0;32mI (4103517) MQTT_APP: pub RS485 published[0m
+[0;32mI (4103527) MQTT_APP: pub Lora published[0m
+[0;32mI (4113777) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.6,"humidity_%":38.9,"pressure_Pa":101131}}}
+[0m
+[0;32mI (4113777) MQTT_APP: pub Lora published[0m
+[0;32mI (4113927) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":271.55,"current_A":16.79,"power_kW":5.84}}}
+[0m
+[0;32mI (4114027) MQTT_APP: pub RS485 published[0m
+[0;32mI (4124177) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":285.87,"current_A":5.49,"power_kW":7.86}}}
+[0m
+[0;32mI (4124277) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.6,"humidity_%":47.4,"pressure_Pa":100384}}}
+[0m
+[0;32mI (4124277) MQTT_APP: pub RS485 published[0m
+[0;32mI (4124277) MQTT_APP: pub Lora published[0m
+[0;32mI (4134547) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":41.3,"pressure_Pa":100912}}}
+[0m
+[0;32mI (4134547) MQTT_APP: pub Lora published[0m
+[0;32mI (4134697) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":227.5,"current_A":2.85,"power_kW":6.49}}}
+[0m
+[0;32mI (4134797) MQTT_APP: pub RS485 published[0m
+[0;32mI (4144947) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.59,"current_A":13.98,"power_kW":8.48}}}
+[0m
+[0;32mI (4145047) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.4,"humidity_%":36.8,"pressure_Pa":100260}}}
+[0m
+[0;32mI (4145047) MQTT_APP: pub RS485 published[0m
+[0;32mI (4145057) MQTT_APP: pub Lora published[0m
+[0;32mI (4155317) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":56.7,"pressure_Pa":100104}}}
+[0m
+[0;32mI (4155317) MQTT_APP: pub Lora published[0m
+[0;32mI (4155467) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.29,"current_A":10.94,"power_kW":7.31}}}
+[0m
+[0;32mI (4155567) MQTT_APP: pub RS485 published[0m
+[0;32mI (4165717) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":299.57,"current_A":5.23,"power_kW":10.75}}}
+[0m
+[0;32mI (4165817) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":56.9,"pressure_Pa":101758}}}
+[0m
+[0;32mI (4165817) MQTT_APP: pub RS485 published[0m
+[0;32mI (4165827) MQTT_APP: pub Lora published[0m
+[0;32mI (4176067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":285.68,"current_A":12.67,"power_kW":9.44}}}
+[0m
+[0;32mI (4176167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82,"humidity_%":47.6,"pressure_Pa":100975}}}
+[0m
+[0;32mI (4176167) MQTT_APP: pub RS485 published[0m
+[0;32mI (4176177) MQTT_APP: pub Lora published[0m
+[0;32mI (4186457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.6,"humidity_%":49,"pressure_Pa":101113}}}
+[0m
+[0;32mI (4186457) MQTT_APP: pub Lora published[0m
+[0;32mI (4186607) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":225.38,"current_A":3.03,"power_kW":9.11}}}
+[0m
+[0;32mI (4186707) MQTT_APP: pub RS485 published[0m
+[0;32mI (4194457) MQTT_APP: Giờ hiện tại: 01:19:06 - 01/01/2000[0m
+[0;32mI (4194457) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,0],"hour":1,"minute":19,"second":6,"day":1,"month":1,"year":2000}[0m
+[0;32mI (4194467) MQTT_APP: pub LED thành công[0m
+[0;32mI (4194487) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (4194717) MQTT_APP: Giờ hiện tại: 01:19:06 - 01/01/2000[0m
+[0;32mI (4194717) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":1,"minute":19,"second":6,"day":1,"month":1,"year":2000}[0m
+[0;32mI (4194727) MQTT_APP: pub LED thành công[0m
+[0;32mI (4194747) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (4196877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.27,"current_A":5.03,"power_kW":6.43}}}
+[0m
+[0;32mI (4196977) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.6,"humidity_%":57.2,"pressure_Pa":101063}}}
+[0m
+[0;32mI (4196977) MQTT_APP: pub RS485 published[0m
+[0;32mI (4196977) MQTT_APP: pub Lora published[0m
+[0;32mI (4207217) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":229.38,"current_A":17.65,"power_kW":5.43}}}
+[0m
+[0;32mI (4207317) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.1,"humidity_%":40,"pressure_Pa":101249}}}
+[0m
+[0;32mI (4207317) MQTT_APP: pub RS485 published[0m
+[0;32mI (4207317) MQTT_APP: pub Lora published[0m
+[0;32mI (4217607) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.9,"humidity_%":34.7,"pressure_Pa":101648}}}
+[0m
+[0;32mI (4217607) MQTT_APP: pub Lora published[0m
+I (4217627) wifi:<ba-del>idx:0, tid:0
+I (4217627) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:975, winSize:64
+[0;32mI (4217757) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.48,"current_A":0.6,"power_kW":5.92}}}
+[0m
+[0;32mI (4217857) MQTT_APP: pub RS485 published[0m
+[0;32mI (4228007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":288.42,"current_A":5.04,"power_kW":6.69}}}
+[0m
+[0;32mI (4228107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.1,"humidity_%":51.7,"pressure_Pa":101076}}}
+[0m
+[0;32mI (4228107) MQTT_APP: pub RS485 published[0m
+[0;32mI (4228107) MQTT_APP: pub Lora published[0m
+[0;32mI (4238367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":46.5,"pressure_Pa":101753}}}
+[0m
+[0;32mI (4238367) MQTT_APP: pub Lora published[0m
+[0;32mI (4238517) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.4,"current_A":9.27,"power_kW":6.56}}}
+[0m
+[0;32mI (4238617) MQTT_APP: pub RS485 published[0m
+[0;32mI (4248767) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":206.93,"current_A":12.15,"power_kW":6.05}}}
+[0m
+[0;32mI (4248867) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81,"humidity_%":38.5,"pressure_Pa":101693}}}
+[0m
+[0;32mI (4248867) MQTT_APP: pub RS485 published[0m
+[0;32mI (4248867) MQTT_APP: pub Lora published[0m
+[0;32mI (4259127) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.6,"humidity_%":35.3,"pressure_Pa":101037}}}
+[0m
+[0;32mI (4259127) MQTT_APP: pub Lora published[0m
+[0;32mI (4259277) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":249.22,"current_A":0.54,"power_kW":9.46}}}
+[0m
+[0;32mI (4259377) MQTT_APP: pub RS485 published[0m
+[0;32mI (4269527) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":252.16,"current_A":17.76,"power_kW":6.93}}}
+[0m
+[0;32mI (4269627) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":39.6,"pressure_Pa":101128}}}
+[0m
+[0;32mI (4269627) MQTT_APP: pub RS485 published[0m
+[0;32mI (4269627) MQTT_APP: pub Lora published[0m
+[0;32mI (4279897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":33.6,"pressure_Pa":100263}}}
+[0m
+[0;32mI (4279897) MQTT_APP: pub Lora published[0m
+[0;32mI (4280047) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":235.15,"current_A":19.21,"power_kW":6.52}}}
+[0m
+[0;32mI (4280147) MQTT_APP: pub RS485 published[0m
+[0;32mI (4290297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":223.8,"current_A":9.37,"power_kW":10.85}}}
+[0m
+[0;32mI (4290397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.4,"humidity_%":51.5,"pressure_Pa":100876}}}
+[0m
+[0;32mI (4290397) MQTT_APP: pub RS485 published[0m
+[0;32mI (4290407) MQTT_APP: pub Lora published[0m
+[0;32mI (4300667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.2,"humidity_%":54.1,"pressure_Pa":100757}}}
+[0m
+[0;32mI (4300667) MQTT_APP: pub Lora published[0m
+[0;32mI (4300817) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":202.98,"current_A":3.62,"power_kW":8.34}}}
+[0m
+[0;32mI (4300917) MQTT_APP: pub RS485 published[0m
+[0;32mI (4311067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":283.94,"current_A":6.52,"power_kW":6.77}}}
+[0m
+[0;32mI (4311167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.2,"humidity_%":42.3,"pressure_Pa":100679}}}
+[0m
+[0;32mI (4311167) MQTT_APP: pub RS485 published[0m
+[0;32mI (4311167) MQTT_APP: pub Lora published[0m
+[0;32mI (4321427) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.9,"humidity_%":45.4,"pressure_Pa":101067}}}
+[0m
+[0;32mI (4321427) MQTT_APP: pub Lora published[0m
+[0;32mI (4321577) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":268.98,"current_A":10.52,"power_kW":9.32}}}
+[0m
+[0;32mI (4321677) MQTT_APP: pub RS485 published[0m
+[0;32mI (4326927) MQTT_APP: Giờ hiện tại: 01:20:40 - 01/01/2000[0m
+[0;32mI (4326927) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":1,"minute":20,"second":40,"day":1,"month":1,"year":2000}[0m
+[0;32mI (4326937) MQTT_APP: pub LED thành công[0m
+[0;32mI (4326957) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (4331837) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":241.44,"current_A":14.87,"power_kW":5.31}}}
+[0m
+[0;32mI (4331937) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.8,"humidity_%":40.1,"pressure_Pa":100190}}}
+[0m
+[0;32mI (4331937) MQTT_APP: pub RS485 published[0m
+[0;32mI (4331937) MQTT_APP: pub Lora published[0m
+[0;32mI (4342197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.7,"humidity_%":38.2,"pressure_Pa":100296}}}
+[0m
+[0;32mI (4342197) MQTT_APP: pub Lora published[0m
+[0;32mI (4342347) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":281.72,"current_A":2.33,"power_kW":7.36}}}
+[0m
+[0;32mI (4342447) MQTT_APP: pub RS485 published[0m
+[0;32mI (4352597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":211.33,"current_A":6.45,"power_kW":9.97}}}
+[0m
+[0;32mI (4352697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83,"humidity_%":41.5,"pressure_Pa":100070}}}
+[0m
+[0;32mI (4352697) MQTT_APP: pub RS485 published[0m
+[0;32mI (4352697) MQTT_APP: pub Lora published[0m
+[0;32mI (4362957) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.6,"humidity_%":51.2,"pressure_Pa":100014}}}
+[0m
+[0;32mI (4362957) MQTT_APP: pub Lora published[0m
+[0;32mI (4363107) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":233.01,"current_A":17.83,"power_kW":6.45}}}
+[0m
+[0;32mI (4363207) MQTT_APP: pub RS485 published[0m
+[0;32mI (4373357) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":247.84,"current_A":1.32,"power_kW":10.81}}}
+[0m
+[0;32mI (4373457) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.6,"humidity_%":47,"pressure_Pa":101269}}}
+[0m
+[0;32mI (4373457) MQTT_APP: pub RS485 published[0m
+[0;32mI (4373457) MQTT_APP: pub Lora published[0m
+[0;32mI (4383727) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.1,"humidity_%":44.7,"pressure_Pa":100223}}}
+[0m
+[0;32mI (4383727) MQTT_APP: pub Lora published[0m
+[0;32mI (4383877) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.61,"current_A":1.32,"power_kW":9.4}}}
+[0m
+[0;32mI (4383977) MQTT_APP: pub RS485 published[0m
+[0;32mI (4394127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.35,"current_A":15.23,"power_kW":9.59}}}
+[0m
+[0;32mI (4394227) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":46.4,"pressure_Pa":101759}}}
+[0m
+[0;32mI (4394227) MQTT_APP: pub RS485 published[0m
+[0;32mI (4394227) MQTT_APP: pub Lora published[0m
+[0;32mI (4404487) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.3,"humidity_%":36.5,"pressure_Pa":100939}}}
+[0m
+[0;32mI (4404487) MQTT_APP: pub Lora published[0m
+I (4404507) wifi:<ba-del>idx:0, tid:0
+I (4404507) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:1019, winSize:64
+[0;32mI (4404637) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":246.67,"current_A":1.83,"power_kW":6.73}}}
+[0m
+[0;32mI (4404737) MQTT_APP: pub RS485 published[0m
+[0;32mI (4414887) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":217.61,"current_A":13.55,"power_kW":5.94}}}
+[0m
+[0;32mI (4414987) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.3,"humidity_%":38.6,"pressure_Pa":101599}}}
+[0m
+[0;32mI (4414987) MQTT_APP: pub RS485 published[0m
+[0;32mI (4414987) MQTT_APP: pub Lora published[0m
+[0;32mI (4425257) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.6,"humidity_%":57.3,"pressure_Pa":101207}}}
+[0m
+[0;32mI (4425257) MQTT_APP: pub Lora published[0m
+[0;32mI (4425407) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":201.8,"current_A":18.04,"power_kW":8.44}}}
+[0m
+[0;32mI (4425507) MQTT_APP: pub RS485 published[0m
+[0;32mI (4435657) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":292.9,"current_A":0.54,"power_kW":8.4}}}
+[0m
+[0;32mI (4435757) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":46.3,"pressure_Pa":101198}}}
+[0m
+[0;32mI (4435757) MQTT_APP: pub RS485 published[0m
+[0;32mI (4435757) MQTT_APP: pub Lora published[0m
+[0;32mI (4446007) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":282.79,"current_A":5.95,"power_kW":10.5}}}
+[0m
+[0;32mI (4446107) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.1,"humidity_%":36,"pressure_Pa":101555}}}
+[0m
+[0;32mI (4446107) MQTT_APP: pub RS485 published[0m
+[0;32mI (4446107) MQTT_APP: pub Lora published[0m
+[0;32mI (4456397) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":88.8,"humidity_%":58.9,"pressure_Pa":100425}}}
+[0m
+[0;32mI (4456397) MQTT_APP: pub Lora published[0m
+[0;32mI (4456547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":257.86,"current_A":2.45,"power_kW":7.93}}}
+[0m
+[0;32mI (4456647) MQTT_APP: pub RS485 published[0m
+[0;32mI (4466797) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":296.66,"current_A":6.9,"power_kW":6.89}}}
+[0m
+[0;32mI (4466897) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.2,"humidity_%":48.1,"pressure_Pa":101312}}}
+[0m
+[0;32mI (4466897) MQTT_APP: pub RS485 published[0m
+[0;32mI (4466907) MQTT_APP: pub Lora published[0m
+[0;32mI (4477167) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.9,"humidity_%":43.5,"pressure_Pa":101219}}}
+[0m
+[0;32mI (4477167) MQTT_APP: pub Lora published[0m
+[0;32mI (4477317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":236.92,"current_A":3.81,"power_kW":9.05}}}
+[0m
+[0;32mI (4477417) MQTT_APP: pub RS485 published[0m
+[0;32mI (4487567) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":263.92,"current_A":18.49,"power_kW":6.08}}}
+[0m
+[0;32mI (4487667) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.7,"humidity_%":51.8,"pressure_Pa":100105}}}
+[0m
+[0;32mI (4487667) MQTT_APP: pub RS485 published[0m
+[0;32mI (4487667) MQTT_APP: pub Lora published[0m
+[0;32mI (4497937) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.6,"humidity_%":33.1,"pressure_Pa":100496}}}
+[0m
+[0;32mI (4497937) MQTT_APP: pub Lora published[0m
+[0;32mI (4498087) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":228.09,"current_A":4.17,"power_kW":5.36}}}
+[0m
+[0;32mI (4498187) MQTT_APP: pub RS485 published[0m
+[0;32mI (4508337) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.04,"current_A":8.56,"power_kW":5.17}}}
+[0m
+[0;32mI (4508437) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.9,"humidity_%":33.9,"pressure_Pa":101290}}}
+[0m
+[0;32mI (4508437) MQTT_APP: pub RS485 published[0m
+[0;32mI (4508437) MQTT_APP: pub Lora published[0m
+I (4508447) wifi:<ba-del>idx:0, tid:0
+I (4508447) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:1044, winSize:64
+[0;32mI (4518697) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.5,"humidity_%":46.5,"pressure_Pa":101912}}}
+[0m
+[0;32mI (4518697) MQTT_APP: pub Lora published[0m
+[0;32mI (4518847) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":210.59,"current_A":8.48,"power_kW":6.32}}}
+[0m
+[0;32mI (4518947) MQTT_APP: pub RS485 published[0m
+[0;32mI (4529097) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":210.07,"current_A":15.2,"power_kW":7.21}}}
+[0m
+[0;32mI (4529197) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.4,"humidity_%":40.6,"pressure_Pa":100650}}}
+[0m
+[0;32mI (4529197) MQTT_APP: pub RS485 published[0m
+[0;32mI (4529197) MQTT_APP: pub Lora published[0m
+[0;32mI (4539467) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.7,"humidity_%":59.9,"pressure_Pa":101957}}}
+[0m
+[0;32mI (4539467) MQTT_APP: pub Lora published[0m
+[0;32mI (4539617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":261.07,"current_A":10.1,"power_kW":7.36}}}
+[0m
+[0;32mI (4539717) MQTT_APP: pub RS485 published[0m
+[0;32mI (4549867) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":215.15,"current_A":12.47,"power_kW":8.51}}}
+[0m
+[0;32mI (4549967) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.8,"humidity_%":43.8,"pressure_Pa":100893}}}
+[0m
+[0;32mI (4549967) MQTT_APP: pub RS485 published[0m
+[0;32mI (4549977) MQTT_APP: pub Lora published[0m
+[0;32mI (4550727) MQTT_APP: Giờ hiện tại: 01:23:19 - 01/01/2000[0m
+[0;32mI (4550727) MQTT_APP: Sending JSON: {"inputs":[1,1,1,1,1],"hour":1,"minute":23,"second":19,"day":1,"month":1,"year":2000}[0m
+[0;32mI (4550737) MQTT_APP: pub LED thành công[0m
+[0;32mI (4550747) MQTT_APP: Đã gửi dữ liệu MQTT[0m
+[0;32mI (4560227) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":214.85,"current_A":19.8,"power_kW":9.56}}}
+[0m
+[0;32mI (4560327) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.9,"humidity_%":59.5,"pressure_Pa":100626}}}
+[0m
+[0;32mI (4560327) MQTT_APP: pub RS485 published[0m
+[0;32mI (4560327) MQTT_APP: pub Lora published[0m
+[0;32mI (4570617) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.9,"humidity_%":38.9,"pressure_Pa":101645}}}
+[0m
+[0;32mI (4570617) MQTT_APP: pub Lora published[0m
+[0;32mI (4570767) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.76,"current_A":11.41,"power_kW":10.15}}}
+[0m
+[0;32mI (4570867) MQTT_APP: pub RS485 published[0m
+[0;32mI (4581017) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":283.4,"current_A":13.53,"power_kW":7.52}}}
+[0m
+[0;32mI (4581117) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.4,"humidity_%":34.6,"pressure_Pa":101003}}}
+[0m
+[0;32mI (4581117) MQTT_APP: pub RS485 published[0m
+[0;32mI (4581117) MQTT_APP: pub Lora published[0m
+[0;32mI (4591387) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":36.8,"pressure_Pa":100282}}}
+[0m
+[0;32mI (4591387) MQTT_APP: pub Lora published[0m
+[0;32mI (4591537) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":287.68,"current_A":2.04,"power_kW":9.12}}}
+[0m
+[0;32mI (4591637) MQTT_APP: pub RS485 published[0m
+[0;32mI (4601787) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":216.09,"current_A":1.78,"power_kW":6.31}}}
+[0m
+[0;32mI (4601887) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.4,"humidity_%":30.9,"pressure_Pa":101045}}}
+[0m
+[0;32mI (4601887) MQTT_APP: pub RS485 published[0m
+[0;32mI (4601887) MQTT_APP: pub Lora published[0m
+I (4601907) wifi:<ba-del>idx:0, tid:0
+I (4601907) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:1065, winSize:64
+[0;32mI (4612147) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":31.1,"pressure_Pa":100056}}}
+[0m
+[0;32mI (4612147) MQTT_APP: pub Lora published[0m
+[0;32mI (4612297) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":260.99,"current_A":17.42,"power_kW":9.23}}}
+[0m
+[0;32mI (4612397) MQTT_APP: pub RS485 published[0m
+[0;32mI (4622547) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":287.8,"current_A":17.78,"power_kW":5.09}}}
+[0m
+[0;32mI (4622647) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":84.4,"humidity_%":30.7,"pressure_Pa":101284}}}
+[0m
+[0;32mI (4622647) MQTT_APP: pub RS485 published[0m
+[0;32mI (4622657) MQTT_APP: pub Lora published[0m
+[0;32mI (4632917) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.2,"humidity_%":46.6,"pressure_Pa":100121}}}
+[0m
+[0;32mI (4632917) MQTT_APP: pub Lora published[0m
+[0;32mI (4633067) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":236.07,"current_A":6.37,"power_kW":7.06}}}
+[0m
+[0;32mI (4633167) MQTT_APP: pub RS485 published[0m
+[0;32mI (4643317) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.36,"current_A":16.15,"power_kW":9.99}}}
+[0m
+[0;32mI (4643417) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":85.2,"humidity_%":43,"pressure_Pa":101967}}}
+[0m
+[0;32mI (4643417) MQTT_APP: pub RS485 published[0m
+[0;32mI (4643427) MQTT_APP: pub Lora published[0m
+[0;32mI (4653677) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.7,"humidity_%":31.2,"pressure_Pa":100480}}}
+[0m
+[0;32mI (4653677) MQTT_APP: pub Lora published[0m
+[0;32mI (4653827) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":236.24,"current_A":10.87,"power_kW":7.35}}}
+[0m
+[0;32mI (4653927) MQTT_APP: pub RS485 published[0m
+[0;32mI (4664077) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":277.57,"current_A":14.16,"power_kW":8.71}}}
+[0m
+[0;32mI (4664177) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.3,"humidity_%":43.1,"pressure_Pa":101173}}}
+[0m
+[0;32mI (4664177) MQTT_APP: pub RS485 published[0m
+[0;32mI (4664187) MQTT_APP: pub Lora published[0m
+[0;32mI (4674447) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.2,"humidity_%":47.6,"pressure_Pa":101325}}}
+[0m
+[0;32mI (4674447) MQTT_APP: pub Lora published[0m
+[0;32mI (4674597) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":207.09,"current_A":15.5,"power_kW":5.06}}}
+[0m
+[0;32mI (4674697) MQTT_APP: pub RS485 published[0m
+[0;32mI (4684847) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":200.36,"current_A":3.15,"power_kW":8.75}}}
+[0m
+[0;32mI (4684947) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.3,"humidity_%":48.8,"pressure_Pa":100029}}}
+[0m
+[0;32mI (4684947) MQTT_APP: pub RS485 published[0m
+[0;32mI (4684957) MQTT_APP: pub Lora published[0m
+[0;32mI (4695217) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.7,"humidity_%":50.8,"pressure_Pa":101696}}}
+[0m
+[0;32mI (4695217) MQTT_APP: pub Lora published[0m
+[0;32mI (4695367) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":209.16,"current_A":17.75,"power_kW":9.57}}}
+[0m
+[0;32mI (4695467) MQTT_APP: pub RS485 published[0m
+[0;32mI (4705617) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":257.15,"current_A":12.54,"power_kW":8.67}}}
+[0m
+[0;32mI (4705717) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":39.2,"pressure_Pa":101544}}}
+[0m
+[0;32mI (4705717) MQTT_APP: pub RS485 published[0m
+[0;32mI (4705727) MQTT_APP: pub Lora published[0m
+[0;32mI (4715977) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":83.7,"humidity_%":54.8,"pressure_Pa":101796}}}
+[0m
+[0;32mI (4715977) MQTT_APP: pub Lora published[0m
+[0;32mI (4716127) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":270.36,"current_A":13.42,"power_kW":8.78}}}
+[0m
+[0;32mI (4716227) MQTT_APP: pub RS485 published[0m
+[0;32mI (4726377) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":219.08,"current_A":11.76,"power_kW":5.67}}}
+[0m
+[0;32mI (4726477) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":80.3,"humidity_%":58.1,"pressure_Pa":100362}}}
+[0m
+[0;32mI (4726477) MQTT_APP: pub RS485 published[0m
+[0;32mI (4726477) MQTT_APP: pub Lora published[0m
+I (4726507) wifi:<ba-del>idx:0, tid:0
+I (4726507) wifi:<ba-add>idx:0 (ifx:0, c8:3a:35:1a:13:40), tid:0, ssn:1093, winSize:64
+[0;32mI (4736747) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":82.3,"humidity_%":56.8,"pressure_Pa":101120}}}
+[0m
+[0;32mI (4736747) MQTT_APP: pub Lora published[0m
+[0;32mI (4736897) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":251.2,"current_A":9.62,"power_kW":5.91}}}
+[0m
+[0;32mI (4736997) MQTT_APP: pub RS485 published[0m
+[0;32mI (4747147) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":269.73,"current_A":3.27,"power_kW":7.88}}}
+[0m
+[0;32mI (4747247) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":86.5,"humidity_%":37.1,"pressure_Pa":100029}}}
+[0m
+[0;32mI (4747247) MQTT_APP: pub RS485 published[0m
+[0;32mI (4747257) MQTT_APP: pub Lora published[0m
+[0;32mI (4757517) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.1,"humidity_%":43,"pressure_Pa":101624}}}
+[0m
+[0;32mI (4757517) MQTT_APP: pub Lora published[0m
+[0;32mI (4757667) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":257.39,"current_A":19.6,"power_kW":8.24}}}
+[0m
+[0;32mI (4757767) MQTT_APP: pub RS485 published[0m
+[0;32mI (4767917) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":265.32,"current_A":7.62,"power_kW":6.79}}}
+[0m
+[0;32mI (4768017) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":87.7,"humidity_%":38.6,"pressure_Pa":100601}}}
+[0m
+[0;32mI (4768017) MQTT_APP: pub RS485 published[0m
+[0;32mI (4768027) MQTT_APP: pub Lora published[0m
+[0;32mI (4778267) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":231.23,"current_A":18.35,"power_kW":7.24}}}
+[0m
+[0;32mI (4778367) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":89.1,"humidity_%":30,"pressure_Pa":100687}}}
+[0m
+[0;32mI (4778367) MQTT_APP: pub RS485 published[0m
+[0;32mI (4778367) MQTT_APP: pub Lora published[0m
+[0;32mI (4788657) RS485: UART2 Received: {"sensors":{"temperature_humidity_pressure":{"temperature_C":81.9,"humidity_%":35.7,"pressure_Pa":101292}}}
+[0m
+[0;32mI (4788657) MQTT_APP: pub Lora published[0m
+[0;32mI (4788807) RS485: Received: {"sensors":{"power_monitoring":{"voltage_V":264.76,"current_A":5.36,"power_kW":8.66}}}
+[0m
+[0;32mI (4788907) MQTT_APP: pub RS485 published[0m

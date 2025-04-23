@@ -14,7 +14,7 @@
 
 #define BLINK_TIME_SHORT 500*1000
 #define BLINK_TIME_LED_WIFI 5*1000*1000
-#define BLINK_TIME_LED_ETH 3*1000*1000
+#define BLINK_TIME_LED_ETH 1*1000*1000
 #define USER_RESET_TIME 3000*1000
 #define KEY_SCAN_TIME 20*1000
 #define NUM_GPIO 5
@@ -140,7 +140,7 @@ static void button_task(void *arg) {
         if(gateway_data.status_ap){
             gpio_set_level(LED_OUT, 0);
         } else if(gateway_data.status_eth && gateway_data.mqtt_connect){
-            handle_led_blink(BLINK_TIME_SHORT);
+            handle_led_blink(BLINK_TIME_LED_ETH);
         } else if(gateway_data.status_wifi && gateway_data.mqtt_connect){
             handle_led_blink(BLINK_TIME_LED_WIFI);
         } else{

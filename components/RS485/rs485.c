@@ -12,8 +12,33 @@
 #define RXD_PIN  (GPIO_NUM_26) // Chân RX
 #define RTS_PIN  (GPIO_NUM_27) // Chân DE (Driver Enable)
 
+
+// Cấu hình UART2 (Nhận dữ liệu)
+#define UART_NUM2 UART_NUM_2
+#define TXD2_PIN  (GPIO_NUM_17) // Chân TX
+#define RXD2_PIN  (GPIO_NUM_16) // Chân RX
+
 // Kích thước buffer
 #define BUF_SIZE (256)
+
+
+void lora_init(){
+    uart_config_t uart2_config = {
+        .baud_rate = 9600,  // Tốc độ baud
+        .data_bits = UART_DATA_8_BITS,
+        .parity = UART_PARITY_DISABLE, // Có thể dùng EVEN nếu cần
+        .stop_bits = UART_STOP_BITS_1,
+        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+        .source_clk = UART_SCLK_DEFAULT,
+    };
+
+    // Cấu hình UART2
+    uart_driver_install(UART_NUM2, BUF_SIZE * 2, BUF_SIZE * 2, 10, NULL, 0);
+    uart_param_config(UART_NUM2, &uart2_config);
+    uart_set_pin(UART_NUM2, TXD2_PIN, RXD2_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    ESP_LOGI(TAG, "UART2 Initialized");
+    
+}
 
 void rs485_init()
 {
@@ -34,6 +59,9 @@ void rs485_init()
     // Cấu hình RS485 Half-Duplex mode
     uart_set_mode(UART_NUM, UART_MODE_RS485_HALF_DUPLEX);
     ESP_LOGI(TAG, "RS485 Initialized");
+
+
+
 }
 
 void rs485_send(const char *data)
@@ -57,4 +85,20 @@ char* rs485_receive()
 
     return NULL; // Không có dữ liệu
 }
+
+char* lora_receive()
+{
+    static char data[BUF_SIZE];
+    int len = uart_read_bytes(UART_NUM2, (uint8_t*)data, BUF_SIZE - 1, 100 / portTICK_PERIOD_MS);
+
+    if (len > 0)
+    {
+        data[len] = '\0';
+        ESP_LOGI(TAG, "UART2 Received: %s", data);
+        return data;
+    }
+
+    return NULL;
+}
+
 

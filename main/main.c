@@ -53,13 +53,18 @@ void check_eth_wifi_status() {
     if (esp_netif_is_netif_up(eth_netif)) {
         if (!wifi_stopped) {
             ESP_LOGI(TAG, "Ethernet UP, stopping Wi-Fi.");
+            gateway_data.status_eth = true;
+            gateway_data.status_wifi = false;
             esp_wifi_stop();
             wifi_stopped = true;
         }
     } else {
+        gateway_data.status_wifi = true;
         if (wifi_stopped) {
             ESP_LOGI(TAG, "Ethernet DOWN, starting Wi-Fi.");
             esp_wifi_start();
+            
+            gateway_data.status_eth = false;
             wifi_stopped = false;
         }
     }
@@ -78,12 +83,10 @@ void app_main(void)
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
-
     ESP_ERROR_CHECK(i2c_master_init());
-
-    
     gpio_start();
     rs485_init();
+    lora_init();
     
     if (!is_wifi_configured()){
         gateway_data.status_ap = true;
@@ -98,9 +101,9 @@ void app_main(void)
     mqtt_app_start();
     
     // Cài đặt thời gian ban đầu
-    // rtc_time_t set_time = { .second = 0, .minute = 10, .hour = 1, .day = 3, .date = 25, .month = 3, .year = 25 }; // 15:30:00, Thứ 5, 22/03/2024
-    // ESP_ERROR_CHECK(ds1307_set_time(set_time));
-    // ESP_LOGI(TAG, "Đã ghi thời gian vào DS1307");
+    rtc_time_t set_time = { .second = 0, .minute = 6, .hour = 13, .day = 4, .date = 3, .month = 4, .year = 25 }; // 15:30:00, Thứ 5, 22/03/2024
+    ESP_ERROR_CHECK(ds1307_set_time(set_time));
+    ESP_LOGI(TAG, "Đã ghi thời gian vào DS1307");
 
     // Đọc thời gian liên tục từ DS1307
     // rtc_time_t now;

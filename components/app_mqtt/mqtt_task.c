@@ -12,11 +12,12 @@
 #include "cJSON.h"
 #include "rs485.h"
 #include "ds1307.h"
-#define BROKER_ADDRESS "mqtt://dev-emqx.sful.com.vn"
-#define MQTT_USER "FCVD-01"
-#define MQTT_PASSWORD "xtijGhP9bKLBi0S"
+#define BROKER_ADDRESS "mqtt://109.237.64.101"
+#define MQTT_USER "haui2025"
+#define MQTT_PASSWORD "haui2025"
 #define TOPIC_LED "gateway/led"
 #define TOPIC_RS485 "gateway/rs485"
+#define TOPIC_LORA "gateway/lora"
 #define TOPIC_DOWN "gateway/down"
 static const char *TAG = "MQTT_APP";
 esp_mqtt_event_handle_t event ;
@@ -102,11 +103,17 @@ void publish_mqtt_inputs(int inputs[5]) {
 void mqtt_task(void *pvParameters) {
     while (1) {
         if(gateway_data.mqtt_connect){
-            char *received_data = rs485_receive();
-            if (received_data)
+            char *rs485_data = rs485_receive();
+            char *lora_data = lora_receive();
+            if (rs485_data)
             {
-                esp_mqtt_client_publish(client, TOPIC_RS485, received_data, 0, 0, 0);
-                ESP_LOGI(TAG, "pub RS485 thành công");
+                esp_mqtt_client_publish(client, TOPIC_RS485, rs485_data, 0, 0, 0);
+                ESP_LOGI(TAG, "pub RS485 published");
+            }
+
+            if(lora_data){
+                esp_mqtt_client_publish(client, TOPIC_LORA, lora_data, 0, 0, 0);
+                ESP_LOGI(TAG, "pub Lora published");
             }
 
             if (gateway_data.pub_led) {

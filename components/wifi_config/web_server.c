@@ -16,13 +16,101 @@ static EventGroupHandle_t ap_event_group;
 const int WIFI_CREDENTIALS_READY = BIT0; // Bit báo hiệu SSID/PASS đã sẵn sàng
 // HTML hiển thị danh sách WiFi và form nhập mật khẩu
 const char *HTML_PAGE = "<!DOCTYPE html>\
-<html><head><meta charset='UTF-8'><title>ESP32 WiFi Setup</title></head>\
-<body><h2>Chọn WiFi</h2>\
+<html lang='vi'>\
+<head>\
+<meta charset='UTF-8'>\
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>\
+<title>Kết nối WiFi</title>\
+<style>\
+    body {\
+        font-family: Arial, sans-serif;\
+        background-color: #f0f0f0;\
+        margin: 0;\
+        padding: 0;\
+    }\
+    .container {\
+        display: flex;\
+        justify-content: center;\
+        align-items: center;\
+        height: 100vh;\
+        padding: 10px;\
+    }\
+    .form-box {\
+        background: white;\
+        padding: 25px 35px;\
+        border-radius: 16px;\
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);\
+        width: 90%;\
+        max-width: 400px;\
+    }\
+    h2 {\
+        text-align: center;\
+        font-size: 24px;\
+        margin-bottom: 20px;\
+    }\
+    label {\
+        display: block;\
+        margin-top: 12px;\
+        margin-bottom: 6px;\
+        font-size: 16px;\
+    }\
+    input, select {\
+        width: 100%;\
+        padding: 10px;\
+        font-size: 16px;\
+        margin-bottom: 10px;\
+        border: 1px solid #ccc;\
+        border-radius: 6px;\
+    }\
+    .checkbox-label {\
+        display: flex;\
+        align-items: center;\
+        font-size: 14px;\
+        margin-bottom: 12px;\
+    }\
+    .checkbox-label input {\
+        width: auto;\
+        margin-right: 8px;\
+    }\
+    input[type='submit'] {\
+        background-color: #007BFF;\
+        color: white;\
+        border: none;\
+        font-size: 16px;\
+        padding: 10px;\
+        border-radius: 6px;\
+        cursor: pointer;\
+        width: 100%;\
+    }\
+    input[type='submit']:hover {\
+        background-color: #0056b3;\
+    }\
+</style>\
+</head>\
+<body>\
+<div class='container'>\
+<div class='form-box'>\
+<h2>Kết nối WiFi</h2>\
 <form action='/connect' method='POST'>\
-<label>SSID:</label><select name='ssid'>%s</select><br>\
-<label>Password:</label><input type='password' name='password'><br>\
+<label>SSID:</label>\
+<select name='ssid'>%s</select>\
+<label>Password:</label>\
+<input type='password' id='password' name='password'>\
+<div class='checkbox-label'>\
+<input type='checkbox' onclick='togglePassword()'> Hiển thị mật khẩu\
+</div>\
 <input type='submit' value='Kết Nối'>\
-</form></body></html>";
+</form>\
+</div>\
+</div>\
+<script>\
+function togglePassword() {\
+  var x = document.getElementById('password');\
+  x.type = (x.type === 'password') ? 'text' : 'password';\
+}\
+</script>\
+</body></html>";
+
 
 // Lưu SSID/PASS vào NVS
 void save_wifi_config(const char *ssid, const char *password) {
@@ -37,9 +125,7 @@ void save_wifi_config(const char *ssid, const char *password) {
 
 // Xử lý quét WiFi và trả về danh sách SSID
 static esp_err_t scan_wifi_handler(httpd_req_t *req) {
-    wifi_scan_config_t scan_config = {    
-        .show_hidden = true,
-        .scan_type = WIFI_SCAN_TYPE_ACTIVE,};
+    wifi_scan_config_t scan_config = {.show_hidden = true};
     esp_wifi_scan_start(&scan_config, true);
 
     uint16_t ap_count = 0;
@@ -47,21 +133,44 @@ static esp_err_t scan_wifi_handler(httpd_req_t *req) {
     wifi_ap_record_t ap_records[ap_count];
     esp_wifi_scan_get_ap_records(&ap_count, ap_records);
 
-    char ssid_list[512] = "";
+    // Cấp phát động ssid_list đủ lớn (mỗi AP khoảng 128 bytes)
+    size_t ssid_buf_len = ap_count * 128;
+    char *ssid_list = malloc(ssid_buf_len);
+    if (!ssid_list) {
+        ESP_LOGE(TAG, "Không cấp phát được bộ nhớ ssid_list");
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+    ssid_list[0] = '\0';
+
     for (int i = 0; i < ap_count; i++) {
         char option[128];
-        snprintf(option, sizeof(option), "<option value='%s'>%s (%d dBm)</option>", 
+        snprintf(option, sizeof(option),
+                 "<option value='%s'>%s (%d dBm)</option>",
                  ap_records[i].ssid, ap_records[i].ssid, ap_records[i].rssi);
-        strcat(ssid_list, option);
+        strlcat(ssid_list, option, ssid_buf_len);
     }
 
-    char response_html[1024];
-    snprintf(response_html, sizeof(response_html), HTML_PAGE, ssid_list);
-    
+    // Cấp phát động response_html (HTML_PAGE khoảng 500 + ssid_list)
+    size_t html_len = strlen(HTML_PAGE) + strlen(ssid_list) + 1;
+    char *response_html = malloc(html_len);
+    if (!response_html) {
+        ESP_LOGE(TAG, "Không cấp phát được bộ nhớ response_html");
+        free(ssid_list);
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+
+    snprintf(response_html, html_len, HTML_PAGE, ssid_list);
+
     httpd_resp_set_type(req, "text/html");
     httpd_resp_send(req, response_html, HTTPD_RESP_USE_STRLEN);
+
+    free(ssid_list);
+    free(response_html);
     return ESP_OK;
 }
+
 
 // Hàm giải mã URL
 void url_decode(const char *src, char *dest, size_t dest_size) {
@@ -120,11 +229,11 @@ static esp_err_t connect_wifi_handler(httpd_req_t *req) {
         return ESP_FAIL;
     }
 
-    // Lưu SSID/PASS vào NVS (giả định có hàm save_wifi_config)
+    // Lưu SSID/PASS vào NVS 
     save_wifi_config(ssid, password);
+    xEventGroupSetBits(ap_event_group, WIFI_CREDENTIALS_READY);
 
     httpd_resp_send(req, "Connection successful, ESP will reboot!", HTTPD_RESP_USE_STRLEN);
-    xEventGroupSetBits(ap_event_group, WIFI_CREDENTIALS_READY);
     vTaskDelay(2000 / portTICK_PERIOD_MS);
     esp_restart();
     return ESP_OK;
@@ -134,7 +243,6 @@ static esp_err_t connect_wifi_handler(httpd_req_t *req) {
 void start_web_server() {
     ap_event_group = xEventGroupCreate(); // Tạo Event Group
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
-    config.stack_size = 8192; // Tăng stack size
     httpd_handle_t server = NULL;
     httpd_start(&server, &config);
 
@@ -144,6 +252,7 @@ void start_web_server() {
     httpd_register_uri_handler(server, &scan_wifi);
     httpd_register_uri_handler(server, &connect_wifi);
     ESP_LOGI(TAG, "Web server started");
+    ESP_LOGI(TAG, "[APP] Free memory start_web_server: %" PRIu32 " bytes", esp_get_free_heap_size());
 }
 void wait_for_wifi_credentials() {
     ESP_LOGI(TAG, "Waiting SSID/PASS from Web...");

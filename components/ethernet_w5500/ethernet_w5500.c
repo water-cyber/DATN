@@ -28,7 +28,7 @@ static void eth_event_handler(void *arg, esp_event_base_t event_base,
 
     switch (event_id) {
         case ETHERNET_EVENT_CONNECTED:
-            gateway_data.status_eth = true;
+            
             esp_eth_ioctl(eth_handle, ETH_CMD_G_MAC_ADDR, mac_addr);
             ESP_LOGI(TAG, "Ethernet connected, MAC: %02x:%02x:%02x:%02x:%02x:%02x",
                      mac_addr[0], mac_addr[1], mac_addr[2], 
@@ -37,7 +37,7 @@ static void eth_event_handler(void *arg, esp_event_base_t event_base,
 
         case ETHERNET_EVENT_DISCONNECTED:
             ESP_LOGI(TAG, "Ethernet disconnected");
-            gateway_data.status_eth = false;
+            
             break;
 
         case ETHERNET_EVENT_START:
@@ -46,7 +46,7 @@ static void eth_event_handler(void *arg, esp_event_base_t event_base,
 
         case ETHERNET_EVENT_STOP:
             ESP_LOGI(TAG, "Ethernet stopped");
-            gateway_data.status_eth = false;
+            
             break;
     }
 }
